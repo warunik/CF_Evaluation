@@ -1,0 +1,22 @@
+{
+  "feature_names": [
+    "age",
+    "workclass",
+    "fnlwgt",
+    "education",
+    "education-num",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week",
+    "native-country"
+  ],
+  "n_features": 14,
+  "n_train_samples": 22792,
+  "n_test_samples": 9769,
+  "train_class_distribution": {
+    "0": 

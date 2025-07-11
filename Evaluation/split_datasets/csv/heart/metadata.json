@@ -1,0 +1,21 @@
+{
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "n_features": 13,
+  "n_train_samples": 717,
+  "n_test_samples": 308,
+  "train_class_distribution": {
+    "0": 
