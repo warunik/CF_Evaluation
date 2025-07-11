@@ -1,0 +1,6 @@
+dataset,model,accuracy,precision,recall,f1,roc_auc,cv_f1_score,best_params
+diabetes,Decision Tree,0.7142857142857143,0.7035404325664693,0.7142857142857143,0.7030935613682092,0.7832098765432098,0.6050008638934222,"{'classifier__criterion': 'entropy', 'classifier__max_depth': 5, 'classifier__min_samples_leaf': 4, 'classifier__min_samples_split': 2}"
+diabetes,Logistic Regression,0.7402597402597403,0.7323747680890539,0.7402597402597403,0.7313771134525852,0.8372839506172839,0.6554881725988283,"{'classifier__C': 1, 'classifier__penalty': 'l1', 'classifier__solver': 'liblinear'}"
+diabetes,MLP,0.7402597402597403,0.7326721471299785,0.7402597402597403,0.7326031000385084,0.8308641975308642,0.6241165443351235,"{'classifier__alpha': 0.0001, 'classifier__hidden_layer_sizes': (150, 100, 50), 'classifier__learning_rate': 'constant'}"
+diabetes,Random Forest,0.7402597402597403,0.7331279932299226,0.7402597402597403,0.733765115930721,0.8201646090534979,0.6395848595848597,"{'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 50}"
+diabetes,XGBoost,0.7402597402597403,0.7337348641696467,0.7402597402597403,0.7348651348651348,0.831358024691358,0.6137318410534871,"{'classifier__learning_rate': 0.1, 'classifier__max_depth': 5, 'classifier__n_estimators': 50, 'classifier__subsample': 0.8}"
