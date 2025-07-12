@@ -1,0 +1,26 @@
+instance,original_class,expected_contrast,dataset,model,result,original_prediction,modified_prediction,original_confidence,modified_confidence,reason
+111,No Heart Disease,Heart Disease,heart,mlp,✗,No Heart Disease,No Heart Disease,0.6623725494876151,0.9870163894768476,
+251,No Heart Disease,Heart Disease,heart,mlp,✓,Heart Disease,Heart Disease,0.9937632955578339,0.9946417543732529,
+146,No Heart Disease,Heart Disease,heart,mlp,✓,Heart Disease,Heart Disease,0.9950289582467224,0.9914909078504274,
+35,Heart Disease,No Heart Disease,heart,mlp,✗,No Heart Disease,Heart Disease,0.5593075840874451,0.9098779918463117,
+71,Heart Disease,No Heart Disease,heart,mlp,✓,No Heart Disease,No Heart Disease,0.9903461739646691,0.8468609974691885,
+241,No Heart Disease,Heart Disease,heart,mlp,✗,No Heart Disease,No Heart Disease,0.5922341148645653,0.6530592277847762,
+89,No Heart Disease,Heart Disease,heart,mlp,✗,No Heart Disease,No Heart Disease,0.9926953923376904,0.9979079837240916,
+119,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,,,,,No counterfactual rules provided
+284,Heart Disease,No Heart Disease,heart,mlp,✓,No Heart Disease,No Heart Disease,0.9650528980939289,0.963907605518123,
+196,No Heart Disease,Heart Disease,heart,mlp,✗,No Heart Disease,No Heart Disease,0.6588704961695409,0.6588704961695409,
+40,Heart Disease,No Heart Disease,heart,mlp,✗,Heart Disease,Heart Disease,0.966236589299562,0.9688635815574572,
+266,Heart Disease,No Heart Disease,heart,mlp,✓,No Heart Disease,No Heart Disease,0.9951176407949334,0.9935126560151556,
+218,No Heart Disease,Heart Disease,heart,mlp,✗,No Heart Disease,No Heart Disease,0.9975755678742375,0.9979922720045563,
+290,Heart Disease,No Heart Disease,heart,mlp,✗,Heart Disease,Heart Disease,0.7751746712925384,0.9915923519329578,
+175,Heart Disease,Heart Disease,heart,mlp,✗,No Heart Disease,No Heart Disease,0.9998755617014253,0.9998755617014253,
+231,Heart Disease,No Heart Disease,heart,mlp,✗,Heart Disease,Heart Disease,0.9784741065013187,0.9945920533300318,
+94,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,,,,,No counterfactual rules provided
+84,No Heart Disease,Heart Disease,heart,mlp,✓,Heart Disease,Heart Disease,0.9996974419720126,0.9833838379941994,
+234,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,,,,,No counterfactual rules provided
+229,No Heart Disease,Heart Disease,heart,mlp,✗,No Heart Disease,No Heart Disease,0.9962935444488474,0.9962935444488474,
+264,No Heart Disease,Heart Disease,heart,mlp,✗,No Heart Disease,No Heart Disease,0.9875103333474877,0.9984054091583419,
+39,No Heart Disease,Heart Disease,heart,mlp,✓,No Heart Disease,Heart Disease,0.7688646448238308,0.9248869980009563,
+127,No Heart Disease,Heart Disease,heart,mlp,✗,Heart Disease,No Heart Disease,0.9694142438495539,0.9989012575425175,
+260,Heart Disease,No Heart Disease,heart,mlp,✗,Heart Disease,Heart Disease,0.9957262658405587,0.9960686576451335,
+75,Heart Disease,No Heart Disease,heart,mlp,✗,Heart Disease,Heart Disease,0.9539471234624688,0.9754869616206923,

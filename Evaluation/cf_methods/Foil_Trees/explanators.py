@@ -146,8 +146,7 @@ class TreeExplanator(RuleExplanator):
             print('[E] Fidelity of tree on neighborhood data =', local_fidelity)
 
         if DEBUG:
-            # print_binary_tree(model, xs[0].reshape(1, -1))
-            print('Decision tree:')
+            print_binary_tree(model, xs[0].reshape(1, -1))
 
         return model, local_fidelity
 

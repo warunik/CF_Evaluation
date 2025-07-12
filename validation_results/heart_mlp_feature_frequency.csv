@@ -1,0 +1,14 @@
+Rank,Feature,Frequency,Percentage
+1,cp,11,25.0
+2,ca,5,11.36
+3,restecg,4,9.09
+4,thal,4,9.09
+5,fbs,4,9.09
+6,sex,4,9.09
+7,slope,3,6.82
+8,oldpeak,2,4.55
+9,thalach,2,4.55
+10,trestbps,2,4.55
+11,chol,1,2.27
+12,age,1,2.27
+13,exang,1,2.27

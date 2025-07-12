@@ -3,6 +3,7 @@ DATASETS = {
     "heart": {
         "name": "Heart Disease",
         "path": "Evaluation/data/heart.csv",
+        "preprocessed_dir": "preprocessed_data/heart",  # Added
         "target_column": "target",
         "class_labels": {0: "No Heart Disease", 1: "Heart Disease"},
         "feature_types": {
@@ -31,6 +32,7 @@ DATASETS = {
     "diabetes": {
         "name": "Diabetes Prediction",
         "path": "Evaluation/data/diabetes.csv",
+        "preprocessed_dir": "preprocessed_data/diabetes",  # Added
         "target_column": "Outcome",
         "class_labels": {0: "No Diabetes", 1: "Diabetes"},
         "feature_types": {
@@ -54,6 +56,7 @@ DATASETS = {
     "adult": {
         "name": "Income Prediction",
         "path": "Evaluation/data/adult.csv",
+        "preprocessed_dir": "preprocessed_data/adult",  # Added
         "target_column": "class",
         "drop_columns": ["fnlwgt", "education-num", "native-country"],
         "class_labels": {0: "<=50K", 1: ">50K"},
@@ -84,6 +87,7 @@ DATASETS = {
     "bank": {
         "name": "Credit Approval",
         "path": "Evaluation/data/bank.csv",
+        "preprocessed_dir": "preprocessed_data/bank",  # Added
         "target_column": "give_credit",
         "class_labels": {0: "Deny Credit", 1: "Approve Credit"},
         "feature_types": {
@@ -109,6 +113,7 @@ DATASETS = {
     "german": {
         "name": "German Credit Risk",
         "path": "Evaluation/data/german_credit.csv",
+        "preprocessed_dir": "preprocessed_data/german",  # Added
         "target_column": "default",
         "class_labels": {0: "Good Credit", 1: "Bad Credit"},
         "feature_types": {

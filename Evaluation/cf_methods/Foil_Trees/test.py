@@ -236,6 +236,10 @@ class CounterfactualExplanationGenerator:
                 
                 # Extract counterfactual rules
                 cf_rules = self._extract_counterfactual_rules(main_explanation)
+                contrast_class = self._extract_contrast_class(main_explanation)
+                confidence = self._extract_confidence(main_explanation)
+                fidelity = self._extract_fidelity(main_explanation)
+                time_taken = self._extract_time_taken(main_explanation)
                 
                 # Map class labels
                 actual_class_label = self.config['class_labels'].get(actual_class, str(actual_class))
@@ -245,10 +249,12 @@ class CounterfactualExplanationGenerator:
                     'Instance_ID': instance_idx,
                     'Actual_Class': actual_class_label,
                     'Predicted_Class': predicted_class_label,
-                    'Prediction_Confidence': float(np.max(prediction_proba)),
+                    'Contrast_Class': contrast_class,
                     'Counterfactual_Rules': cf_rules,
-                    'Full_Explanation': main_explanation[:1000],  # Truncate long explanations
-                    'Additional_Info': additional_info[:500] if additional_info else ""
+                    'Prediction_Confidence': float(np.max(prediction_proba)),
+                    'Confidence': confidence,
+                    'Fidelity': fidelity,
+                    'Time_Taken(s)': time_taken
                 }
                 
                 results.append(result)
@@ -290,6 +296,78 @@ class CounterfactualExplanationGenerator:
             return cf_rules[:500]  # Truncate very long rules
         except Exception:
             return "Error extracting rules"
+
+    def _extract_contrast_class(self, explanation):
+        """Extract counterfactual rules from explanation"""
+        try:
+            contrast_class = "No rules extracted"
+            if "Contrast Class" in explanation:
+                lines = explanation.split('\n')
+                for line in lines:
+                    if "Contrast Class" in line and '|' in line:
+                        parts = line.split('|')
+                        if len(parts) >= 3:
+                            contrast_class = parts[-2].strip()
+                            break
+            elif "IF" in explanation.upper():
+                # Try to extract IF-THEN rules
+                lines = explanation.split('\n')
+                rule_lines = [line.strip() for line in lines if 'IF' in line.upper() or 'THEN' in line.upper()]
+                if rule_lines:
+                    contrast_class = '; '.join(rule_lines[:3])  # Take first 3 rules
+            
+            return contrast_class[:500]  # Truncate very long rules
+        except Exception:
+            return "Error extracting rules"
+
+    def _extract_confidence(self, explanation):
+        """Extract confidence from explanation"""
+        try:
+            confidence = "No confidence extracted"
+            if "Confidence" in explanation:
+                lines = explanation.split('\n')
+                for line in lines:
+                    if "Confidence" in line and '|' in line:
+                        parts = line.split('|')
+                        if len(parts) >= 3:
+                            confidence = parts[-2].strip()
+                            break
+            return confidence[:500]
+        except Exception:
+            return "Error extracting confidence"
+
+    def _extract_fidelity(self, explanation):
+        """Extract fidelity from explanation"""
+        try:
+            fidelity = "No fidelity extracted"
+            if "Fidelity" in explanation:
+                lines = explanation.split('\n')
+                for line in lines:
+                    if "Fidelity" in line and '|' in line:
+                        parts = line.split('|')
+                        if len(parts) >= 3:
+                            fidelity = parts[-2].strip()
+                            break
+            return fidelity[:500]
+        except Exception:
+            return "Error extracting fidelity"
+
+    def _extract_time_taken(self, explanation):
+        """Extract time taken (s) from explanation"""
+        try:
+            time_taken = "No time extracted"
+            if "Time Taken" in explanation or "Time Taken(s)" in explanation:
+                lines = explanation.split('\n')
+                for line in lines:
+                    if ("Time Taken" in line or "Time Taken(s)" in line) and '|' in line:
+                        parts = line.split('|')
+                        if len(parts) >= 3:
+                            time_taken = parts[-2].strip()
+                            break
+            return time_taken[:500]
+        except Exception:
+            return "Error extracting time"
+
     
     def run_full_analysis(self, n_samples=1000, max_instances=50):
         """Run complete counterfactual analysis using preprocessed data and pretrained model"""
