@@ -633,11 +633,11 @@ def validate_multiple_reports(report_directory, output_dir="./validation_results
 # Example usage
 def main():
     # Example 1: Validate a single report
-    single_report_path = "Evaluation/heart_mlp_counterfactual_report.csv"
-    validate_single_report(single_report_path)
+    # single_report_path = "Evaluation/heart_mlp_counterfactual_report.csv"
+    # validate_single_report(single_report_path)
     
     # Example 2: Validate all reports in a directory
-    # validate_multiple_reports("Evaluation/", "./validation_results/")
+    validate_multiple_reports("Evaluation/results/", "./validation_results/")
 
 if __name__ == "__main__":
     main()

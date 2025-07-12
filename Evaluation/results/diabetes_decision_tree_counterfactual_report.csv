@@ -1,0 +1,232 @@
+Instance_ID,Actual_Class,Predicted_Class,Contrast_Class,Counterfactual_Rules,Prediction_Confidence,Confidence,Fidelity,Time_Taken(s)
+0,Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > -0.148,0.75,100.0%,85.2%,0.02
+1,Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction <= 0.912 and Glucose <= 125.31,0.6944444444444444,100.0%,74.2%,0.02
+2,Diabetes,Diabetes,No Diabetes,Pregnancies > 5.557,0.5333333333333333,100.0%,81.4%,0.13
+3,Diabetes,Diabetes,No Diabetes,Glucose <= 168.578,0.5333333333333333,100.0%,76.0%,0.02
+4,Diabetes,No Diabetes,Diabetes,SkinThickness > 27.841 and DiabetesPedigreeFunction <= 0.442 and SkinThickness > 26.755 and Pregnancies <= 8.629,0.75,100.0%,86.6%,0.11
+5,No Diabetes,No Diabetes,Diabetes,BloodPressure > 36.655 and BMI <= 28.828,0.9655172413793104,100.0%,66.2%,0.01
+6,No Diabetes,Diabetes,No Diabetes,BMI > 27.019,0.8333333333333334,100.0%,85.4%,0.10
+7,No Diabetes,No Diabetes,Diabetes,BloodPressure <= 84.583 and Glucose <= 141.169 and SkinThickness > 5.554 and BMI <= 34.111,0.9781021897810219,100.0%,77.0%,0.01
+8,No Diabetes,No Diabetes,Diabetes,Insulin > -38.425,0.9781021897810219,100.0%,78.6%,0.01
+9,No Diabetes,No Diabetes,Diabetes,Insulin > -63.903,0.6944444444444444,100.0%,70.2%,0.01
+10,No Diabetes,No Diabetes,Diabetes,Pregnancies > -0.008 and Glucose <= 133.112 and Age > 21.386,0.9781021897810219,100.0%,72.6%,0.01
+11,No Diabetes,No Diabetes,Diabetes,BMI <= 30.092 and Glucose <= 121.581,0.9781021897810219,100.0%,82.2%,0.09
+12,No Diabetes,No Diabetes,Diabetes,BMI <= 34.735,0.9655172413793104,100.0%,55.0%,0.01
+13,No Diabetes,Diabetes,No Diabetes,BMI > 29.787 and BloodPressure <= 92.38 and Insulin <= 116.614,0.5333333333333333,100.0%,88.6%,0.01
+14,Diabetes,Diabetes,No Diabetes,Age <= 33.768 and BMI > 32.691,0.6363636363636364,100.0%,71.6%,0.11
+15,Diabetes,Diabetes,No Diabetes,Glucose > 140.395,1.0,100.0%,86.2%,0.13
+16,Diabetes,No Diabetes,Diabetes,Glucose <= 134.688 and BloodPressure <= 17.842,0.9781021897810219,100.0%,79.6%,0.10
+17,No Diabetes,Diabetes,No Diabetes,BMI > 29.908,0.5333333333333333,100.0%,83.2%,0.13
+18,No Diabetes,Diabetes,No Diabetes,N/A,0.9310344827586207,100.0%,60.2%,0.09
+19,No Diabetes,Diabetes,No Diabetes,BMI <= 38.271,0.5333333333333333,97.2%,71.0%,0.01
+20,No Diabetes,No Diabetes,Diabetes,Glucose <= 129.228,0.9781021897810219,100.0%,78.8%,0.12
+21,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.199 and Pregnancies <= 5.215 and Glucose <= 155.713,0.5384615384615384,100.0%,76.0%,0.01
+22,No Diabetes,No Diabetes,Diabetes,Age <= 44.381 and Pregnancies > 1.312,0.9655172413793104,100.0%,85.0%,0.11
+23,No Diabetes,No Diabetes,Diabetes,Glucose <= 135.485 and Age <= 34.043 and BMI <= 29.323 and SkinThickness <= 21.874,0.9781021897810219,100.0%,86.0%,0.11
+24,No Diabetes,Diabetes,No Diabetes,BloodPressure > 63.717 and Glucose > 141.45 and DiabetesPedigreeFunction <= 0.777,0.6363636363636364,100.0%,81.6%,0.11
+25,No Diabetes,Diabetes,No Diabetes,BloodPressure > 58.853 and BMI > 28.252,0.5333333333333333,100.0%,86.4%,0.01
+26,Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.305 and BloodPressure <= 89.396,0.5,100.0%,76.4%,0.01
+27,Diabetes,No Diabetes,Diabetes,SkinThickness > 6.707 and DiabetesPedigreeFunction > 0.458,0.6944444444444444,100.0%,87.0%,0.01
+28,No Diabetes,No Diabetes,Diabetes,Glucose <= 132.838 and BMI > 16.949,0.9781021897810219,100.0%,82.4%,0.10
+29,No Diabetes,No Diabetes,Diabetes,Pregnancies > 4.992 and BMI <= 35.201 and BloodPressure > 62.537,1.0,100.0%,82.0%,0.01
+30,Diabetes,Diabetes,No Diabetes,N/A,1.0,100.0%,84.4%,0.09
+31,Diabetes,No Diabetes,Diabetes,BMI <= 36.821 and Glucose > 124.518 and BMI <= 40.43,1.0,100.0%,85.6%,0.02
+32,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.619 and Pregnancies > -0.381 and DiabetesPedigreeFunction > 0.376,0.6944444444444444,100.0%,87.6%,0.01
+33,No Diabetes,No Diabetes,Diabetes,Pregnancies > 1.153 and DiabetesPedigreeFunction <= 0.505 and BMI <= 28.612,1.0,100.0%,73.6%,0.09
+34,No Diabetes,No Diabetes,Diabetes,BMI <= 30.978,0.9781021897810219,100.0%,84.2%,0.10
+35,Diabetes,Diabetes,No Diabetes,Glucose > 125.988,1.0,100.0%,75.0%,0.10
+36,No Diabetes,No Diabetes,Diabetes,Insulin <= 211.798,0.9781021897810219,100.0%,69.8%,0.01
+37,Diabetes,Diabetes,No Diabetes,BMI > 31.902 and Age > 28.309,0.5333333333333333,100.0%,85.0%,0.11
+38,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > -0.313,0.9781021897810219,100.0%,80.0%,0.08
+39,No Diabetes,No Diabetes,Diabetes,BMI <= 29.79 and Age > 35.134,1.0,100.0%,80.8%,0.10
+40,No Diabetes,No Diabetes,Diabetes,Glucose <= 131.771 and BMI <= 29.572,0.9655172413793104,100.0%,89.4%,0.01
+41,Diabetes,Diabetes,No Diabetes,Insulin <= 20.84 and Age > 33.91 and BloodPressure > 58.071 and Insulin <= 34.935,1.0,100.0%,82.2%,0.10
+42,No Diabetes,No Diabetes,Diabetes,N/A,0.9781021897810219,0.0%,70.2%,0.08
+43,No Diabetes,No Diabetes,Diabetes,Pregnancies > 0.148 and Age <= 40.128,0.9781021897810219,99.3%,74.6%,0.01
+44,No Diabetes,No Diabetes,Diabetes,BMI <= 29.413 and Glucose <= 129.565,0.9781021897810219,100.0%,87.8%,0.01
+45,Diabetes,Diabetes,No Diabetes,BMI > 25.501,0.9310344827586207,100.0%,78.2%,0.01
+46,No Diabetes,No Diabetes,Diabetes,Pregnancies > 1.362 and Glucose <= 125.1 and BMI <= 33.568 and BloodPressure <= 78.569,0.75,100.0%,84.4%,0.01
+47,Diabetes,Diabetes,No Diabetes,Age > 31.161,1.0,100.0%,83.8%,0.12
+48,No Diabetes,No Diabetes,Diabetes,Glucose <= 119.976,1.0,100.0%,85.2%,0.10
+49,No Diabetes,No Diabetes,Diabetes,Insulin <= 134.8 and Age <= 26.142,0.9781021897810219,100.0%,81.8%,0.01
+50,No Diabetes,No Diabetes,Diabetes,Glucose <= 132.733,0.9781021897810219,100.0%,52.6%,0.01
+51,No Diabetes,No Diabetes,Diabetes,Age > 8.244,0.9781021897810219,100.0%,83.6%,0.01
+52,Diabetes,Diabetes,No Diabetes,Pregnancies > 4.46 and DiabetesPedigreeFunction > 0.434,0.5333333333333333,100.0%,84.0%,0.13
+53,No Diabetes,No Diabetes,Diabetes,Glucose <= 134.326,0.9781021897810219,100.0%,84.4%,0.10
+54,Diabetes,No Diabetes,Diabetes,Glucose <= 131.962 and BMI > 31.709 and Age <= 42.527,0.75,100.0%,83.2%,0.01
+55,Diabetes,No Diabetes,Diabetes,Pregnancies > -1.486 and BMI <= 28.649,0.9781021897810219,100.0%,75.8%,0.02
+56,No Diabetes,No Diabetes,Diabetes,Glucose <= 134.008,0.9655172413793104,100.0%,84.2%,0.09
+57,Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.441,0.5714285714285714,100.0%,68.6%,0.08
+58,Diabetes,No Diabetes,Diabetes,Pregnancies <= 8.472,0.5,100.0%,80.0%,0.01
+59,Diabetes,No Diabetes,Diabetes,Age <= 30.164 and DiabetesPedigreeFunction <= 0.537 and Pregnancies <= 3.739,0.9781021897810219,100.0%,74.4%,0.02
+60,No Diabetes,No Diabetes,Diabetes,Pregnancies > -1.177,0.9781021897810219,100.0%,75.6%,0.01
+61,No Diabetes,No Diabetes,Diabetes,Glucose <= 124.969,0.9781021897810219,100.0%,83.2%,0.11
+62,Diabetes,No Diabetes,Diabetes,Pregnancies > 1.212 and SkinThickness <= 5.251,0.75,100.0%,84.0%,0.12
+63,Diabetes,No Diabetes,Diabetes,Glucose <= 132.441,0.6944444444444444,100.0%,88.8%,0.01
+64,No Diabetes,No Diabetes,Diabetes,N/A,1.0,0.0%,70.8%,0.08
+65,No Diabetes,No Diabetes,Diabetes,Glucose <= 131.129,0.9781021897810219,100.0%,88.0%,0.02
+66,No Diabetes,No Diabetes,Diabetes,N/A,1.0,100.0%,84.4%,0.11
+67,No Diabetes,No Diabetes,Diabetes,Glucose <= 131.508,0.9781021897810219,100.0%,82.4%,0.01
+68,No Diabetes,No Diabetes,Diabetes,BMI <= 41.84 and Insulin <= 153.955,0.6944444444444444,100.0%,73.0%,0.01
+69,No Diabetes,Diabetes,No Diabetes,Glucose > 140.561 and Insulin > -18.466,0.5333333333333333,100.0%,76.0%,0.02
+70,Diabetes,Diabetes,No Diabetes,Pregnancies > 5.463 and BMI > 33.308 and Glucose > 163.836 and BMI > 26.276,1.0,100.0%,85.6%,0.12
+71,Diabetes,No Diabetes,Diabetes,Age > 34.034 and DiabetesPedigreeFunction <= 0.485,0.75,100.0%,61.2%,0.01
+72,No Diabetes,No Diabetes,Diabetes,Glucose <= 140.873 and BMI <= 29.204,0.9781021897810219,100.0%,75.0%,0.08
+73,No Diabetes,No Diabetes,Diabetes,N/A,0.9781021897810219,0.0%,70.2%,0.08
+74,No Diabetes,No Diabetes,Diabetes,BloodPressure > 31.217,0.9781021897810219,100.0%,77.6%,0.02
+75,Diabetes,No Diabetes,Diabetes,N/A,0.5,0.0%,70.6%,0.08
+76,Diabetes,No Diabetes,Diabetes,Glucose <= 149.953,0.5384615384615384,100.0%,66.0%,0.01
+77,No Diabetes,No Diabetes,Diabetes,Pregnancies <= 11.067 and SkinThickness <= 27.285,0.75,100.0%,79.6%,0.10
+78,Diabetes,No Diabetes,Diabetes,Glucose <= 129.312 and BMI > 29.838 and Glucose <= 152.549,0.9781021897810219,100.0%,90.8%,0.01
+79,No Diabetes,Diabetes,No Diabetes,Pregnancies <= 1.021 and BloodPressure > 72.05 and Pregnancies <= 1.539,0.6153846153846154,100.0%,76.8%,0.01
+80,No Diabetes,No Diabetes,Diabetes,Insulin <= 116.977 and Glucose <= 143.431 and BMI <= 29.891,1.0,100.0%,75.2%,0.02
+81,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.04 and Pregnancies > 1.347,0.9781021897810219,100.0%,93.6%,0.01
+82,No Diabetes,No Diabetes,Diabetes,Glucose <= 116.714 and Age <= 24.393,0.9781021897810219,100.0%,89.0%,0.01
+83,No Diabetes,No Diabetes,Diabetes,Glucose <= 131.228 and SkinThickness > 4.447 and Glucose <= 152.389,0.9781021897810219,100.0%,86.8%,0.10
+84,No Diabetes,No Diabetes,Diabetes,Glucose <= 125.59,0.9781021897810219,100.0%,77.0%,0.01
+85,No Diabetes,Diabetes,No Diabetes,Glucose > 137.493 and BloodPressure > 75.904,0.8333333333333334,100.0%,80.0%,0.10
+86,Diabetes,No Diabetes,Diabetes,Pregnancies > 3.034,0.9781021897810219,100.0%,80.8%,0.10
+87,Diabetes,Diabetes,No Diabetes,BloodPressure <= 71.297,0.5333333333333333,100.0%,84.0%,0.09
+88,Diabetes,Diabetes,No Diabetes,BMI > 32.646,1.0,100.0%,83.6%,0.09
+89,No Diabetes,No Diabetes,Diabetes,Glucose <= 120.479 and SkinThickness > 20.628 and Glucose <= 135.873 and BMI <= 29.761,0.5,100.0%,83.8%,0.01
+90,Diabetes,Diabetes,No Diabetes,N/A,0.9310344827586207,100.0%,78.4%,0.11
+91,Diabetes,No Diabetes,Diabetes,N/A,0.5714285714285714,100.0%,74.6%,0.08
+92,No Diabetes,No Diabetes,Diabetes,Glucose > 73.564 and BMI <= 28.861,0.9781021897810219,100.0%,65.2%,0.01
+93,Diabetes,No Diabetes,Diabetes,Pregnancies > -1.401,0.5714285714285714,100.0%,76.2%,0.09
+94,Diabetes,Diabetes,No Diabetes,Pregnancies <= 6.749 and BMI <= 29.761 and Glucose > 131.376,1.0,100.0%,59.4%,0.01
+95,No Diabetes,No Diabetes,Diabetes,Glucose <= 139.757 and BMI > 29.201,0.75,100.0%,85.6%,0.01
+96,Diabetes,No Diabetes,Diabetes,Glucose <= 132.313,0.75,100.0%,82.8%,0.01
+97,No Diabetes,No Diabetes,Diabetes,BloodPressure <= 62.106 and BMI <= 30.6 and Glucose <= 124.536,0.9781021897810219,100.0%,81.2%,0.10
+98,Diabetes,No Diabetes,Diabetes,N/A,0.75,100.0%,78.6%,0.10
+99,No Diabetes,No Diabetes,Diabetes,BMI <= 45.481,0.9781021897810219,100.0%,90.0%,0.10
+100,No Diabetes,No Diabetes,Diabetes,Glucose <= 121.803,0.75,100.0%,73.6%,0.01
+101,No Diabetes,No Diabetes,Diabetes,BMI <= 34.682 and Glucose <= 129.377,0.9781021897810219,100.0%,78.6%,0.12
+102,Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.145 and Glucose <= 130.894 and BMI > 29.624 and Glucose <= 158.779,0.75,100.0%,77.0%,0.01
+103,Diabetes,No Diabetes,Diabetes,Glucose <= 135.892,0.5,100.0%,84.6%,0.01
+104,Diabetes,Diabetes,No Diabetes,BMI > 26.675,0.5333333333333333,100.0%,85.2%,0.12
+105,No Diabetes,No Diabetes,Diabetes,SkinThickness > 13.598,0.9781021897810219,100.0%,77.0%,0.02
+106,No Diabetes,No Diabetes,Diabetes,BMI <= 31.634 and Insulin <= 20.868,0.9781021897810219,100.0%,79.2%,0.11
+107,No Diabetes,Diabetes,No Diabetes,SkinThickness > 4.165 and Glucose > 143.63,0.6363636363636364,100.0%,53.4%,0.01
+108,No Diabetes,No Diabetes,Diabetes,Insulin <= 167.398 and Pregnancies > 2.776 and SkinThickness > 6.375,0.9781021897810219,100.0%,90.0%,0.10
+109,No Diabetes,Diabetes,No Diabetes,Glucose > 133.123,0.5333333333333333,100.0%,87.4%,0.11
+110,Diabetes,No Diabetes,Diabetes,N/A,1.0,100.0%,82.6%,0.11
+111,Diabetes,Diabetes,No Diabetes,BMI > 31.956 and Insulin > 138.202,1.0,100.0%,80.4%,0.11
+112,Diabetes,Diabetes,No Diabetes,BloodPressure > 59.678,0.5333333333333333,100.0%,86.4%,0.01
+113,Diabetes,Diabetes,No Diabetes,SkinThickness > 2.698 and Insulin > -131.539,0.6363636363636364,100.0%,88.0%,0.01
+114,No Diabetes,Diabetes,No Diabetes,Pregnancies > 6.546,1.0,100.0%,78.0%,0.10
+115,No Diabetes,No Diabetes,Diabetes,Age > 35.937 and Glucose <= 145.066,1.0,100.0%,80.8%,0.01
+116,No Diabetes,No Diabetes,Diabetes,BloodPressure > 65.714 and BMI <= 38.525,0.9655172413793104,100.0%,79.4%,0.01
+117,No Diabetes,No Diabetes,Diabetes,Pregnancies > 0.774,0.75,100.0%,73.8%,0.01
+118,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.332 and SkinThickness > 16.372 and Age <= 25.835,0.6944444444444444,100.0%,71.0%,0.01
+119,Diabetes,Diabetes,No Diabetes,N/A,1.0,100.0%,70.6%,0.10
+120,No Diabetes,No Diabetes,Diabetes,BloodPressure > 42.485,0.9781021897810219,100.0%,72.0%,0.08
+121,Diabetes,Diabetes,No Diabetes,Glucose <= 142.771 and Pregnancies > -3.253,1.0,100.0%,82.6%,0.11
+122,Diabetes,Diabetes,No Diabetes,Glucose > 132.285 and Age > 20.806,1.0,100.0%,80.4%,0.10
+123,No Diabetes,No Diabetes,Diabetes,Glucose <= 131.599 and BloodPressure <= 94.111,0.6944444444444444,100.0%,84.2%,0.01
+124,Diabetes,No Diabetes,Diabetes,BMI <= 29.584 and Glucose <= 129.984 and BMI <= 34.965,0.5,99.9%,84.0%,0.12
+125,No Diabetes,No Diabetes,Diabetes,Pregnancies > -1.278 and Age <= 32.416,0.9781021897810219,100.0%,86.6%,0.01
+126,Diabetes,No Diabetes,Diabetes,Insulin > -52.01,0.5714285714285714,100.0%,72.4%,0.10
+127,No Diabetes,No Diabetes,Diabetes,BloodPressure <= 89.793,0.9781021897810219,100.0%,75.4%,0.01
+128,Diabetes,Diabetes,No Diabetes,BMI > 24.273,0.9310344827586207,100.0%,76.4%,0.09
+129,No Diabetes,No Diabetes,Diabetes,Glucose <= 132.168 and DiabetesPedigreeFunction <= 0.449,0.75,100.0%,85.6%,0.11
+130,No Diabetes,No Diabetes,Diabetes,BloodPressure <= 83.326 and Glucose <= 132.304,0.9781021897810219,100.0%,83.8%,0.01
+131,No Diabetes,No Diabetes,Diabetes,Age <= 41.77 and DiabetesPedigreeFunction > 0.279,0.9781021897810219,100.0%,86.8%,0.01
+132,No Diabetes,No Diabetes,Diabetes,Age <= 33.532 and Insulin > -31.638,0.9781021897810219,100.0%,66.4%,0.01
+133,No Diabetes,No Diabetes,Diabetes,Glucose <= 135.626 and Insulin > 1.327,0.75,100.0%,85.0%,0.09
+134,Diabetes,No Diabetes,Diabetes,Glucose <= 133.491 and Age > 37.794,0.5,100.0%,85.4%,0.10
+135,Diabetes,Diabetes,No Diabetes,Glucose > 126.778,0.9310344827586207,100.0%,76.6%,0.09
+136,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.249 and BloodPressure <= 86.134,0.9781021897810219,100.0%,84.2%,0.11
+137,No Diabetes,No Diabetes,Diabetes,N/A,0.9781021897810219,0.0%,71.6%,0.08
+138,No Diabetes,No Diabetes,Diabetes,Glucose <= 135.992 and BMI <= 29.785,0.9781021897810219,100.0%,85.4%,0.01
+139,Diabetes,Diabetes,No Diabetes,Age <= 39.226,0.9310344827586207,100.0%,79.0%,0.09
+140,Diabetes,No Diabetes,Diabetes,Pregnancies > 1.382,0.75,100.0%,90.4%,0.01
+141,Diabetes,Diabetes,No Diabetes,Insulin > 274.78 and SkinThickness <= 40.948,1.0,100.0%,80.0%,0.01
+142,No Diabetes,No Diabetes,Diabetes,Age <= 39.936 and Pregnancies > 1.431 and Glucose <= 96.983,0.6944444444444444,100.0%,88.2%,0.01
+143,Diabetes,No Diabetes,Diabetes,Glucose <= 127.38,0.5,100.0%,80.4%,0.10
+144,Diabetes,Diabetes,No Diabetes,Glucose > 128.256,0.6363636363636364,100.0%,77.4%,0.09
+145,No Diabetes,No Diabetes,Diabetes,SkinThickness > 25.545 and BMI > 31.158,0.75,100.0%,83.4%,0.01
+146,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.375 and BMI <= 33.708,0.9655172413793104,100.0%,70.8%,0.01
+147,No Diabetes,No Diabetes,Diabetes,Glucose <= 148.921 and Insulin <= 46.893 and Pregnancies <= 4.004,0.9781021897810219,100.0%,85.0%,0.10
+148,Diabetes,No Diabetes,Diabetes,Glucose <= 139.068 and BMI <= 29.841,0.75,100.0%,84.8%,0.01
+149,No Diabetes,No Diabetes,Diabetes,Glucose <= 139.142,0.9781021897810219,100.0%,83.4%,0.12
+150,No Diabetes,No Diabetes,Diabetes,SkinThickness <= 13.001,0.75,100.0%,75.8%,0.09
+151,Diabetes,No Diabetes,Diabetes,Glucose > 100.419 and Age <= 30.747 and SkinThickness > 22.549,0.9781021897810219,100.0%,70.8%,0.01
+152,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.061 and Glucose <= 119.713,0.9781021897810219,100.0%,81.6%,0.01
+153,No Diabetes,No Diabetes,Diabetes,Glucose <= 128.592 and Insulin <= 102.741 and BMI > 29.309 and Glucose <= 147.996 and Age > 33.809,0.75,100.0%,85.2%,0.13
+154,Diabetes,No Diabetes,Diabetes,SkinThickness <= 14.293 and Glucose <= 135.69,0.9781021897810219,100.0%,86.4%,0.01
+155,No Diabetes,No Diabetes,Diabetes,BMI <= 43.552,0.6944444444444444,100.0%,76.8%,0.02
+156,Diabetes,No Diabetes,Diabetes,Glucose > 95.933 and Pregnancies > -0.324,0.5,100.0%,86.6%,0.01
+157,No Diabetes,Diabetes,No Diabetes,BMI > 33.883,0.5333333333333333,100.0%,70.0%,0.09
+158,No Diabetes,No Diabetes,Diabetes,Pregnancies > -0.088 and SkinThickness <= 23.562,0.9781021897810219,100.0%,70.6%,0.02
+159,No Diabetes,No Diabetes,Diabetes,Glucose <= 130.048,0.9781021897810219,100.0%,80.8%,0.01
+160,No Diabetes,Diabetes,No Diabetes,BloodPressure <= 74.457 and DiabetesPedigreeFunction <= 0.362 and BloodPressure <= 75.315 and DiabetesPedigreeFunction <= 0.641,0.6363636363636364,100.0%,86.8%,0.11
+161,Diabetes,No Diabetes,Diabetes,Age <= 27.828 and DiabetesPedigreeFunction > 0.202 and BMI <= 35.569,0.9781021897810219,100.0%,80.4%,0.01
+162,No Diabetes,No Diabetes,Diabetes,Glucose <= 128.934 and BloodPressure > 57.406,0.9655172413793104,100.0%,82.6%,0.09
+163,No Diabetes,Diabetes,No Diabetes,Pregnancies > 5.048,1.0,100.0%,63.8%,0.01
+164,No Diabetes,No Diabetes,Diabetes,Glucose <= 133.065 and BMI <= 25.329,0.9781021897810219,100.0%,82.4%,0.09
+165,No Diabetes,No Diabetes,Diabetes,Insulin > -9.16 and Pregnancies <= 6.383,0.9781021897810219,100.0%,84.4%,0.01
+166,No Diabetes,No Diabetes,Diabetes,Glucose <= 131.999 and Insulin > -14.484,0.5,100.0%,82.2%,0.09
+167,Diabetes,No Diabetes,Diabetes,Pregnancies > 0.749,0.75,100.0%,80.4%,0.01
+168,Diabetes,Diabetes,No Diabetes,SkinThickness > 18.475,0.6153846153846154,100.0%,75.2%,0.11
+169,No Diabetes,No Diabetes,Diabetes,Glucose <= 145.136 and BMI <= 29.475,0.5384615384615384,100.0%,83.4%,0.01
+170,No Diabetes,No Diabetes,Diabetes,BloodPressure > 45.344,1.0,100.0%,51.2%,0.01
+171,Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction <= 0.54 and Pregnancies <= 6.804 and Glucose <= 138.014,0.75,100.0%,68.8%,0.01
+172,No Diabetes,No Diabetes,Diabetes,BMI <= 34.183,0.5384615384615384,100.0%,69.0%,0.01
+173,No Diabetes,No Diabetes,Diabetes,Glucose <= 119.188 and BMI > 37.102 and Age <= 46.412,0.9781021897810219,100.0%,85.2%,0.02
+174,No Diabetes,No Diabetes,Diabetes,Glucose <= 130.226 and Pregnancies > 7.385,1.0,100.0%,77.8%,0.10
+175,Diabetes,Diabetes,No Diabetes,Pregnancies > 7.783 and DiabetesPedigreeFunction > 0.265 and BMI > 24.698,0.5333333333333333,100.0%,73.8%,0.02
+176,Diabetes,No Diabetes,Diabetes,Glucose <= 133.679,0.5,100.0%,86.4%,0.09
+177,No Diabetes,No Diabetes,Diabetes,Pregnancies > 0.464 and Glucose <= 151.122,0.9781021897810219,100.0%,70.6%,0.01
+178,No Diabetes,Diabetes,No Diabetes,Pregnancies <= 0.761,0.6153846153846154,100.0%,77.0%,0.10
+179,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.31 and SkinThickness > 0.26,0.6944444444444444,100.0%,79.6%,0.01
+180,Diabetes,Diabetes,No Diabetes,BMI > 28.454,0.5333333333333333,100.0%,82.2%,0.12
+181,No Diabetes,Diabetes,No Diabetes,Glucose > 130.143,0.5333333333333333,100.0%,74.2%,0.10
+182,No Diabetes,No Diabetes,Diabetes,Glucose <= 130.886 and BMI > 30.078,0.75,100.0%,83.2%,0.10
+183,Diabetes,Diabetes,No Diabetes,Age <= 38.998,0.6363636363636364,100.0%,83.6%,0.10
+184,Diabetes,Diabetes,No Diabetes,Glucose > 158.991 and BMI <= 40.925 and BloodPressure <= 82.417,1.0,100.0%,76.0%,0.01
+185,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.711 and Glucose > 58.044,0.9655172413793104,100.0%,80.2%,0.10
+186,No Diabetes,No Diabetes,Diabetes,Glucose <= 132.478 and BMI <= 29.663,0.9655172413793104,100.0%,91.8%,0.01
+187,No Diabetes,No Diabetes,Diabetes,N/A,0.75,0.0%,79.0%,0.09
+188,No Diabetes,No Diabetes,Diabetes,Pregnancies > 0.971,0.75,100.0%,76.0%,0.01
+189,No Diabetes,No Diabetes,Diabetes,BloodPressure <= 77.148,0.5384615384615384,100.0%,78.2%,0.02
+190,No Diabetes,No Diabetes,Diabetes,Glucose <= 152.666,1.0,100.0%,72.0%,0.01
+191,No Diabetes,No Diabetes,Diabetes,BMI <= 29.816 and BloodPressure <= 62.534,0.9781021897810219,100.0%,75.6%,0.09
+192,No Diabetes,No Diabetes,Diabetes,Glucose <= 132.414,0.6944444444444444,100.0%,88.2%,0.13
+193,No Diabetes,No Diabetes,Diabetes,Glucose <= 121.519,0.6944444444444444,100.0%,80.8%,0.10
+194,No Diabetes,No Diabetes,Diabetes,N/A,0.9655172413793104,0.0%,74.6%,0.08
+195,No Diabetes,Diabetes,No Diabetes,Glucose > 126.679 and Insulin > -89.266,0.5333333333333333,100.0%,77.2%,0.01
+196,No Diabetes,Diabetes,No Diabetes,N/A,0.9310344827586207,100.0%,85.0%,0.10
+197,Diabetes,Diabetes,No Diabetes,N/A,0.9310344827586207,100.0%,79.4%,0.10
+198,No Diabetes,No Diabetes,Diabetes,Pregnancies > 0.912 and Glucose > 64.703,1.0,100.0%,89.2%,0.01
+199,No Diabetes,No Diabetes,Diabetes,SkinThickness > 30.387 and Age <= 28.699 and BMI > 37.645 and DiabetesPedigreeFunction > 0.414,0.9781021897810219,100.0%,69.2%,0.01
+200,No Diabetes,No Diabetes,Diabetes,Pregnancies <= 3.079,1.0,100.0%,63.6%,0.01
+201,No Diabetes,No Diabetes,Diabetes,N/A,0.75,0.0%,69.4%,0.08
+202,No Diabetes,No Diabetes,Diabetes,BloodPressure <= 89.051,1.0,100.0%,82.2%,0.10
+203,Diabetes,No Diabetes,Diabetes,BMI <= 39.637,0.6944444444444444,100.0%,82.6%,0.01
+204,No Diabetes,No Diabetes,Diabetes,Glucose <= 130.29 and BMI > 26.666 and Glucose <= 152.284,0.6944444444444444,100.0%,88.8%,0.02
+205,No Diabetes,No Diabetes,Diabetes,Glucose <= 123.101 and Pregnancies > 1.122,0.6944444444444444,100.0%,80.0%,0.01
+206,Diabetes,No Diabetes,Diabetes,Glucose <= 129.283 and Age > 27.817 and Glucose <= 148.811,0.5,100.0%,79.6%,0.01
+207,No Diabetes,No Diabetes,Diabetes,SkinThickness <= 37.122,1.0,100.0%,75.0%,0.01
+208,No Diabetes,No Diabetes,Diabetes,Insulin > -11.522,1.0,100.0%,70.0%,0.08
+209,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > 0.127 and BMI <= 30.164,0.9781021897810219,100.0%,72.0%,0.09
+210,No Diabetes,No Diabetes,Diabetes,BMI <= 33.325,1.0,94.6%,63.4%,0.01
+211,No Diabetes,No Diabetes,Diabetes,Age <= 38.165 and DiabetesPedigreeFunction > 0.123,0.9781021897810219,100.0%,86.2%,0.02
+212,Diabetes,Diabetes,No Diabetes,Age <= 37.577 and Glucose > 122.838,1.0,100.0%,66.6%,0.01
+213,No Diabetes,Diabetes,No Diabetes,BMI > 31.349,0.5333333333333333,100.0%,86.0%,0.01
+214,No Diabetes,No Diabetes,Diabetes,Glucose <= 140.649,1.0,100.0%,87.2%,0.13
+215,No Diabetes,No Diabetes,Diabetes,N/A,1.0,100.0%,69.6%,0.08
+216,Diabetes,Diabetes,No Diabetes,Glucose > 124.146,0.9310344827586207,100.0%,68.8%,0.01
+217,No Diabetes,No Diabetes,Diabetes,BloodPressure > 44.86 and BMI <= 32.425,0.9781021897810219,100.0%,80.6%,0.01
+218,No Diabetes,No Diabetes,Diabetes,DiabetesPedigreeFunction > -0.139,0.9781021897810219,100.0%,69.0%,0.01
+219,No Diabetes,No Diabetes,Diabetes,Glucose <= 131.854,0.75,100.0%,85.0%,0.01
+220,No Diabetes,Diabetes,No Diabetes,Glucose > 103.657,0.5333333333333333,100.0%,71.8%,0.01
+221,Diabetes,Diabetes,No Diabetes,Glucose > 154.953,1.0,100.0%,75.6%,0.01
+222,No Diabetes,No Diabetes,Diabetes,Glucose <= 131.719 and BMI <= 29.564,0.9781021897810219,100.0%,87.6%,0.01
+223,No Diabetes,No Diabetes,Diabetes,Glucose > 111.708 and Pregnancies > -1.764 and Insulin <= 51.379,0.9781021897810219,100.0%,70.0%,0.01
+224,Diabetes,No Diabetes,Diabetes,Pregnancies > -0.296 and Age <= 31.042,0.9781021897810219,100.0%,71.2%,0.01
+225,No Diabetes,Diabetes,No Diabetes,Insulin > 25.732,1.0,100.0%,51.4%,0.01
+226,No Diabetes,No Diabetes,Diabetes,BMI <= 29.823 and Glucose > 131.888 and BloodPressure > 58.675 and Age <= 36.422,0.5384615384615384,100.0%,87.0%,0.01
+227,No Diabetes,No Diabetes,Diabetes,Age <= 37.967,0.5384615384615384,100.0%,91.4%,0.01
+228,No Diabetes,No Diabetes,Diabetes,BMI <= 37.83 and BloodPressure > 35.196,0.75,100.0%,77.6%,0.09
+229,Diabetes,No Diabetes,Diabetes,BloodPressure <= 96.275,0.5714285714285714,100.0%,74.2%,0.10
+230,Diabetes,Diabetes,No Diabetes,SkinThickness <= 30.802,0.6153846153846154,100.0%,85.6%,0.01
