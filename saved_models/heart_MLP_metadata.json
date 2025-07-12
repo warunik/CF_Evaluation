@@ -1,0 +1,79 @@
+{
+  "model_info": {
+    "name": "MLP",
+    "filename": "heart_MLP_tuned.pkl",
+    "dataset": "heart",
+    "dataset_name": "Heart Disease",
+    "training_timestamp": "2025-07-12T07:55:52.262951",
+    "random_state": 42
+  },
+  "hyperparameters": {
+    "best_params": {
+      "classifier__alpha": 0.001,
+      "classifier__hidden_layer_sizes": [
+        100,
+        50
+      ],
+      "classifier__learning_rate": "constant",
+      "classifier__solver": "lbfgs"
+    },
+    "tuning_method": "GridSearchCV/RandomizedSearchCV"
+  },
+  "performance": {
+    "accuracy": 0.9902597402597403,
+    "precision_micro": 0.9902597402597403,
+    "precision_macro": 0.9901960784313726,
+    "precision_weighted": 0.9904507257448434,
+    "recall_micro": 0.9902597402597403,
+    "recall_macro": 0.990506329113924,
+    "recall_weighted": 0.9902597402597403,
+    "f1_micro": 0.9902597402597403,
+    "f1_macro": 0.9902571726821244,
+    "f1_weighted": 0.9902612808063097,
+    "confusion_matrix": [
+      [
+        150,
+        0
+      ],
+      [
+        3,
+        155
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1-score": 0.9900990099009901,
+        "support": 150.0
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 0.9810126582278481,
+        "f1-score": 0.9904153354632588,
+        "support": 158.0
+      },
+      "accuracy": 0.9902597402597403,
+      "macro avg": {
+        "precision": 0.9901960784313726,
+        "recall": 0.990506329113924,
+        "f1-score": 0.9902571726821244,
+        "support": 308.0
+      },
+      "weighted avg": {
+        "precision": 0.9904507257448434,
+        "recall": 0.9902597402597403,
+        "f1-score": 0.9902612808063097,
+        "support": 308.0
+      }
+    },
+    "roc_auc": 0.9967088607594937
+  },
+  "dataset_info": {
+    "target_column": "target",
+    "class_labels": {
+      "0": "No Heart Disease",
+      "1": "Heart Disease"
+    }
+  }
+}

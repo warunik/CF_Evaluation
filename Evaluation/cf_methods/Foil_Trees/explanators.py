@@ -4,7 +4,9 @@ a contrastive/counterfactual explanation.
 Attributes:
     DEBUG (bool): Debug mode enabled
 """
-
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
 import networkx as nx
 import warnings
@@ -13,8 +15,8 @@ from sklearn import tree, ensemble, metrics
 from sklearn.tree import _tree
 from sklearn.utils import check_random_state
 
-from .rules import Operator, Literal
-from .utils import cache, check_stringvar, check_relvar, print_binary_tree
+from Foil_Trees.rules import Operator, Literal
+from Foil_Trees.utils import cache, check_stringvar, check_relvar, print_binary_tree
 
 
 DEBUG = False
@@ -144,7 +146,8 @@ class TreeExplanator(RuleExplanator):
             print('[E] Fidelity of tree on neighborhood data =', local_fidelity)
 
         if DEBUG:
-            print_binary_tree(model, xs[0].reshape(1, -1))
+            # print_binary_tree(model, xs[0].reshape(1, -1))
+            print('Decision tree:')
 
         return model, local_fidelity
 

@@ -118,28 +118,28 @@ def rbf(d, sigma=0.1):
 ###############################
 
 
-def print_binary_tree(t, sample):
-    """Print a binary tree and sample to a string."""
-    fact_leaf = t.apply(sample)[0]
-    print(sample[0])
+# def print_binary_tree(t, sample):
+#     """Print a binary tree and sample to a string."""
+#     fact_leaf = t.apply(sample)[0]
+#     print(sample[0])
 
-    t_ = t.tree_
-    print("def tree():")
+#     t_ = t.tree_
+#     print("def tree():")
 
-    def recurse(node, depth):
-        indent = "  " * depth
-        if t_.feature[node] != _tree.TREE_UNDEFINED:
-            name = t_.feature[node]
-            threshold = t_.threshold[node]
-            print("{}if {} <= {}:".format(indent, name, threshold))
-            recurse(t_.children_left[node], depth + 1)
-            print("{}else:  # if {} > {}".format(indent, name, threshold))
-            recurse(t_.children_right[node], depth + 1)
-        else:
-            print("{}return {}{}".format(indent, np.argmax(t_.value[node]),
-                                         ' (fact)' if node == fact_leaf else ''))
+#     def recurse(node, depth):
+#         indent = "  " * depth
+#         if t_.feature[node] != _tree.TREE_UNDEFINED:
+#             name = t_.feature[node]
+#             threshold = t_.threshold[node]
+#             print("{}if {} <= {}:".format(indent, name, threshold))
+#             recurse(t_.children_left[node], depth + 1)
+#             print("{}else:  # if {} > {}".format(indent, name, threshold))
+#             recurse(t_.children_right[node], depth + 1)
+#         else:
+#             print("{}return {}{}".format(indent, np.argmax(t_.value[node]),
+#                                          ' (fact)' if node == fact_leaf else ''))
 
-    recurse(0, 1)
+#     recurse(0, 1)
 
 ###############################
 # Data set downloader

@@ -1,0 +1,77 @@
+{
+  "model_info": {
+    "name": "Random Forest",
+    "filename": "diabetes_Random_Forest_tuned.pkl",
+    "dataset": "diabetes",
+    "dataset_name": "Diabetes Prediction",
+    "training_timestamp": "2025-07-12T07:59:47.884085",
+    "random_state": 42
+  },
+  "hyperparameters": {
+    "best_params": {
+      "classifier__n_estimators": 50,
+      "classifier__min_samples_split": 10,
+      "classifier__min_samples_leaf": 1,
+      "classifier__max_depth": 20,
+      "classifier__class_weight": null
+    },
+    "tuning_method": "GridSearchCV/RandomizedSearchCV"
+  },
+  "performance": {
+    "accuracy": 0.7402597402597403,
+    "precision_micro": 0.7402597402597403,
+    "precision_macro": 0.7155533309064435,
+    "precision_weighted": 0.7331279932299226,
+    "recall_micro": 0.7402597402597403,
+    "recall_macro": 0.6949382716049383,
+    "recall_weighted": 0.7402597402597403,
+    "f1_micro": 0.7402597402597403,
+    "f1_macro": 0.701755896023412,
+    "f1_weighted": 0.733765115930721,
+    "confusion_matrix": [
+      [
+        127,
+        23
+      ],
+      [
+        37,
+        44
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.774390243902439,
+        "recall": 0.8466666666666667,
+        "f1-score": 0.8089171974522293,
+        "support": 150.0
+      },
+      "1": {
+        "precision": 0.6567164179104478,
+        "recall": 0.5432098765432098,
+        "f1-score": 0.5945945945945946,
+        "support": 81.0
+      },
+      "accuracy": 0.7402597402597403,
+      "macro avg": {
+        "precision": 0.7155533309064435,
+        "recall": 0.6949382716049383,
+        "f1-score": 0.701755896023412,
+        "support": 231.0
+      },
+      "weighted avg": {
+        "precision": 0.7331279932299226,
+        "recall": 0.7402597402597403,
+        "f1-score": 0.733765115930721,
+        "support": 231.0
+      }
+    },
+    "roc_auc": 0.8201646090534979
+  },
+  "dataset_info": {
+    "target_column": "Outcome",
+    "class_labels": {
+      "0": "No Diabetes",
+      "1": "Diabetes"
+    }
+  }
+}

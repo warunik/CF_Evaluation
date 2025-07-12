@@ -12,7 +12,9 @@ Todo:
     * Adjust DomainMapper.generate_neighborhood_data() to
         generate foil samples
 """
-
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
 import pandas as pd
 import warnings
@@ -23,10 +25,10 @@ from itertools import groupby
 from sklearn.utils import check_random_state
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
 
-from .rules import Operator, Literal
-from .domain_mappers import DomainMapper, DomainMapperTabular
-from .explanators import Explanator, TreeExplanator
-from .fact_foil import FactFoilClassification, FactFoilRegression
+from Foil_Trees.rules import Operator, Literal
+from Foil_Trees.domain_mappers import DomainMapper, DomainMapperTabular
+from Foil_Trees.explanators import Explanator, TreeExplanator
+from Foil_Trees.fact_foil import FactFoilClassification, FactFoilRegression
 
 
 class ContrastiveExplanation:
@@ -242,13 +244,13 @@ class ContrastiveExplanation:
 
             t.fit(xs, ys, sample_weight=weights)
             # Visualize the internal decision tree used in the explanation
-            import matplotlib.pyplot as plt
-            from sklearn.tree import plot_tree
+            # import matplotlib.pyplot as plt
+            # from sklearn.tree import plot_tree
 
-            plt.figure(figsize=(16, 8))
-            plot_tree(t, feature_names=self.domain_mapper.feature_names, filled=True)
-            plt.title("Local FOIL Tree Used for Explanation")
-            plt.show()
+            # plt.figure(figsize=(16, 8))
+            # plot_tree(t, feature_names=self.domain_mapper.feature_names, filled=True)
+            # plt.title("Local FOIL Tree Used for Explanation")
+            # plt.show()
 
 
             if t.tree_.node_count > 1:

@@ -2,15 +2,17 @@
 format for the Explainer to use, and mapping the explanation back into
 this domain.
 """
-
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pandas as pd
 import numpy as np
 import sklearn
 import warnings
 import itertools
 import scipy
-from .rules import Literal, Operator
-from .utils import cache, check_stringvar, show_image, rbf, Encoder
+from Foil_Trees.rules import Literal, Operator
+from Foil_Trees.utils import cache, check_stringvar, show_image, rbf, Encoder
 from sklearn.utils import check_random_state
 
 from skimage.segmentation import quickshift, felzenszwalb, slic

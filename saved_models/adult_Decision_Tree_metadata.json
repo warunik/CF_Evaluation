@@ -1,0 +1,77 @@
+{
+  "model_info": {
+    "name": "Decision Tree",
+    "filename": "adult_Decision_Tree_tuned.pkl",
+    "dataset": "adult",
+    "dataset_name": "Income Prediction",
+    "training_timestamp": "2025-07-12T08:00:44.393369",
+    "random_state": 42
+  },
+  "hyperparameters": {
+    "best_params": {
+      "classifier__min_samples_split": 20,
+      "classifier__min_samples_leaf": 8,
+      "classifier__max_depth": 10,
+      "classifier__criterion": "gini",
+      "classifier__class_weight": null
+    },
+    "tuning_method": "GridSearchCV/RandomizedSearchCV"
+  },
+  "performance": {
+    "accuracy": 0.8562800696079435,
+    "precision_micro": 0.8562800696079435,
+    "precision_macro": 0.8088735726393831,
+    "precision_weighted": 0.851989734813159,
+    "recall_micro": 0.8562800696079435,
+    "recall_macro": 0.7851498763183311,
+    "recall_weighted": 0.8562800696079435,
+    "f1_micro": 0.8562800696079435,
+    "f1_macro": 0.7957848497008884,
+    "f1_weighted": 0.8534128897289559,
+    "confusion_matrix": [
+      [
+        6841,
+        576
+      ],
+      [
+        828,
+        1524
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.8920328595644804,
+        "recall": 0.9223405689631927,
+        "f1-score": 0.9069335808033939,
+        "support": 7417.0
+      },
+      "1": {
+        "precision": 0.7257142857142858,
+        "recall": 0.6479591836734694,
+        "f1-score": 0.6846361185983828,
+        "support": 2352.0
+      },
+      "accuracy": 0.8562800696079435,
+      "macro avg": {
+        "precision": 0.8088735726393831,
+        "recall": 0.7851498763183311,
+        "f1-score": 0.7957848497008884,
+        "support": 9769.0
+      },
+      "weighted avg": {
+        "precision": 0.851989734813159,
+        "recall": 0.8562800696079435,
+        "f1-score": 0.8534128897289559,
+        "support": 9769.0
+      }
+    },
+    "roc_auc": 0.9036796328346628
+  },
+  "dataset_info": {
+    "target_column": "class",
+    "class_labels": {
+      "0": "<=50K",
+      "1": ">50K"
+    }
+  }
+}
