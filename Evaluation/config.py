@@ -19,6 +19,13 @@ DATASETS = {
             "slope": "numeric",
             "ca": "numeric",
             "thal": "numeric"
+        },
+        "model_paths": {
+            "decision_tree": "Evaluation/saved_models/heart_Decision_Tree_tuned.pkl",
+            "logistic_regression": "Evaluation/saved_models/heart_Logistic_Regression_tuned.pkl",
+            "mlp": "Evaluation/saved_models/heart_MLP_tuned.pkl",
+            "random_forest": "Evaluation/saved_models/heart_Random_Forest_tuned.pkl",
+            "xgboost": "Evaluation/saved_models/heart_XGBoost_tuned.pkl"
         }
     },
     "diabetes": {
@@ -35,6 +42,13 @@ DATASETS = {
             "BMI": "numeric",
             "DiabetesPedigreeFunction": "numeric",
             "Age": "numeric"
+        },
+        "model_paths": {
+            "decision_tree": "Evaluation/saved_models/diabetes_Decision_Tree_tuned.pkl",
+            "logistic_regression": "Evaluation/saved_models/diabetes_Logistic_Regression_tuned.pkl",
+            "mlp": "Evaluation/saved_models/diabetes_MLP_tuned.pkl",
+            "random_forest": "Evaluation/saved_models/diabetes_Random_Forest_tuned.pkl",
+            "xgboost": "Evaluation/saved_models/diabetes_XGBoost_tuned.pkl"
         }
     },
     "adult": {
@@ -58,6 +72,13 @@ DATASETS = {
             "capital-loss": "numeric",
             "hours-per-week": "numeric",
             "native-country": "categorical"
+        },
+        "model_paths": {
+            "decision_tree": "Evaluation/saved_models/adult_Decision_Tree_tuned.pkl",
+            "logistic_regression": "Evaluation/saved_models/adult_Logistic_Regression_tuned.pkl",
+            "mlp": "Evaluation/saved_models/adult_MLP_tuned.pkl",
+            "random_forest": "Evaluation/saved_models/adult_Random_Forest_tuned.pkl",
+            "xgboost": "Evaluation/saved_models/adult_XGBoost_tuned.pkl"
         }
     },
     "bank": {
@@ -76,78 +97,13 @@ DATASETS = {
             "nbr_real_estate_loans_or_lines": "numeric",
             "nbr_60_89_days_past_due_not_worse": "numeric",
             "dependents": "numeric"
-        }
-    },
-    "compas": {
-        "name": "Recidivism Prediction",
-        "path": "Evaluation/data/compas.csv",
-        "target_column": "is_recid",
-        "drop_columns": [
-            'id', 'name', 'first', 'last', 
-            'compas_screening_date', 'dob', 'c_jail_in', 'c_jail_out',
-            'c_case_number', 'c_offense_date', 'c_arrest_date',
-            'r_case_number', 'r_charge_degree', 'r_offense_date', 'r_charge_desc',
-            'r_jail_in', 'r_jail_out', 'vr_case_number', 'vr_offense_date',
-            'vr_charge_desc', 'type_of_assessment', 'decile_score.1',
-            'score_text', 'screening_date', 'v_type_of_assessment',
-            'v_decile_score', 'v_score_text', 'v_screening_date',
-            'in_custody', 'out_custody', 'priors_count.1', 'start', 'end',
-            'event', 'decile_score'
-        ],
-        "class_labels": {0: "No Recidivism", 1: "Recidivism"},
-        "feature_types": {
-            "id": "numeric",
-            "name": "categorical",
-            "first": "categorical",
-            "last": "categorical",
-            "compas_screening_date": "date",
-            "sex": "categorical",
-            "dob": "date",
-            "age": "numeric",
-            "age_cat": "categorical",
-            "race": "categorical",
-            "juv_fel_count": "numeric",
-            "decile_score": "numeric",
-            "juv_misd_count": "numeric",
-            "juv_other_count": "numeric",
-            "priors_count": "numeric",
-            "days_b_screening_arrest": "numeric",
-            "c_jail_in": "datetime",
-            "c_jail_out": "datetime",
-            "c_case_number": "categorical",
-            "c_offense_date": "date",
-            "c_arrest_date": "date",
-            "c_days_from_compas": "numeric",
-            "c_charge_degree": "categorical",
-            "c_charge_desc": "categorical",
-            "r_case_number": "categorical",
-            "r_charge_degree": "categorical",
-            "r_days_from_arrest": "numeric",
-            "r_offense_date": "date",
-            "r_charge_desc": "categorical",
-            "r_jail_in": "datetime",
-            "r_jail_out": "datetime",
-            "violent_recid": "binary",
-            "is_violent_recid": "binary",
-            "vr_case_number": "categorical",
-            "vr_charge_degree": "categorical",
-            "vr_offense_date": "date",
-            "vr_charge_desc": "categorical",
-            "type_of_assessment": "categorical",
-            "decile_score.1": "numeric",  # Duplicate column
-            "score_text": "categorical",
-            "screening_date": "date",
-            "v_type_of_assessment": "categorical",
-            "v_decile_score": "numeric",
-            "v_score_text": "categorical",
-            "v_screening_date": "date",
-            "in_custody": "date",
-            "out_custody": "date",
-            "priors_count.1": "numeric",   # Duplicate column
-            "start": "date",
-            "end": "date",
-            "event": "numeric",
-            "two_year_recid": "binary"
+        },
+        "model_paths": {
+            "decision_tree": "Evaluation/saved_models/bank_Decision_Tree_tuned.pkl",
+            "logistic_regression": "Evaluation/saved_models/bank_Logistic_Regression_tuned.pkl",
+            "mlp": "Evaluation/saved_models/bank_MLP_tuned.pkl",
+            "random_forest": "Evaluation/saved_models/bank_Random_Forest_tuned.pkl",
+            "xgboost": "Evaluation/saved_models/bank_XGBoost_tuned.pkl"
         }
     },
     "german": {
@@ -176,6 +132,13 @@ DATASETS = {
             "people_under_maintenance": "numeric",
             "telephone": "categorical",
             "foreign_worker": "categorical"
+        },
+        "model_paths": {
+            "decision_tree": "Evaluation/saved_models/german_Decision_Tree_tuned.pkl",
+            "logistic_regression": "Evaluation/saved_models/german_Logistic_Regression_tuned.pkl",
+            "mlp": "Evaluation/saved_models/german_MLP_tuned.pkl",
+            "random_forest": "Evaluation/saved_models/german_Random_Forest_tuned.pkl",
+            "xgboost": "Evaluation/saved_models/german_XGBoost_tuned.pkl"
         }
     }
 }
@@ -186,14 +149,4 @@ ML_MODELS = {
     "logistic_regression": "Logistic Regression",
     "xgboost": "XGBoost",
     "decision_tree": "Decision Tree",
-}
-
-CF_METHODS = {
-    "dice": "DiCE (Diverse Counterfactual Explanations)",
-    "wachter": "Wachter's Method",
-    "cem": "CEM (Contrastive Explanation Method)",
-    "face": "FACE (Feasible and Actionable Counterfactual Explanations)",
-    "FOCUS": "FOCUS (Feature-wise Counterfactual Explanations)",
-    "CCHVAE": "CCHVAE (Counterfactual Explanations with Variational Autoencoders)",
-    "foiltrees": "Foil Trees",
 }

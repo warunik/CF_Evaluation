@@ -1,0 +1,51 @@
+{
+    "dataset_name": "Diabetes Prediction",
+    "target_column": "Outcome",
+    "class_labels": {
+        "0": "No Diabetes",
+        "1": "Diabetes"
+    },
+    "feature_types": {
+        "Pregnancies": "numeric",
+        "Glucose": "numeric",
+        "BloodPressure": "numeric",
+        "SkinThickness": "numeric",
+        "Insulin": "numeric",
+        "BMI": "numeric",
+        "DiabetesPedigreeFunction": "numeric",
+        "Age": "numeric"
+    },
+    "numeric_features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+    ],
+    "categorical_features": [],
+    "train_size": 537,
+    "test_size": 231,
+    "features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+    ],
+    "class_distribution": {
+        "train": {
+            "0": 350,
+            "1": 187
+        },
+        "test": {
+            "0": 150,
+            "1": 81
+        }
+    }
+}

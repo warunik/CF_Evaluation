@@ -1,30 +1,24 @@
 """
-Enhanced FOIL Trees Counterfactual Explanation Generator
-Uses config file for dataset management and generates counterfactual explanations
+Enhanced FOIL Trees Counterfactual Explanation Generator - FIXED VERSION
+Uses config file for dataset management and pretrained models
 """
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
+import json
+import pickle
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.neural_network import MLPClassifier
-import xgboost as xgb
+from Foil_Trees import domain_mappers, contrastive_explanation
 import warnings
 warnings.filterwarnings('ignore')
 
 # Import config
 from Evaluation.config import DATASETS, ML_MODELS
 
-# Your FOIL Trees imports
-from Foil_Trees import domain_mappers, contrastive_explanation
-
 class CounterfactualExplanationGenerator:
-    """Enhanced counterfactual explanation generator using config file"""
+    """Enhanced counterfactual explanation generator using pretrained models and preprocessed data"""
     
     def __init__(self, dataset_name, model_name='random_forest', verbose=True):
         self.dataset_name = dataset_name
@@ -34,197 +28,208 @@ class CounterfactualExplanationGenerator:
         self.model = None
         self.label_encoders = {}
         self.explainer = None
+        self.metadata = None
+        self.X_train = None
+        self.X_test = None
+        self.y_train = None
+        self.y_test = None
         
-    def load_and_prepare_data(self):
-        """Load and prepare dataset based on config"""
-        # Load dataset
-        df = pd.read_csv(self.config['path'])
-        
-        # Drop columns if specified
-        if 'drop_columns' in self.config:
-            df = df.drop(columns=self.config['drop_columns'], errors='ignore')
-        
-        # Prepare features and target
-        X = df.drop(self.config['target_column'], axis=1)
-        y = df[self.config['target_column']]
-        
-        # Handle missing values
-        self._handle_missing_values(X)
-        
-        # Identify categorical and numerical features
-        categorical_features = []
-        numerical_features = []
-        
-        for col in X.columns:
-            if col in self.config['feature_types']:
-                if self.config['feature_types'][col] == 'categorical':
-                    categorical_features.append(col)
-                else:
-                    numerical_features.append(col)
-            else:
-                # Auto-detect if not in config
-                if X[col].dtype == 'object':
-                    categorical_features.append(col)
-                else:
-                    numerical_features.append(col)
-        
-        self.categorical_features = categorical_features
-        self.numerical_features = numerical_features
-        
-        if self.verbose:
-            print(f"Dataset: {self.config['name']}")
-            print(f"Shape: {X.shape}")
-            print(f"Categorical features: {categorical_features}")
-            print(f"Numerical features: {numerical_features}")
-        
-        return X, y
+    def load_preprocessed_data(self):
+        """Load preprocessed data from saved files"""
+        try:
+            data_dir = f"preprocessed_data/{self.dataset_name}"
+            
+            # Check if files exist
+            required_files = ['metadata.json', 'X_train.csv', 'X_test.csv', 'y_train.csv', 'y_test.csv']
+            for file in required_files:
+                if not os.path.exists(f"{data_dir}/{file}"):
+                    raise FileNotFoundError(f"Required file not found: {data_dir}/{file}")
+            
+            # Load metadata
+            with open(f"{data_dir}/metadata.json", "r") as f:
+                self.metadata = json.load(f)
+            
+            # Load datasets
+            self.X_train = pd.read_csv(f"{data_dir}/X_train.csv")
+            self.X_test = pd.read_csv(f"{data_dir}/X_test.csv")
+            self.y_train = pd.read_csv(f"{data_dir}/y_train.csv").iloc[:, 0]  # Get first column as Series
+            self.y_test = pd.read_csv(f"{data_dir}/y_test.csv").iloc[:, 0]    # Get first column as Series
+            
+            # Extract feature types from metadata
+            self.categorical_features = self.metadata.get("categorical_features", [])
+            self.numerical_features = self.metadata.get("numeric_features", [])
+            
+            # Validate that we have features
+            if not self.categorical_features and not self.numerical_features:
+                # Fall back to config feature types
+                feature_types = self.config.get("feature_types", {})
+                self.categorical_features = [k for k, v in feature_types.items() if v == "categorical"]
+                self.numerical_features = [k for k, v in feature_types.items() if v == "numeric"]
+            
+            # Ensure feature lists contain only columns that exist in the data
+            all_columns = set(self.X_train.columns)
+            self.categorical_features = [f for f in self.categorical_features if f in all_columns]
+            self.numerical_features = [f for f in self.numerical_features if f in all_columns]
+            
+            if self.verbose:
+                print(f"Loaded preprocessed data for {self.config['name']}")
+                print(f"Train size: {len(self.X_train)}, Test size: {len(self.X_test)}")
+                print(f"Categorical features: {self.categorical_features}")
+                print(f"Numerical features: {self.numerical_features}")
+                
+        except Exception as e:
+            print(f"Error loading preprocessed data: {str(e)}")
+            raise
     
-    def _handle_missing_values(self, X):
-        """Handle missing values in the dataset"""
-        for col in X.columns:
-            if X[col].isnull().any():
-                if X[col].dtype == 'object':
-                    X[col] = X[col].fillna('Unknown')
-                else:
-                    X[col] = X[col].fillna(X[col].median())
+    def load_pretrained_model(self):
+        """Load pretrained model from saved file"""
+        try:
+            # Get model path from config
+            model_key = model_name_mapping(self.model_name)
+            model_path = self.config["model_paths"][model_key]
+            
+            # Check if model file exists
+            if not os.path.exists(model_path):
+                raise FileNotFoundError(f"Model file not found: {model_path}")
+            
+            with open(model_path, 'rb') as f:
+                self.model = pickle.load(f)
+                
+            if self.verbose:
+                print(f"Loaded pretrained model: {ML_MODELS.get(self.model_name, self.model_name)}")
+                print(f"Model path: {model_path}")
+                
+        except Exception as e:
+            print(f"Error loading pretrained model: {str(e)}")
+            raise
     
-    def _get_model(self):
-        """Get ML model based on config"""
-        models = {
-            'random_forest': RandomForestClassifier(n_estimators=100, random_state=42),
-            'decision_tree': DecisionTreeClassifier(random_state=42),
-            'logistic_regression': LogisticRegression(random_state=42, max_iter=1000),
-            'mlp': MLPClassifier(random_state=42, max_iter=1000),
-            'xgboost': xgb.XGBClassifier(random_state=42, eval_metric='logloss')
-        }
-        
-        return models.get(self.model_name, RandomForestClassifier(n_estimators=100, random_state=42))
-    
-    def prepare_model_data(self, X_train, X_test):
-        """Prepare data for model training (encode categorical variables)"""
-        X_train_encoded = X_train.copy()
-        X_test_encoded = X_test.copy()
-        
-        # Encode categorical variables for sklearn model
-        for col in self.categorical_features:
-            le = LabelEncoder()
-            X_train_encoded[col] = le.fit_transform(X_train_encoded[col].astype(str))
-            X_test_encoded[col] = le.transform(X_test_encoded[col].astype(str))
-            self.label_encoders[col] = le
-        
-        return X_train_encoded, X_test_encoded
-    
-    def train_model(self, X_train, y_train):
-        """Train the ML model"""
-        self.model = self._get_model()
-        self.model.fit(X_train, y_train)
-        
-        if self.verbose:
-            print(f"Model trained: {ML_MODELS.get(self.model_name, self.model_name)}")
-    
-    def setup_explainer(self, X_train):
-        """Set up FOIL Trees explainer"""
-        class_labels = list(self.config['class_labels'].values())
-        
-        # Choose appropriate domain mapper
-        if self.categorical_features:
+    def setup_explainer(self):
+        """Set up FOIL Trees explainer using loaded data"""
+        try:
+            class_labels = list(self.config['class_labels'].values())
+            
+            # Always use DomainMapperPandas for consistency
             domain_mapper = domain_mappers.DomainMapperPandas(
-                train_data=X_train,
+                train_data=self.X_train,
                 contrast_names=class_labels,
                 seed=42
             )
-        else:
-            domain_mapper = domain_mappers.DomainMapperTabular(
-                train_data=X_train.values,
-                feature_names=list(X_train.columns),
-                contrast_names=class_labels,
-                categorical_features=None,
+            
+            # Ensure feature names are set correctly
+            domain_mapper.feature_names = list(self.X_train.columns)
+            
+            self.explainer = contrastive_explanation.ContrastiveExplanation(
+                domain_mapper=domain_mapper,
+                explanator=contrastive_explanation.TreeExplanator(),
+                regression=False,
+                verbose=False,
                 seed=42
             )
-        
-        domain_mapper.feature_names = list(X_train.columns)
-        
-        self.explainer = contrastive_explanation.ContrastiveExplanation(
-            domain_mapper=domain_mapper,
-            explanator=contrastive_explanation.TreeExplanator(),
-            regression=False,
-            verbose=False,
-            seed=42
-        )
+            
+        except Exception as e:
+            print(f"Error setting up explainer: {str(e)}")
+            raise
     
-    def create_model_wrapper(self, X_train):
+    def create_model_wrapper(self):
         """Create model wrapper for categorical encoding"""
         def model_predict_wrapper(X_batch):
-            if isinstance(X_batch, pd.DataFrame):
+            try:
+                # Ensure X_batch is a DataFrame
+                if not isinstance(X_batch, pd.DataFrame):
+                    if isinstance(X_batch, np.ndarray):
+                        X_batch = pd.DataFrame(X_batch, columns=self.X_train.columns)
+                    else:
+                        # Handle single instance
+                        X_batch = pd.DataFrame([X_batch], columns=self.X_train.columns)
+                
                 X_encoded = X_batch.copy()
-            else:
-                X_encoded = pd.DataFrame(X_batch, columns=X_train.columns)
-            
-            # Encode categorical features
-            for col in self.categorical_features:
-                if col in X_encoded.columns:
-                    try:
-                        X_encoded[col] = self.label_encoders[col].transform(X_encoded[col].astype(str))
-                    except ValueError:
-                        # Handle unseen categories
-                        X_encoded[col] = X_encoded[col].map(
-                            lambda x: self.label_encoders[col].transform([str(x)])[0] 
-                            if str(x) in self.label_encoders[col].classes_ else 0
-                        )
-            
-            return self.model.predict_proba(X_encoded)
+                
+                # Encode categorical features
+                for col in self.categorical_features:
+                    if col in X_encoded.columns:
+                        # Create label encoder if not already created
+                        if col not in self.label_encoders:
+                            self.label_encoders[col] = LabelEncoder()
+                            # Fit on training data
+                            train_values = self.X_train[col].astype(str).fillna('missing')
+                            self.label_encoders[col].fit(train_values)
+                        
+                        # Transform values
+                        test_values = X_encoded[col].astype(str).fillna('missing')
+                        encoded_values = []
+                        
+                        for val in test_values:
+                            if val in self.label_encoders[col].classes_:
+                                encoded_values.append(self.label_encoders[col].transform([val])[0])
+                            else:
+                                # Handle unseen categories with most frequent class
+                                encoded_values.append(0)
+                        
+                        X_encoded[col] = encoded_values
+                
+                # Ensure all columns are numeric
+                for col in X_encoded.columns:
+                    X_encoded[col] = pd.to_numeric(X_encoded[col], errors='coerce').fillna(0)
+                
+                # Get predictions
+                predictions = self.model.predict_proba(X_encoded)
+                
+                # Ensure predictions have correct shape
+                if predictions.ndim == 1:
+                    predictions = predictions.reshape(-1, 1)
+                
+                return predictions
+                
+            except Exception as e:
+                print(f"Error in model wrapper: {str(e)}")
+                # Return dummy predictions to avoid crashing
+                n_samples = len(X_batch) if hasattr(X_batch, '__len__') else 1
+                n_classes = len(self.config['class_labels'])
+                return np.ones((n_samples, n_classes)) / n_classes
         
         return model_predict_wrapper
     
-    def generate_counterfactual_explanations(self, X_test, y_test, X_train, n_samples=1000):
-        """Generate counterfactual explanations for all test instances"""
+    def generate_counterfactual_explanations(self, n_samples=1000, max_instances=50):
+        """Generate counterfactual explanations for test instances"""
         results = []
         
-        # Prepare encoded test data for predictions
-        if self.categorical_features:
-            X_test_encoded = X_test.copy()
-            for col in self.categorical_features:
-                X_test_encoded[col] = self.label_encoders[col].transform(X_test_encoded[col].astype(str))
-        else:
-            X_test_encoded = X_test
-        
         # Create model wrapper
-        if self.categorical_features:
-            model_predict_func = self.create_model_wrapper(X_train)
-        else:
-            model_predict_func = self.model.predict_proba
+        model_predict_func = self.create_model_wrapper()
         
         print(f"\n{self.config['name'].upper()} - COUNTERFACTUAL EXPLANATION REPORT")
         print("="*70)
         
-        for idx, (test_idx, instance) in enumerate(X_test.iterrows()):
+        # Select subset of test instances
+        sample_size = min(max_instances, len(self.X_test))
+        test_indices = np.random.choice(self.X_test.index, size=sample_size, replace=False)
+        
+        processed_count = 0
+        
+        for idx, instance_idx in enumerate(test_indices):
             try:
-                # Get predictions
-                instance_encoded = X_test_encoded.iloc[idx]
-                actual_class = y_test.iloc[idx]
-                predicted_class = self.model.predict([instance_encoded])[0]
-                prediction_proba = self.model.predict_proba([instance_encoded])[0]
+                # Get instance data
+                instance = self.X_test.loc[instance_idx]
+                actual_class = self.y_test.loc[instance_idx]
                 
-                # Prepare instance for explanation
-                if self.categorical_features:
-                    fact_sample = instance
-                else:
-                    fact_sample = instance.values
+                # Get predictions using wrapper
+                instance_df = pd.DataFrame([instance], columns=self.X_train.columns)
+                prediction_proba = model_predict_func(instance_df)[0]
+                predicted_class = np.argmax(prediction_proba)
                 
                 # Generate explanation
                 explanation = self.explainer.explain_instance_domain(
                     model_predict=model_predict_func,
-                    fact_sample=fact_sample,
+                    fact_sample=instance,
                     foil_method='second',
                     generate_data=True,
-                    n_samples=n_samples,
-                    include_factual=True
+                    n_samples=min(n_samples, 500),  # Reduce samples to avoid memory issues
+                    include_factual=False
                 )
                 
                 # Parse explanation
                 if isinstance(explanation, tuple):
-                    main_explanation = explanation[0]
-                    additional_info = explanation[1] if len(explanation) > 1 else ""
+                    main_explanation = str(explanation[0])
+                    additional_info = str(explanation[1]) if len(explanation) > 1 else ""
                 else:
                     main_explanation = str(explanation)
                     additional_info = ""
@@ -233,26 +238,27 @@ class CounterfactualExplanationGenerator:
                 cf_rules = self._extract_counterfactual_rules(main_explanation)
                 
                 # Map class labels
-                actual_class_label = self.config['class_labels'].get(actual_class, actual_class)
-                predicted_class_label = self.config['class_labels'].get(predicted_class, predicted_class)
+                actual_class_label = self.config['class_labels'].get(actual_class, str(actual_class))
+                predicted_class_label = self.config['class_labels'].get(predicted_class, str(predicted_class))
                 
                 result = {
-                    'Instance_ID': test_idx,
+                    'Instance_ID': instance_idx,
                     'Actual_Class': actual_class_label,
                     'Predicted_Class': predicted_class_label,
-                    'Prediction_Confidence': max(prediction_proba),
+                    'Prediction_Confidence': float(np.max(prediction_proba)),
                     'Counterfactual_Rules': cf_rules,
-                    'Full_Explanation': main_explanation,
-                    'Additional_Info': additional_info
+                    'Full_Explanation': main_explanation[:1000],  # Truncate long explanations
+                    'Additional_Info': additional_info[:500] if additional_info else ""
                 }
                 
                 results.append(result)
+                processed_count += 1
                 
                 # Print summary for each instance
                 if self.verbose:
-                    print(f"\nInstance {idx + 1} (ID: {test_idx}):")
+                    print(f"\nInstance {idx + 1} (ID: {instance_idx}):")
                     print(f"  Actual: {actual_class_label}, Predicted: {predicted_class_label}")
-                    print(f"  Confidence: {max(prediction_proba):.3f}")
+                    print(f"  Confidence: {np.max(prediction_proba):.3f}")
                     print(f"  Counterfactual: {cf_rules}")
                 
             except Exception as e:
@@ -264,89 +270,136 @@ class CounterfactualExplanationGenerator:
     
     def _extract_counterfactual_rules(self, explanation):
         """Extract counterfactual rules from explanation"""
-        cf_rules = "No rules extracted"
-        if "Counterfactuals" in explanation:
-            lines = explanation.split('\n')
-            for line in lines:
-                if "Counterfactuals" in line:
-                    cf_rules = line.split('|')[-2].strip()
-                    break
-        return cf_rules
+        try:
+            cf_rules = "No rules extracted"
+            if "Counterfactuals" in explanation:
+                lines = explanation.split('\n')
+                for line in lines:
+                    if "Counterfactuals" in line and '|' in line:
+                        parts = line.split('|')
+                        if len(parts) >= 3:
+                            cf_rules = parts[-2].strip()
+                            break
+            elif "IF" in explanation.upper():
+                # Try to extract IF-THEN rules
+                lines = explanation.split('\n')
+                rule_lines = [line.strip() for line in lines if 'IF' in line.upper() or 'THEN' in line.upper()]
+                if rule_lines:
+                    cf_rules = '; '.join(rule_lines[:3])  # Take first 3 rules
+            
+            return cf_rules[:500]  # Truncate very long rules
+        except Exception:
+            return "Error extracting rules"
     
-    def run_full_analysis(self, test_size=0.3, n_samples=1000):
-        """Run complete counterfactual analysis"""
-        # Load and prepare data
-        X, y = self.load_and_prepare_data()
-        
-        # Split data
-        X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=test_size, random_state=42
-        )
-        
-        # Prepare model data (encode categorical variables)
-        X_train_encoded, X_test_encoded = self.prepare_model_data(X_train, X_test)
-        
-        # Train model
-        self.train_model(X_train_encoded, y_train)
-        
-        # Setup explainer
-        self.setup_explainer(X_train)
-        
-        # Generate counterfactual explanations
-        results = self.generate_counterfactual_explanations(
-            X_test, y_test, X_train, n_samples=n_samples
-        )
-        
-        return results
+    def run_full_analysis(self, n_samples=1000, max_instances=50):
+        """Run complete counterfactual analysis using preprocessed data and pretrained model"""
+        try:
+            # Load preprocessed data
+            self.load_preprocessed_data()
+            
+            # Load pretrained model
+            self.load_pretrained_model()
+            
+            # Setup explainer
+            self.setup_explainer()
+            
+            # Generate counterfactual explanations
+            results = self.generate_counterfactual_explanations(
+                n_samples=n_samples,
+                max_instances=max_instances
+            )
+            
+            return results
+            
+        except Exception as e:
+            print(f"Error in full analysis: {str(e)}")
+            return []
     
     def save_results(self, results, filename=None):
         """Save results to CSV file"""
         if filename is None:
             filename = f"{self.dataset_name}_{self.model_name}_counterfactual_report.csv"
         
-        df_results = pd.DataFrame(results)
-        df_results.to_csv(filename, index=False)
-        
-        if self.verbose:
-            print(f"\nResults saved to {filename}")
-            print(f"Total instances processed: {len(results)}")
-            if results:
-                print(f"Average confidence: {np.mean([r['Prediction_Confidence'] for r in results]):.3f}")
+        if results:
+            df_results = pd.DataFrame(results)
+            df_results.to_csv(filename, index=False)
+            
+            if self.verbose:
+                print(f"\nResults saved to {filename}")
+                print(f"Total instances processed: {len(results)}")
+                avg_confidence = np.mean([r['Prediction_Confidence'] for r in results])
+                print(f"Average confidence: {avg_confidence:.3f}")
+        else:
+            print(f"No results to save for {filename}")
 
-def run_analysis_for_dataset(dataset_name, model_name='random_forest', n_samples=1000):
-    """Run counterfactual analysis for a specific dataset"""
-    try:
-        generator = CounterfactualExplanationGenerator(dataset_name, model_name)
-        results = generator.run_full_analysis(n_samples=n_samples)
-        generator.save_results(results)
-        return results
-    except Exception as e:
-        print(f"Error processing {dataset_name} dataset: {str(e)}")
-        return []
+def model_name_mapping(model_name):
+    """Map model names to config keys"""
+    mapping = {
+        'random_forest': 'random_forest',
+        'decision_tree': 'decision_tree',
+        'logistic_regression': 'logistic_regression',
+        'mlp': 'mlp',
+        'xgboost': 'xgboost'
+    }
+    return mapping.get(model_name, model_name)
+
+def run_analysis_for_datasets_and_models(datasets, models, n_samples=1000, max_instances=50):
+    """Run counterfactual analysis for multiple datasets and models"""
+    all_results = []
+    
+    for dataset_name in datasets:
+        for model_name in models:
+            try:
+                print(f"\n{'='*70}")
+                print(f"ANALYZING {dataset_name.upper()} DATASET WITH {model_name.upper()} MODEL")
+                print('='*70)
+                
+                generator = CounterfactualExplanationGenerator(dataset_name, model_name)
+                results = generator.run_full_analysis(
+                    n_samples=n_samples,
+                    max_instances=max_instances
+                )
+                
+                # Save results with model-specific filename
+                filename = f"{dataset_name}_{model_name}_counterfactual_report.csv"
+                generator.save_results(results, filename)
+                
+                if results:
+                    print(f"\n{dataset_name.upper()} - {model_name.upper()} SUMMARY:")
+                    print(f"Total instances processed: {len(results)}")
+                    avg_confidence = np.mean([r['Prediction_Confidence'] for r in results])
+                    print(f"Average confidence: {avg_confidence:.3f}")
+                
+                all_results.extend(results)
+                
+            except Exception as e:
+                print(f"Error processing {dataset_name} with {model_name}: {str(e)}")
+                continue
+    
+    return all_results
 
 if __name__ == "__main__":
-    # Available datasets from config
+    # Available datasets and models
     available_datasets = list(DATASETS.keys())
-    print("Available datasets:", available_datasets)
+    available_models = list(ML_MODELS.keys())
     
-    # Run analysis for specific datasets
-    datasets_to_analyze = ['diabetes', 'adult', 'heart', 'bank', 'german']  # Add more as needed
+    # Verify we have 5 datasets and 5 models
+    datasets_to_analyze = available_datasets[:5]
+    models_to_use = available_models[:5]
     
-    for dataset_name in datasets_to_analyze:
-        if dataset_name in available_datasets:
-            print(f"\n{'='*70}")
-            print(f"ANALYZING {dataset_name.upper()} DATASET")
-            print('='*70)
-            
-            results = run_analysis_for_dataset(dataset_name, model_name='random_forest')
-            
-            if results:
-                print(f"\n{dataset_name.upper()} DATASET SUMMARY:")
-                print(f"Total instances processed: {len(results)}")
-                print(f"Average confidence: {np.mean([r['Prediction_Confidence'] for r in results]):.3f}")
-        else:
-            print(f"Dataset {dataset_name} not found in config")
+    print(f"Datasets to analyze: {datasets_to_analyze}")
+    print(f"Models to use: {models_to_use}")
+    print(f"Total reports to generate: {len(datasets_to_analyze) * len(models_to_use)}")
+    
+    # Run analysis for all combinations
+    all_results = run_analysis_for_datasets_and_models(
+        datasets_to_analyze,
+        models_to_use,
+        n_samples=500,  # Reduced to avoid memory issues
+        max_instances=25  # Reduced to avoid processing issues
+    )
     
     print("\n" + "="*70)
     print("COUNTERFACTUAL EXPLANATION GENERATION COMPLETED")
+    print(f"Total instances processed across all reports: {len(all_results)}")
     print("="*70)

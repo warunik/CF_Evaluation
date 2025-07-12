@@ -1,0 +1,66 @@
+{
+    "dataset_name": "Heart Disease",
+    "target_column": "target",
+    "class_labels": {
+        "0": "No Heart Disease",
+        "1": "Heart Disease"
+    },
+    "feature_types": {
+        "age": "numeric",
+        "sex": "numeric",
+        "cp": "numeric",
+        "trestbps": "numeric",
+        "chol": "numeric",
+        "fbs": "numeric",
+        "restecg": "numeric",
+        "thalach": "numeric",
+        "exang": "numeric",
+        "oldpeak": "numeric",
+        "slope": "numeric",
+        "ca": "numeric",
+        "thal": "numeric"
+    },
+    "numeric_features": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+    ],
+    "categorical_features": [],
+    "train_size": 717,
+    "test_size": 308,
+    "features": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+    ],
+    "class_distribution": {
+        "train": {
+            "1": 368,
+            "0": 349
+        },
+        "test": {
+            "1": 158,
+            "0": 150
+        }
+    }
+}

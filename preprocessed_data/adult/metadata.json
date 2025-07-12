@@ -1,0 +1,61 @@
+{
+    "dataset_name": "Income Prediction",
+    "target_column": "class",
+    "class_labels": {
+        "0": "<=50K",
+        "1": ">50K"
+    },
+    "feature_types": {
+        "age": "numeric",
+        "workclass": "categorical",
+        "education": "categorical",
+        "marital-status": "categorical",
+        "occupation": "categorical",
+        "relationship": "categorical",
+        "race": "categorical",
+        "sex": "categorical",
+        "capital-gain": "numeric",
+        "capital-loss": "numeric",
+        "hours-per-week": "numeric"
+    },
+    "numeric_features": [
+        "age",
+        "capital-gain",
+        "capital-loss",
+        "hours-per-week"
+    ],
+    "categorical_features": [
+        "workclass",
+        "education",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex"
+    ],
+    "train_size": 22792,
+    "test_size": 9769,
+    "features": [
+        "age",
+        "workclass",
+        "education",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "capital-gain",
+        "capital-loss",
+        "hours-per-week"
+    ],
+    "class_distribution": {
+        "train": {
+            "0": 17303,
+            "1": 5489
+        },
+        "test": {
+            "0": 7417,
+            "1": 2352
+        }
+    }
+}

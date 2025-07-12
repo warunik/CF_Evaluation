@@ -1,0 +1,60 @@
+{
+    "dataset_name": "Credit Approval",
+    "target_column": "give_credit",
+    "class_labels": {
+        "0": "Deny Credit",
+        "1": "Approve Credit"
+    },
+    "feature_types": {
+        "Unnamed: 0": "numeric",
+        "revolving": "numeric",
+        "age": "numeric",
+        "nbr_30_59_days_past_due_not_worse": "numeric",
+        "debt_ratio": "numeric",
+        "monthly_income": "numeric",
+        "nbr_open_credits_and_loans": "numeric",
+        "nbr_90_days_late": "numeric",
+        "nbr_real_estate_loans_or_lines": "numeric",
+        "nbr_60_89_days_past_due_not_worse": "numeric",
+        "dependents": "numeric"
+    },
+    "numeric_features": [
+        "Unnamed: 0",
+        "revolving",
+        "age",
+        "nbr_30_59_days_past_due_not_worse",
+        "debt_ratio",
+        "monthly_income",
+        "nbr_open_credits_and_loans",
+        "nbr_90_days_late",
+        "nbr_real_estate_loans_or_lines",
+        "nbr_60_89_days_past_due_not_worse",
+        "dependents"
+    ],
+    "categorical_features": [],
+    "train_size": 105000,
+    "test_size": 45000,
+    "features": [
+        "Unnamed: 0",
+        "revolving",
+        "age",
+        "nbr_30_59_days_past_due_not_worse",
+        "debt_ratio",
+        "monthly_income",
+        "nbr_open_credits_and_loans",
+        "nbr_90_days_late",
+        "nbr_real_estate_loans_or_lines",
+        "nbr_60_89_days_past_due_not_worse",
+        "dependents"
+    ],
+    "class_distribution": {
+        "train": {
+            "0": 97982,
+            "1": 7018
+        },
+        "test": {
+            "0": 41992,
+            "1": 3008
+        }
+    }
+}

@@ -1,4 +1,6 @@
 import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pickle
 import pandas as pd
 import numpy as np
@@ -23,114 +25,7 @@ SEED = 42
 np.random.seed(SEED)
 
 # Configuration from your provided data
-DATASETS = {
-    "heart": {
-        "name": "Heart Disease",
-        "path": "Evaluation/data/heart.csv",
-        "target_column": "target",
-        "class_labels": {0: "No Heart Disease", 1: "Heart Disease"},
-        "feature_types": {
-            "age": "numeric",
-            "sex": "numeric",
-            "cp": "numeric",
-            "trestbps": "numeric",
-            "chol": "numeric",
-            "fbs": "numeric",
-            "restecg": "numeric",
-            "thalach": "numeric",
-            "exang": "numeric",
-            "oldpeak": "numeric",
-            "slope": "numeric",
-            "ca": "numeric",
-            "thal": "numeric"
-        }
-    },
-    "diabetes": {
-        "name": "Diabetes Prediction",
-        "path": "Evaluation/data/diabetes.csv",
-        "target_column": "Outcome",
-        "class_labels": {0: "No Diabetes", 1: "Diabetes"},
-        "feature_types": {
-            "Pregnancies": "numeric",
-            "Glucose": "numeric",
-            "BloodPressure": "numeric",
-            "SkinThickness": "numeric",
-            "Insulin": "numeric",
-            "BMI": "numeric",
-            "DiabetesPedigreeFunction": "numeric",
-            "Age": "numeric"
-        }
-    },
-    "adult": {
-        "name": "Income Prediction",
-        "path": "Evaluation/data/adult.csv",
-        "target_column": "class",
-        "drop_columns": [" fnlwgt", " education-num", " native-country"],
-        "class_labels": {0: "<=50K", 1: ">50K"},
-        "feature_types": {
-            "age": "numeric",
-            "workclass": "categorical",
-            "fnlwgt": "numeric",
-            "education": "categorical",
-            "education-num": "numeric",
-            "marital-status": "categorical",
-            "occupation": "categorical",
-            "relationship": "categorical",
-            "race": "categorical",
-            "sex": "categorical",
-            "capital-gain": "numeric",
-            "capital-loss": "numeric",
-            "hours-per-week": "numeric",
-            "native-country": "categorical"
-        }
-    },
-    "bank": {
-        "name": "Credit Approval",
-        "path": "Evaluation/data/bank.csv",
-        "target_column": "give_credit",
-        "class_labels": {0: "Deny Credit", 1: "Approve Credit"},
-        "feature_types": {
-            "revolving": "numeric",
-            "age": "numeric",
-            "nbr_30_59_days_past_due_not_worse": "numeric",
-            "debt_ratio": "numeric",
-            "monthly_income": "numeric",
-            "nbr_open_credits_and_loans": "numeric",
-            "nbr_90_days_late": "numeric",
-            "nbr_real_estate_loans_or_lines": "numeric",
-            "nbr_60_89_days_past_due_not_worse": "numeric",
-            "dependents": "numeric"
-        }
-    },
-    "german": {
-        "name": "German Credit Risk",
-        "path": "Evaluation/data/german_credit.csv",
-        "target_column": "default",
-        "class_labels": {0: "Good Credit", 1: "Bad Credit"},
-        "feature_types": {
-            "account_check_status": "categorical",
-            "duration_in_month": "numeric",
-            "credit_history": "categorical",
-            "purpose": "categorical",
-            "credit_amount": "numeric",
-            "savings": "categorical",
-            "present_emp_since": "categorical",
-            "installment_as_income_perc": "numeric",
-            "personal_status_sex": "categorical",
-            "other_debtors": "categorical",
-            "present_res_since": "numeric",
-            "property": "categorical",
-            "age": "numeric",
-            "other_installment_plans": "categorical",
-            "housing": "categorical",
-            "credits_this_bank": "numeric",
-            "job": "categorical",
-            "people_under_maintenance": "numeric",
-            "telephone": "categorical",
-            "foreign_worker": "categorical"
-        }
-    }
-}
+from config import DATASETS, ML_MODELS
 
 # Create output directories
 os.makedirs("saved_models", exist_ok=True)
