@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate
+diabetes,decision_tree,231,73,212,19,34.43396226415094

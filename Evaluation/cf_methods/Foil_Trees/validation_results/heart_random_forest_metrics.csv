@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate
+heart,random_forest,308,105,246,62,42.68292682926829

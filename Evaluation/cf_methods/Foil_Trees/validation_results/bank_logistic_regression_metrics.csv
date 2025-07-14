@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate
+bank,logistic_regression,45000,543,34147,2250,1.5901836178873692

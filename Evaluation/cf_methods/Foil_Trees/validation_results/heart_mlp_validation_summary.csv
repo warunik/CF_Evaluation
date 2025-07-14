@@ -1,0 +1,309 @@
+instance,original_class,expected_contrast,dataset,model,result,reason,original_prediction,modified_prediction,original_confidence,modified_confidence
+0,No Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+1,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9984683065734336,0.9604673493572594
+2,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9972706681455327,0.9986790224119751
+3,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+4,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9004171608610165,0.8308772954373588
+5,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.961125088017819,0.9883042563505179
+6,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9966096906430372,0.9956882956405416
+7,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9962695268390812,0.9947038050224379
+8,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+9,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9974179676979542,0.9974179676979542
+10,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9788323045282029,0.7301206632685652
+11,No Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.990445156723541,0.9949315755143845
+12,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9997414298674845,0.9988231535887548
+13,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9998316470573212,0.9848980409465121
+14,Heart Disease,Heart Disease,heart,mlp,✓,,No Heart Disease,Heart Disease,0.8326049009924984,0.501560640270051
+15,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9997414298674845,0.9990690387159628
+16,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+17,No Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9960165302161998,0.9961345145948937
+18,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9961317198514626,0.9844332566201964
+19,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9926059807680832,0.9930312330664108
+20,Heart Disease,No Heart Disease,heart,mlp,✓,,Heart Disease,No Heart Disease,0.8688267250325578,0.7314280585895249
+21,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.8289748191096338,0.8656995061308491
+22,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9733542935054184,0.9693570957415915
+23,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9876589390827613,0.9518295242143812
+24,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9989519447898527,0.997399116061239
+25,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9700797358747834,0.614192154197126
+26,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9987977918711857,0.9992993064975236
+27,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+28,No Heart Disease,Heart Disease,heart,mlp,✓,,No Heart Disease,Heart Disease,0.5941037601160476,0.627884903137976
+29,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.990575416895108,0.9422875375310803
+30,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+31,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+32,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9904439474829504,0.7994010583163637
+33,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9445364741400625,0.9445364741400625
+34,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9924443972585698,0.9904901056696007
+35,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.5593075840874451,0.7117444423655963
+36,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9014026628807156,0.9644143033113691
+37,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.6776132679627526,0.8924648261019734
+38,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.6924161063820236,0.5504024189039592
+39,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+40,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.966236589299562,0.8999500474109108
+41,Heart Disease,No Heart Disease,heart,mlp,✓,,Heart Disease,No Heart Disease,0.6662378278615356,0.8170042014948833
+42,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+43,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9121162903604656,0.9121162903604656
+44,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+45,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+46,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9724522811455331,0.9980949241818338
+47,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9962935444488474,0.9866489776117672
+48,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.8781606321899396,0.6661789973811758
+49,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9463139500219213,0.7672723574592513
+50,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9973301769206842,0.9490277921463579
+51,Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+52,Heart Disease,No Heart Disease,heart,mlp,✓,,Heart Disease,No Heart Disease,0.9504625587891014,0.7650407611749941
+53,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9519248876087342,0.8265776629849398
+54,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+55,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9999394967941202,0.9987224627740786
+56,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+57,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9533585758361314,0.9663354511048857
+58,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.5922341148645653,0.91844558427829
+59,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.5367594899075316,0.5224842231637756
+60,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9996957630949787,0.9992663177601848
+61,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.8781606321899396,0.7194061230654878
+62,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9699752937795858,0.9780646031850746
+63,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9882950935036321,0.9882950935036321
+64,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+65,No Heart Disease,Heart Disease,heart,mlp,✓,,No Heart Disease,Heart Disease,0.5723907815172473,0.7403807515250042
+66,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9694142438495539,0.8762171487025656
+67,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+68,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9996974419720126,0.9050040829136484
+69,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9999283145302764,0.9818912866912759
+70,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9993776435975038,0.9985059159903437
+71,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9903461739646691,0.9903461739646691
+72,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9754728820333796,0.9792515011762777
+73,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+74,No Heart Disease,Heart Disease,heart,mlp,✓,,No Heart Disease,Heart Disease,0.9709942093799543,0.5626101748774487
+75,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9539471234624688,0.8694009129602113
+76,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9623051049209181,0.9913583344401041
+77,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9993882623291493,0.9993755092908474
+78,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.852283181852459,0.9296910474558248
+79,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+80,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.5284062725493825,0.6187776430637455
+81,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+82,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.5593075840874451,0.6541422069167249
+83,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+84,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+85,No Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9951255499266479,0.9208981966340624
+86,Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9926059807680832,0.8377853350503005
+87,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.8269858995257027,0.8269858995257027
+88,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+89,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9926953923376904,0.9727925238634668
+90,Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9949315443109332,0.9973189594352626
+91,Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+92,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9993882623291493,0.9998077988317953
+93,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+94,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+95,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+96,No Heart Disease,Heart Disease,heart,mlp,✗,,Heart Disease,No Heart Disease,0.5650902122176942,0.5752658280530651
+97,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9951176407949334,0.9951176407949334
+98,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+99,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9731492881919486,0.9731492881919486
+100,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9984586124742499,0.997289409993974
+101,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9925338627013592,0.9200085589047075
+102,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.8637427540583219,0.9597605475998147
+103,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9539471234624688,0.9060630685378301
+104,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9981865127102333,0.9984597730911536
+105,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9746645511570715,0.9828692577999654
+106,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9743970937735197,0.8438194383314707
+107,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+108,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+109,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+110,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.560682949177709,0.6430378109966592
+111,No Heart Disease,Heart Disease,heart,mlp,✓,,No Heart Disease,Heart Disease,0.6623725494876151,0.609788263283494
+112,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9709942093799543,0.7909981431247863
+113,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9966901036467953,0.9786372019485999
+114,Heart Disease,No Heart Disease,heart,mlp,✗,,No Heart Disease,Heart Disease,0.8634132160449142,0.850446032906888
+115,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9700797358747834,0.981870111646077
+116,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9797244404827449,0.9493194253693469
+117,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9972545376784301,0.9607936713736309
+118,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9996957630949787,0.9433096938414471
+119,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9848393725168341,0.9652543213656763
+120,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.8637427540583219,0.7118982181074471
+121,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9828449615244627,0.9843027980376468
+122,No Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9990007525536131,0.9981346870268099
+123,Heart Disease,Heart Disease,heart,mlp,✗,,Heart Disease,No Heart Disease,0.8774927539499836,0.5165196129533716
+124,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.998608240240127,0.8389574914883596
+125,No Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9978075670841506,0.9986167616493694
+126,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.5335415611531957,0.5806225349865544
+127,No Heart Disease,Heart Disease,heart,mlp,✗,,Heart Disease,No Heart Disease,0.9694142438495539,0.9056988572262205
+128,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.7751746712925384,0.7450603378731849
+129,Heart Disease,No Heart Disease,heart,mlp,✓,,Heart Disease,No Heart Disease,0.8444879068045714,0.6284581833218428
+130,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9978075670841506,0.9970621253249985
+131,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9956507836193442,0.9890534610803056
+132,No Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9724522811455331,0.9468607756581844
+133,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9924443972585698,0.9596300994672693
+134,Heart Disease,No Heart Disease,heart,mlp,✓,,Heart Disease,No Heart Disease,0.8637427540583219,0.5239864395442607
+135,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9875103333474877,0.88394218536404
+136,Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9861115808295331,0.9968382117379183
+137,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+138,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9539471234624688,0.9254848841254172
+139,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+140,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9852620855587049,0.9642280598088467
+141,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.5770345565425519,0.5770345565425519
+142,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+143,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9996673235368321,0.9943996661896974
+144,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9152811438970571,0.9508646029048228
+145,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9945416347393057,0.9721493520972887
+146,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9950289582467224,0.9828752356361983
+147,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.6093054154484827,0.7543252832132842
+148,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9743737895504151,0.9824892070015939
+149,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9946523446355242,0.9747876044467174
+150,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9966096906430372,0.9824160483496345
+151,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9689563302578524,0.9329502094935687
+152,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+153,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.6662378278615356,0.6662378278615356
+154,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9957693296853302,0.9965181460523773
+155,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+156,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9977140481526866,0.9876423637313114
+157,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.6662378278615356,0.7932563277856326
+158,No Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9550538727172143,0.9547766544893872
+159,No Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9988931761435986,0.9988987850707293
+160,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9800275986453647,0.9862624822076709
+161,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+162,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9800275986453647,0.6550450239198072
+163,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+164,Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+165,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9993776435975038,0.9993663151317905
+166,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9849828864937046,0.920474918303678
+167,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.928975209606481,0.8356345667224355
+168,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.8657732784899895,0.7107424326796147
+169,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+170,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9522337127881443,0.9057031112062442
+171,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+172,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.924574127788673,0.9712589206557997
+173,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+174,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+175,Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9998755617014253,0.9999044892134649
+176,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9832063217555753,0.9802625355450105
+177,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9946361069834524,0.9962088602168179
+178,No Heart Disease,Heart Disease,heart,mlp,✓,,No Heart Disease,Heart Disease,0.560682949177709,0.9709601137251046
+179,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9944462645844392,0.9388203028117971
+180,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+181,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+182,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9919318125061235,0.9862479953626452
+183,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9953308375389639,0.9973806368015883
+184,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9375064265166525,0.9629955303589022
+185,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+186,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+187,No Heart Disease,Heart Disease,heart,mlp,✓,,No Heart Disease,Heart Disease,0.9754728820333796,0.5583468572372224
+188,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+189,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.7814229771413352,0.7443571431515312
+190,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.998319773615826,0.9988505937267187
+191,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.7340282650269229,0.8767953324081241
+192,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9550538727172143,0.773641922431637
+193,Heart Disease,No Heart Disease,heart,mlp,✓,,Heart Disease,No Heart Disease,0.8930522830644881,0.8371898255209779
+194,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+195,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9882950935036321,0.9598142635680811
+196,No Heart Disease,Heart Disease,heart,mlp,✓,,No Heart Disease,Heart Disease,0.6588704961695409,0.8075293054381948
+197,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9101089098706747,0.9129385488804528
+198,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9852166951463881,0.9769174795865381
+199,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9836292444169328,0.97930087844047
+200,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.976370933393438,0.9290954790340683
+201,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9996673235368321,0.9944081809185694
+202,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9743737895504151,0.9869217789265913
+203,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.6216910937322725,0.9655045305784791
+204,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.8781606321899396,0.9032700450323627
+205,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+206,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.8634132160449142,0.9046045178280975
+207,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+208,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9504625587891014,0.9906855923538059
+209,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+210,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9829825994563025,0.9963497504720921
+211,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9699752937795858,0.9766073959644295
+212,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9890690901066513,0.8259653496242182
+213,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+214,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9375064265166525,0.5833830422456181
+215,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9821938965076282,0.9626566549979444
+216,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+217,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9988931761435986,0.9971353519609782
+218,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9975755678742375,0.9683376532562832
+219,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+220,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.7511192023371016,0.8623683496136144
+221,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9797244404827449,0.9791533456381956
+222,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.831939967722105,0.7901542141099518
+223,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+224,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.8155126260818601,0.8187621095030647
+225,No Heart Disease,Heart Disease,heart,mlp,✗,,Heart Disease,No Heart Disease,0.8748729303721124,0.5543453117755841
+226,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.8320813012238387,0.7897191490847846
+227,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9883229121790654,0.9911026370179995
+228,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+229,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9962935444488474,0.9954717107787187
+230,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9728015233557503,0.703563705259558
+231,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+232,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.997813806271775,0.9883032834402858
+233,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9973744843602267,0.9954388909904935
+234,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9827488212781776,0.9825925448102324
+235,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.6216910937322725,0.8971308569967738
+236,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.8320813012238387,0.9013879629450348
+237,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+238,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9463139500219213,0.8683382225634905
+239,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.8118753824648973,0.8259216041602008
+240,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.8825581044451588,0.8960140861844975
+241,No Heart Disease,Heart Disease,heart,mlp,✓,,No Heart Disease,Heart Disease,0.5922341148645653,0.5246168003393878
+242,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9504625587891014,0.9525162226159329
+243,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.8688267250325578,0.8804858169546483
+244,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.96075493403629,0.9385910734512384
+245,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+246,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+247,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+248,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9984356526297986,0.9961208268154659
+249,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+250,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9746645511570715,0.9464425574318258
+251,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+252,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9733010593320407,0.9207298695513161
+253,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9938436456975569,0.9917224382783929
+254,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9928985681386612,0.9933632569820304
+255,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.8483056539617496,0.9650373916803139
+256,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9981152403731826,0.9978260219022015
+257,Heart Disease,No Heart Disease,heart,mlp,✓,,Heart Disease,No Heart Disease,0.5325668154562151,0.9800553481722695
+258,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+259,Heart Disease,No Heart Disease,heart,mlp,✗,,No Heart Disease,Heart Disease,0.5335415611531957,0.7431148475312935
+260,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+261,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.8748729303721124,0.8469320534086289
+262,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9285169675622911,0.9943666187878307
+263,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+264,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9875103333474877,0.8375158833979559
+265,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9733542935054184,0.9971778129011178
+266,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9951176407949334,0.9956999025998867
+267,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.8047938536778826,0.8375154136882206
+268,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9650528980939289,0.9911785849643029
+269,Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9863468594441047,0.9285040074116243
+270,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.803276147122547,0.69414402232938
+271,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9697472679733112,0.9783551782056887
+272,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9984356526297986,0.9963777666099649
+273,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+274,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9429797404230331,0.9504732545997681
+275,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9832063217555753,0.9845666774345333
+276,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+277,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9943650633902997,0.9740686295242115
+278,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9962695268390812,0.9933875567677801
+279,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+280,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9920202515185649,0.9895892679578869
+281,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9990258106683532,0.9939493435667701
+282,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9980065867142801,0.9955773951343131
+283,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+284,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9650528980939289,0.9649367018243531
+285,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+286,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9388531932924951,0.8976009611162117
+287,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.8777204190343683,0.9421950729462628
+288,No Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9913446760213466,0.8891816664292833
+289,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.7574123026827082,0.9810719522439877
+290,Heart Disease,No Heart Disease,heart,mlp,✓,,Heart Disease,No Heart Disease,0.7751746712925384,0.7377602344724277
+291,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.9989180529254609,0.9929551175642422
+292,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+293,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9882950935036321,0.9750382090586243
+294,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+295,No Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9699752937795858,0.942615850325559
+296,No Heart Disease,Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+297,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.8988258237664501,0.9743457482169449
+298,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9990258106683532,0.9982268710333152
+299,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9401512803176663,0.7173298693706648
+300,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+301,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9704109894955059,0.9069839273646151
+302,Heart Disease,No Heart Disease,heart,mlp,✗,,Heart Disease,Heart Disease,0.9861115808295331,0.9360057686197925
+303,Heart Disease,Heart Disease,heart,mlp,✗,,No Heart Disease,No Heart Disease,0.9990007525536131,0.9984391625786023
+304,Heart Disease,No Heart Disease,heart,mlp,SKIPPED,No counterfactual rules provided,,,,
+305,Heart Disease,No Heart Disease,heart,mlp,✓,,No Heart Disease,No Heart Disease,0.986652213668626,0.9797099686718705
+306,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9883229121790654,0.991568255800514
+307,No Heart Disease,Heart Disease,heart,mlp,✓,,Heart Disease,Heart Disease,0.9951255499266479,0.9951255499266479

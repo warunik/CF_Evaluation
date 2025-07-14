@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate
+diabetes,mlp,231,93,196,35,47.44897959183674

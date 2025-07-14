@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate
+bank,random_forest,45000,2429,41857,3143,5.803091478127912

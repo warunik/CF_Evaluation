@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate
+heart,logistic_regression,308,108,232,76,46.55172413793103

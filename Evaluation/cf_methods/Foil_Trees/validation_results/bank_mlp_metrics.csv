@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate
+bank,mlp,45000,4365,33829,2719,12.903130450205444

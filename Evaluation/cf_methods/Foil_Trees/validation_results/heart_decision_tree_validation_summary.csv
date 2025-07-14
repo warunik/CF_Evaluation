@@ -1,0 +1,309 @@
+instance,original_class,expected_contrast,dataset,model,result,reason,original_prediction,modified_prediction,original_confidence,modified_confidence
+0,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+1,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+2,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+3,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+4,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+5,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+6,No Heart Disease,Heart Disease,heart,decision_tree,✓,,No Heart Disease,Heart Disease,1.0,1.0
+7,Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+8,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+9,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+10,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+11,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+12,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+13,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+14,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+15,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+16,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+17,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+18,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+19,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+20,Heart Disease,No Heart Disease,heart,decision_tree,✗,,No Heart Disease,Heart Disease,1.0,1.0
+21,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+22,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+23,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+24,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+25,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+26,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+27,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+28,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+29,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+30,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+31,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+32,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+33,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+34,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+35,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+36,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+37,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+38,Heart Disease,No Heart Disease,heart,decision_tree,✓,,Heart Disease,No Heart Disease,1.0,1.0
+39,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+40,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+41,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+42,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+43,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+44,Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+45,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+46,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+47,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+48,Heart Disease,No Heart Disease,heart,decision_tree,✓,,Heart Disease,No Heart Disease,1.0,1.0
+49,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+50,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+51,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+52,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+53,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+54,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+55,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+56,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+57,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+58,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+59,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+60,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+61,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+62,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+63,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+64,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+65,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+66,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+67,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+68,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+69,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+70,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+71,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+72,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+73,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+74,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+75,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+76,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+77,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+78,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+79,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+80,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+81,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+82,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+83,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+84,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+85,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+86,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+87,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+88,Heart Disease,No Heart Disease,heart,decision_tree,✗,,No Heart Disease,Heart Disease,1.0,1.0
+89,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+90,Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+91,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+92,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+93,No Heart Disease,Heart Disease,heart,decision_tree,✓,,No Heart Disease,Heart Disease,1.0,1.0
+94,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+95,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+96,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+97,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+98,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+99,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+100,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+101,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+102,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+103,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+104,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+105,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+106,Heart Disease,No Heart Disease,heart,decision_tree,✗,,No Heart Disease,Heart Disease,1.0,1.0
+107,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+108,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+109,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+110,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+111,No Heart Disease,Heart Disease,heart,decision_tree,✗,,Heart Disease,No Heart Disease,1.0,1.0
+112,Heart Disease,No Heart Disease,heart,decision_tree,✗,,No Heart Disease,Heart Disease,1.0,1.0
+113,Heart Disease,No Heart Disease,heart,decision_tree,✗,,No Heart Disease,Heart Disease,1.0,1.0
+114,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+115,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+116,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+117,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+118,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+119,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+120,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+121,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+122,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+123,Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+124,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+125,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+126,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+127,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+128,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+129,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+130,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+131,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+132,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+133,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+134,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+135,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+136,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+137,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+138,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+139,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+140,Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+141,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+142,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+143,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+144,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+145,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+146,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+147,Heart Disease,No Heart Disease,heart,decision_tree,✗,,No Heart Disease,Heart Disease,1.0,1.0
+148,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+149,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+150,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+151,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+152,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+153,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+154,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+155,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+156,Heart Disease,No Heart Disease,heart,decision_tree,✓,,Heart Disease,No Heart Disease,1.0,1.0
+157,No Heart Disease,Heart Disease,heart,decision_tree,✗,,Heart Disease,No Heart Disease,1.0,1.0
+158,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+159,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+160,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+161,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+162,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+163,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+164,Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+165,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+166,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+167,No Heart Disease,Heart Disease,heart,decision_tree,✗,,Heart Disease,No Heart Disease,1.0,1.0
+168,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+169,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+170,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+171,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+172,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+173,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+174,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+175,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+176,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+177,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+178,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+179,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+180,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+181,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+182,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+183,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+184,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+185,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+186,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+187,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+188,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+189,No Heart Disease,Heart Disease,heart,decision_tree,✓,,No Heart Disease,Heart Disease,1.0,1.0
+190,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+191,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+192,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+193,Heart Disease,No Heart Disease,heart,decision_tree,✓,,Heart Disease,No Heart Disease,1.0,1.0
+194,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+195,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+196,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+197,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+198,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+199,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+200,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+201,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+202,No Heart Disease,Heart Disease,heart,decision_tree,✗,,Heart Disease,No Heart Disease,1.0,1.0
+203,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+204,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+205,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+206,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+207,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+208,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+209,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+210,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+211,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+212,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+213,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+214,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+215,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+216,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+217,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+218,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+219,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+220,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+221,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+222,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+223,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+224,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+225,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+226,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+227,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+228,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+229,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+230,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+231,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+232,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+233,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+234,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+235,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+236,Heart Disease,No Heart Disease,heart,decision_tree,✗,,No Heart Disease,Heart Disease,1.0,1.0
+237,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+238,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+239,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+240,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+241,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+242,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+243,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+244,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+245,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+246,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+247,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+248,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+249,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+250,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+251,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+252,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+253,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+254,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+255,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+256,No Heart Disease,Heart Disease,heart,decision_tree,✗,,Heart Disease,No Heart Disease,1.0,1.0
+257,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+258,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+259,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+260,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+261,No Heart Disease,Heart Disease,heart,decision_tree,✗,,Heart Disease,No Heart Disease,1.0,1.0
+262,Heart Disease,No Heart Disease,heart,decision_tree,✓,,Heart Disease,No Heart Disease,1.0,1.0
+263,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+264,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+265,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+266,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+267,No Heart Disease,Heart Disease,heart,decision_tree,✓,,No Heart Disease,Heart Disease,1.0,1.0
+268,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+269,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+270,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+271,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+272,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+273,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+274,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+275,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+276,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+277,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+278,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+279,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+280,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+281,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+282,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+283,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+284,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+285,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+286,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+287,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+288,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+289,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+290,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+291,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+292,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+293,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+294,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+295,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+296,No Heart Disease,Heart Disease,heart,decision_tree,✗,,No Heart Disease,No Heart Disease,1.0,1.0
+297,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+298,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+299,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+300,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+301,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+302,Heart Disease,No Heart Disease,heart,decision_tree,✗,,Heart Disease,Heart Disease,1.0,1.0
+303,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+304,Heart Disease,No Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,
+305,Heart Disease,No Heart Disease,heart,decision_tree,✓,,No Heart Disease,No Heart Disease,1.0,1.0
+306,No Heart Disease,Heart Disease,heart,decision_tree,✓,,Heart Disease,Heart Disease,1.0,1.0
+307,No Heart Disease,Heart Disease,heart,decision_tree,SKIPPED,No counterfactual rules provided,,,,

@@ -19,6 +19,7 @@ class CounterfactualValidator:
         self.data = None
         self.model = None
         self.feature_frequency = {}  # Track feature usage frequency
+        self.feature_stats = {}  # Store feature statistics for adaptive scaling
         
     def parse_filename(self, filename):
         """Parse filename to extract dataset and model name"""
@@ -87,12 +88,68 @@ class CounterfactualValidator:
         
         return True
     
+    def calculate_feature_stats(self):
+        """Calculate feature statistics for adaptive scaling"""
+        print("Calculating feature statistics for adaptive scaling...")
+        
+        # Get feature columns (exclude target)
+        feature_cols = [col for col in self.data.columns if col != self.dataset_config["target_column"]]
+        
+        for feature in feature_cols:
+            if feature in self.data.columns:
+                values = self.data[feature].dropna()
+                
+                # Calculate statistics
+                stats = {
+                    'mean': values.mean(),
+                    'std': values.std(),
+                    'min': values.min(),
+                    'max': values.max(),
+                    'median': values.median(),
+                    'q25': values.quantile(0.25),
+                    'q75': values.quantile(0.75),
+                    'iqr': values.quantile(0.75) - values.quantile(0.25),
+                    'range': values.max() - values.min()
+                }
+                
+                # Calculate adaptive step size
+                # Use 5% of standard deviation as base step, with minimum and maximum bounds
+                base_step = stats['std'] * 0.05
+                min_step = stats['iqr'] * 0.01  # 1% of IQR as minimum
+                max_step = stats['iqr'] * 0.1   # 10% of IQR as maximum
+                
+                # Ensure step is within reasonable bounds
+                if base_step < min_step:
+                    adaptive_step = min_step
+                elif base_step > max_step:
+                    adaptive_step = max_step
+                else:
+                    adaptive_step = base_step
+                
+                # Handle edge cases
+                if adaptive_step == 0 or np.isnan(adaptive_step):
+                    adaptive_step = abs(stats['range']) * 0.01  # 1% of range as fallback
+                
+                # Final fallback for constant features
+                if adaptive_step == 0:
+                    adaptive_step = 0.1
+                
+                stats['adaptive_step'] = adaptive_step
+                self.feature_stats[feature] = stats
+                
+                print(f"Feature '{feature}': range=[{stats['min']:.3f}, {stats['max']:.3f}], "
+                      f"std={stats['std']:.3f}, adaptive_step={adaptive_step:.3f}")
+    
     def load_data(self):
         """Load the dataset"""
         try:
             self.data = pd.read_csv(self.dataset_config["path"])
             print(f"Dataset loaded successfully: {self.data.shape}")
             print(f"Columns: {list(self.data.columns)}")
+            
+            # Calculate feature statistics for adaptive scaling
+            self.calculate_feature_stats()
+            
             return True
         except Exception as e:
             print(f"Error loading dataset: {e}")
@@ -173,25 +230,44 @@ class CounterfactualValidator:
             self.feature_frequency[feature] += 1
     
     def apply_counterfactual(self, original_sample, conditions):
-        """Apply counterfactual conditions to create modified sample"""
+        """Apply counterfactual conditions to create modified sample with adaptive scaling"""
         modified_sample = original_sample.copy()
+        
+        print(f"Applying counterfactual conditions:")
         
         for feature, operator, value in conditions:
             if feature in modified_sample.index:
+                original_value = modified_sample[feature]
+                
+                # Get adaptive step size for this feature
+                step_size = self.feature_stats.get(feature, {}).get('adaptive_step', 0.1)
+                
+                print(f"  {feature}: {original_value} -> ", end="")
+                
                 if operator == '<=':
-                    # Set to a value slightly less than the threshold
-                    modified_sample[feature] = min(value - 1, modified_sample[feature])
+                    # Set to a value that satisfies the condition (threshold - step_size)
+                    new_value = value - step_size
                 elif operator == '>=':
-                    # Set to a value slightly more than the threshold
-                    modified_sample[feature] = max(value + 1, modified_sample[feature])
+                    # Set to a value that satisfies the condition (threshold + step_size)
+                    new_value = value + step_size
                 elif operator == '>':
-                    # Set to a value slightly more than the threshold
-                    modified_sample[feature] = max(value + 1, modified_sample[feature])
+                    # Set to a value that satisfies the condition (threshold + step_size)
+                    new_value = value + step_size
                 elif operator == '<':
-                    # Set to a value slightly less than the threshold
-                    modified_sample[feature] = min(value - 1, modified_sample[feature])
+                    # Set to a value that satisfies the condition (threshold - step_size)
+                    new_value = value - step_size
                 elif operator == '=':
-                    modified_sample[feature] = value
+                    new_value = value
+                
+                # Ensure the new value is within reasonable bounds
+                feature_min = self.feature_stats.get(feature, {}).get('min', float('-inf'))
+                feature_max = self.feature_stats.get(feature, {}).get('max', float('inf'))
+                new_value = max(feature_min, min(feature_max, new_value))
+                
+                modified_sample[feature] = new_value
+                
+                print(f"{new_value:.3f} (step: {step_size:.3f}, condition: {feature} {operator} {value})")
+                
             else:
                 print(f"Warning: Feature '{feature}' not found in sample")
         
@@ -320,6 +396,12 @@ class CounterfactualValidator:
                 'original_confidence': original_prediction['confidence'],
                 'modified_confidence': modified_prediction['confidence']
             }
+            
+            print(f"  Original prediction: {orig_class} (confidence: {original_prediction['confidence']:.3f})")
+            print(f"  Modified prediction: {mod_class} (confidence: {modified_prediction['confidence']:.3f})")
+            print(f"  Expected contrast: {contrast_class}")
+            print(f"  Counterfactual success: {'✓' if success else '✗'}")
+            
         else:
             results['validation_result'] = None
         
@@ -337,6 +419,16 @@ class CounterfactualValidator:
         # Create DataFrame
         df_features = pd.DataFrame(sorted_features, columns=['Feature', 'Frequency'])
         
+        # Add feature statistics
+        for idx, row in df_features.iterrows():
+            feature = row['Feature']
+            if feature in self.feature_stats:
+                stats = self.feature_stats[feature]
+                df_features.loc[idx, 'Mean'] = stats['mean']
+                df_features.loc[idx, 'Std'] = stats['std']
+                df_features.loc[idx, 'Adaptive_Step'] = stats['adaptive_step']
+                df_features.loc[idx, 'Range'] = stats['range']
+        
         # Calculate percentages
         total_usage = sum(self.feature_frequency.values())
         df_features['Percentage'] = (df_features['Frequency'] / total_usage * 100).round(2)
@@ -345,7 +437,7 @@ class CounterfactualValidator:
         df_features['Rank'] = range(1, len(df_features) + 1)
         
         # Reorder columns
-        df_features = df_features[['Rank', 'Feature', 'Frequency', 'Percentage']]
+        df_features = df_features[['Rank', 'Feature', 'Frequency', 'Percentage', 'Mean', 'Std', 'Adaptive_Step', 'Range']]
         
         # Save to CSV
         df_features.to_csv(output_path, index=False)
@@ -360,9 +452,6 @@ class CounterfactualValidator:
         print(f"Unique features used: {len(self.feature_frequency)}")
         print("\nMost frequently used features:")
         print(df_features.head(5).to_string(index=False))
-        
-        print("\nLeast frequently used features:")
-        print(df_features.tail(5).to_string(index=False))
         
         return df_features
     
@@ -488,7 +577,8 @@ class CounterfactualValidator:
             'successful': successes,
             'total_valid': total_valid,
             'skipped': skipped,
-            'feature_frequency': self.feature_frequency
+            'feature_frequency': self.feature_frequency,
+            'feature_stats': self.feature_stats
         }
 
     def load_counterfactual_report(self, csv_path):

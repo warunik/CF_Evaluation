@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate
+diabetes,xgboost,231,90,204,27,44.11764705882353

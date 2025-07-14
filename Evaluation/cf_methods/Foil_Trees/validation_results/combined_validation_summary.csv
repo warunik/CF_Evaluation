@@ -1,0 +1,16 @@
+file,dataset,model,total_samples,success_rate,successful,total_valid,skipped
+bank_decision_tree_counterfactual_report.csv,Unknown,Unknown,45000,13.504833177424382,4331,32070,4898
+bank_logistic_regression_counterfactual_report.csv,Unknown,Unknown,45000,1.5901836178873692,543,34147,2250
+bank_mlp_counterfactual_report.csv,Unknown,Unknown,45000,12.903130450205444,4365,33829,2719
+bank_random_forest_counterfactual_report.csv,Unknown,Unknown,45000,5.803091478127912,2429,41857,3143
+bank_xgboost_counterfactual_report.csv,Unknown,Unknown,44999,5.302692425060444,2259,42601,2398
+diabetes_decision_tree_counterfactual_report.csv,Unknown,Unknown,231,34.43396226415094,73,212,19
+diabetes_logistic_regression_counterfactual_report.csv,Unknown,Unknown,231,48.05825242718447,99,206,25
+diabetes_mlp_counterfactual_report.csv,Unknown,Unknown,231,47.44897959183674,93,196,35
+diabetes_random_forest_counterfactual_report.csv,Unknown,Unknown,231,41.5,83,200,31
+diabetes_xgboost_counterfactual_report.csv,Unknown,Unknown,231,44.11764705882353,90,204,27
+heart_decision_tree_counterfactual_report.csv,Unknown,Unknown,308,46.3963963963964,103,222,86
+heart_logistic_regression_counterfactual_report.csv,Unknown,Unknown,308,46.55172413793103,108,232,76
+heart_mlp_counterfactual_report.csv,Unknown,Unknown,308,51.293103448275865,119,232,76
+heart_random_forest_counterfactual_report.csv,Unknown,Unknown,308,42.68292682926829,105,246,62
+heart_xgboost_counterfactual_report.csv,Unknown,Unknown,308,41.44144144144144,92,222,86

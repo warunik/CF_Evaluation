@@ -1,0 +1,309 @@
+instance,original_class,expected_contrast,dataset,model,result,original_prediction,modified_prediction,original_confidence,modified_confidence,reason
+0,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.705,
+1,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.67,
+2,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.985,0.935,
+3,Heart Disease,No Heart Disease,heart,random_forest,✗,No Heart Disease,Heart Disease,0.99,0.53,
+4,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.95,0.95,
+5,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.895,
+6,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+7,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,0.79,
+8,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+9,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.995,0.975,
+10,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.995,
+11,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.815,
+12,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.88,
+13,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,1.0,
+14,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.905,0.905,
+15,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.995,
+16,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.675,
+17,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.99,
+18,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,0.955,
+19,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.985,0.915,
+20,Heart Disease,No Heart Disease,heart,random_forest,✗,No Heart Disease,Heart Disease,0.805,0.755,
+21,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.895,0.71,
+22,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.695,0.51,
+23,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.98,0.98,
+24,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,0.91,
+25,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.99,
+26,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.985,0.875,
+27,No Heart Disease,Heart Disease,heart,random_forest,✓,No Heart Disease,Heart Disease,0.95,0.7,
+28,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.82,0.82,
+29,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+30,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+31,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,1.0,
+32,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.765,
+33,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.97,0.86,
+34,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.95,
+35,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.92,0.92,
+36,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.955,0.905,
+37,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.89,0.835,
+38,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.93,0.77,
+39,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+40,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.955,0.605,
+41,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.97,0.75,
+42,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+43,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.87,
+44,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.95,
+45,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.995,
+46,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.985,0.985,
+47,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.875,
+48,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.98,0.98,
+49,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.645,
+50,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.92,
+51,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+52,Heart Disease,No Heart Disease,heart,random_forest,✓,Heart Disease,No Heart Disease,1.0,0.54,
+53,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.875,0.59,
+54,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.995,0.975,
+55,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.69,
+56,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.955,0.955,
+57,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.915,
+58,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.995,0.725,
+59,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+60,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,1.0,
+61,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+62,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.97,0.95,
+63,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.935,
+64,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+65,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.975,0.78,
+66,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,0.695,
+67,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.995,
+68,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,0.89,
+69,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.76,
+70,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,0.99,
+71,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.995,0.58,
+72,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.74,
+73,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.99,0.815,
+74,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.89,
+75,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+76,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.95,0.98,
+77,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+78,Heart Disease,No Heart Disease,heart,random_forest,✓,Heart Disease,No Heart Disease,0.82,0.61,
+79,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+80,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+81,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.945,0.715,
+82,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.92,0.54,
+83,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,0.91,
+84,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+85,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,0.965,
+86,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+87,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,1.0,
+88,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+89,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.885,
+90,Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.94,0.91,
+91,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.915,0.915,
+92,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.865,
+93,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.94,
+94,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.98,0.955,
+95,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.8,
+96,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.885,0.675,
+97,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,1.0,
+98,Heart Disease,No Heart Disease,heart,random_forest,✗,No Heart Disease,Heart Disease,0.705,0.595,
+99,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+100,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,0.995,
+101,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.915,0.78,
+102,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+103,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.99,0.815,
+104,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.865,
+105,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.96,0.96,
+106,Heart Disease,No Heart Disease,heart,random_forest,✗,No Heart Disease,Heart Disease,0.92,0.505,
+107,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.845,
+108,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.92,0.555,
+109,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.96,
+110,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.835,0.835,
+111,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.87,0.74,
+112,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.99,0.675,
+113,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,0.99,
+114,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.985,0.98,
+115,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.71,
+116,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.975,
+117,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.86,
+118,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,0.985,
+119,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+120,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.795,
+121,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.985,
+122,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,1.0,
+123,Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+124,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.985,
+125,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.99,0.99,
+126,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+127,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,0.615,
+128,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.98,0.98,
+129,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.875,0.91,
+130,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.99,
+131,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.995,
+132,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+133,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.95,
+134,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.77,
+135,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.81,
+136,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.91,
+137,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.755,0.735,
+138,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.985,
+139,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+140,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,0.985,
+141,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.92,0.745,
+142,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+143,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+144,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.965,0.77,
+145,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.985,0.945,
+146,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.99,0.95,
+147,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+148,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.915,0.905,
+149,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.98,0.98,
+150,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.97,0.955,
+151,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+152,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+153,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.97,0.64,
+154,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.76,
+155,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.935,
+156,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.815,0.79,
+157,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.97,0.97,
+158,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+159,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+160,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.985,0.535,
+161,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.95,0.93,
+162,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.985,0.805,
+163,No Heart Disease,Heart Disease,heart,random_forest,✓,No Heart Disease,Heart Disease,0.835,0.63,
+164,Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.74,
+165,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.955,
+166,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.995,
+167,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.935,0.905,
+168,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.96,0.89,
+169,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+170,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.94,
+171,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.98,
+172,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.68,
+173,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+174,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+175,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+176,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.99,
+177,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.985,0.935,
+178,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.835,0.835,
+179,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+180,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.995,0.855,
+181,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.965,0.605,
+182,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.94,
+183,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.99,0.88,
+184,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,0.725,
+185,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+186,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.985,0.62,
+187,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.675,
+188,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+189,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+190,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.77,
+191,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+192,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.945,0.815,
+193,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.91,0.585,
+194,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.99,0.985,
+195,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.59,
+196,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.82,0.63,
+197,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.985,0.975,
+198,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.97,0.935,
+199,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.95,0.905,
+200,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.915,0.915,
+201,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.995,
+202,No Heart Disease,Heart Disease,heart,random_forest,✗,Heart Disease,No Heart Disease,0.915,0.665,
+203,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.965,0.965,
+204,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.98,0.9,
+205,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.86,0.86,
+206,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.985,0.745,
+207,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.995,
+208,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,0.925,
+209,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.87,
+210,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.98,0.935,
+211,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+212,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.975,0.635,
+213,Heart Disease,No Heart Disease,heart,random_forest,✓,Heart Disease,No Heart Disease,0.96,0.585,
+214,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,0.74,
+215,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,1.0,
+216,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.98,0.835,
+217,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.995,
+218,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.96,
+219,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.995,0.92,
+220,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.955,0.695,
+221,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.99,0.65,
+222,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.965,0.775,
+223,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+224,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.96,0.92,
+225,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.99,0.8,
+226,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.945,0.945,
+227,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.975,0.97,
+228,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+229,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+230,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,0.805,
+231,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.99,
+232,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,1.0,
+233,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,0.95,
+234,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,1.0,
+235,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.965,0.555,
+236,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.945,0.785,
+237,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+238,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.995,0.685,
+239,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+240,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.97,0.97,
+241,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.995,0.735,
+242,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,0.845,
+243,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.805,0.525,
+244,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.99,0.675,
+245,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,1.0,
+246,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.97,0.97,
+247,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,0.99,
+248,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.87,
+249,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+250,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.96,0.99,
+251,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+252,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.925,
+253,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.995,0.875,
+254,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.735,
+255,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.9,
+256,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.98,0.96,
+257,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.755,0.52,
+258,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.925,1.0,
+259,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.945,0.915,
+260,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,1.0,
+261,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.99,0.865,
+262,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.99,
+263,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.94,
+264,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+265,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+266,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,1.0,
+267,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.98,0.98,
+268,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.94,0.845,
+269,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,1.0,
+270,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.99,0.99,
+271,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.905,0.905,
+272,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.945,
+273,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+274,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.985,0.865,
+275,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+276,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+277,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,1.0,
+278,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,1.0,0.995,
+279,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.94,0.73,
+280,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+281,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+282,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,0.97,
+283,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.965,0.84,
+284,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+285,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,0.925,
+286,No Heart Disease,Heart Disease,heart,random_forest,✗,Heart Disease,No Heart Disease,0.54,0.54,
+287,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.98,0.69,
+288,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.98,0.75,
+289,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+290,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+291,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,0.93,
+292,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.97,0.845,
+293,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+294,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+295,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.97,0.885,
+296,No Heart Disease,Heart Disease,heart,random_forest,✗,No Heart Disease,No Heart Disease,0.98,0.865,
+297,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,1.0,1.0,
+298,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.985,
+299,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,0.995,0.845,
+300,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.875,
+301,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.985,0.835,
+302,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,0.995,0.995,
+303,Heart Disease,No Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+304,Heart Disease,No Heart Disease,heart,random_forest,✗,Heart Disease,Heart Disease,1.0,1.0,
+305,Heart Disease,No Heart Disease,heart,random_forest,✓,No Heart Disease,No Heart Disease,0.98,0.95,
+306,No Heart Disease,Heart Disease,heart,random_forest,SKIPPED,,,,,No counterfactual rules provided
+307,No Heart Disease,Heart Disease,heart,random_forest,✓,Heart Disease,Heart Disease,1.0,0.94,

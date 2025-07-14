@@ -442,7 +442,7 @@ def generate_feasibility_report(results: List[Dict], dataset_name: str) -> str:
     
     return report
 
-def batch_analyze_datasets(data_dir: str, output_dir: str = "feasibility_reports"):
+def batch_analyze_datasets(base_dir: str = ".", output_dir: str = "feasibility_reports"):
     """Analyze feasibility for all datasets in a directory"""
     
     datasets = ['heart', 'diabetes', 'adult', 'bank', 'german']
@@ -463,14 +463,15 @@ def batch_analyze_datasets(data_dir: str, output_dir: str = "feasibility_reports
         for model in models:
             print(f"\n--- {model.upper()} Model ---")
             
-            # Construct file paths
-            cf_file = os.path.join(data_dir, f"{dataset}_{model}_counterfactual_report.csv")
-            val_file = os.path.join(data_dir, f"{dataset}_{model}_validation_summary.csv")
-            orig_file = os.path.join(data_dir, f"../Evaluation/data/{dataset}.csv")
+            # Updated file paths
+            cf_file = os.path.join(base_dir, "Evaluation", "results", f"{dataset}_{model}_counterfactual_report.csv")
+            val_file = os.path.join(base_dir, "validation_results", f"{dataset}_{model}_validation_summary.csv")
+            orig_file = os.path.join(base_dir, "Evaluation", "data", f"{dataset}.csv")
             
             # Check if files exist
             if not all(os.path.exists(f) for f in [cf_file, val_file, orig_file]):
-                print(f"Missing files for {dataset}_{model}, skipping...")
+                missing_files = [f for f in [cf_file, val_file, orig_file] if not os.path.exists(f)]
+                print(f"Missing files for {dataset}_{model}: {missing_files}")
                 continue
             
             try:
@@ -575,7 +576,7 @@ def generate_summary_report(overall_results: Dict) -> str:
 def main():
     """Main function for command-line usage"""
     parser = argparse.ArgumentParser(description="Analyze counterfactual feasibility")
-    parser.add_argument("--data-dir", required=True, help="Directory containing CSV files")
+    parser.add_argument("--base-dir", default=".", help="Base directory containing the project structure")
     parser.add_argument("--output-dir", default="feasibility_reports", help="Output directory for reports")
     parser.add_argument("--dataset", help="Specific dataset to analyze (optional)")
     parser.add_argument("--model", help="Specific model to analyze (optional)")
@@ -584,9 +585,9 @@ def main():
     
     if args.dataset and args.model:
         # Analyze specific dataset-model combination
-        cf_file = os.path.join(args.data_dir, f"{args.dataset}_{args.model}_counterfactual_report.csv")
-        val_file = os.path.join(args.data_dir, f"{args.dataset}_{args.model}_validation_summary.csv")
-        orig_file = os.path.join(args.data_dir, f"../Evaluation/data/{args.dataset}.csv")
+        cf_file = os.path.join(args.base_dir, "Evaluation", "results", f"{args.dataset}_{args.model}_counterfactual_report.csv")
+        val_file = os.path.join(args.base_dir, "validation_results", f"{args.dataset}_{args.model}_validation_summary.csv")
+        orig_file = os.path.join(args.base_dir, "Evaluation", "data", f"{args.dataset}.csv")
         
         results = load_and_analyze_feasibility(cf_file, val_file, orig_file, args.dataset)
         
@@ -595,7 +596,7 @@ def main():
             print(report)
     else:
         # Batch analyze all datasets
-        batch_analyze_datasets(args.data_dir, args.output_dir)
+        batch_analyze_datasets(args.base_dir, args.output_dir)
 
 if __name__ == "__main__":
     main()
