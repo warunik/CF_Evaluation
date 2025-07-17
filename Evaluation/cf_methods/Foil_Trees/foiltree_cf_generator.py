@@ -37,7 +37,7 @@ class CounterfactualExplanationGenerator:
     def load_preprocessed_data(self):
         """Load preprocessed data from saved files"""
         try:
-            data_dir = f"preprocessed_data/{self.dataset_name}"
+            data_dir = f"{self.dataset_name}"
             
             # Check if files exist
             required_files = ['metadata.json', 'X_train.csv', 'X_test.csv', 'y_train.csv', 'y_test.csv']
