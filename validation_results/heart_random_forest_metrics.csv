@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate,total_time_seconds,avg_time_per_sample,min_sample_time,max_sample_time,total_sample_time,overhead_time
+heart,random_forest,308,115,250,58,46.0,27.678664922714233,0.11009597873687745,0.10612273216247559,0.15372037887573242,27.52399468421936,0.15467023849487305

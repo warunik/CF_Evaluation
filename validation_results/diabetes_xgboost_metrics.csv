@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate,total_time_seconds,avg_time_per_sample,min_sample_time,max_sample_time,total_sample_time,overhead_time
+diabetes,xgboost,231,90,204,27,44.11764705882353,2.612189531326294,0.012104877069884655,0.008998632431030273,0.06278371810913086,2.4693949222564697,0.14279460906982422

@@ -1,0 +1,309 @@
+Instance_ID,Actual_Class,Predicted_Class,Contrast_Class,Counterfactual_Rules,Prediction_Confidence,Confidence,Fidelity,Time_Taken(s)
+0,No Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.991,0.5515772973299413,100.0%,68.8%,0.11
+1,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.534 and ca > 0.727,0.6337472881620737,100.0%,65.8%,0.09
+2,Heart Disease,Heart Disease,No Heart Disease,cp > 0.86 and thal <= 2.49 and oldpeak > -0.665,0.6160194337953965,100.0%,72.0%,0.09
+3,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.773 and exang <= 0.304,0.5937808621981653,100.0%,72.0%,0.09
+4,Heart Disease,Heart Disease,No Heart Disease,ca <= 1.462,0.6120543250639348,94.0%,66.0%,0.08
+5,Heart Disease,Heart Disease,No Heart Disease,slope > 1.284 and oldpeak <= 1.546,0.6091142023394842,100.0%,70.6%,0.09
+6,No Heart Disease,Heart Disease,No Heart Disease,thalach > 136.561 and age <= 50.645,0.5518335740778,100.0%,62.6%,0.02
+7,Heart Disease,Heart Disease,No Heart Disease,cp > 1.136,0.5552050112383545,100.0%,78.4%,0.10
+8,No Heart Disease,Heart Disease,No Heart Disease,cp > 0.73 and fbs <= 0.087,0.6111853949495897,100.0%,60.8%,0.09
+9,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 0.02 and thal <= 2.594,0.5673057657458527,100.0%,72.8%,0.12
+10,Heart Disease,Heart Disease,No Heart Disease,thalach > 148.088 and age > 43.819,0.5533337297272124,100.0%,72.8%,0.10
+11,No Heart Disease,Heart Disease,No Heart Disease,fbs > -0.015 and thalach > 124.94,0.6120543250639348,100.0%,57.4%,0.12
+12,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.089 and slope <= 1.068,0.5818730124360559,100.0%,73.6%,0.12
+13,Heart Disease,Heart Disease,No Heart Disease,cp > 0.245 and oldpeak <= 0.623,0.5716169671100193,100.0%,68.0%,0.11
+14,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.027,0.5504326402316291,100.0%,72.6%,0.11
+15,No Heart Disease,No Heart Disease,Heart Disease,ca > 1.479,0.6337472881620737,100.0%,54.8%,0.09
+16,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5504761425294794,100.0%,72.8%,0.11
+17,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5085411656324768,100.0%,69.6%,0.10
+18,Heart Disease,Heart Disease,No Heart Disease,cp > 1.532 and thal > 1.958,0.5890692084290503,100.0%,72.6%,0.10
+19,No Heart Disease,No Heart Disease,Heart Disease,chol <= 289.119 and fbs <= 0.105,0.5701555762739454,100.0%,72.4%,0.10
+20,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.075 and exang <= 0.289,0.5478679671254186,100.0%,73.0%,0.09
+21,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5527413392689999,100.0%,68.8%,0.10
+22,Heart Disease,Heart Disease,No Heart Disease,ca <= 1.309 and thalach <= 168.877,0.5969301873626198,100.0%,72.0%,0.09
+23,Heart Disease,Heart Disease,No Heart Disease,cp > 0.751 and oldpeak <= 1.158 and ca <= 0.207,0.5549441370805615,100.0%,70.0%,0.09
+24,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5998650427038374,0.0%,59.6%,0.08
+25,No Heart Disease,No Heart Disease,Heart Disease,thal > 1.919,0.6135108896490411,100.0%,71.8%,0.08
+26,Heart Disease,Heart Disease,No Heart Disease,thalach > 149.909 and cp > 1.432,0.5796730437488051,100.0%,72.8%,0.09
+27,No Heart Disease,No Heart Disease,Heart Disease,ca > 0.766,0.5478916704667995,100.0%,68.2%,0.10
+28,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.772,0.5385780180376637,95.0%,68.2%,0.10
+29,No Heart Disease,No Heart Disease,Heart Disease,age > 47.806 and oldpeak > 0.847,0.5854250732480553,100.0%,61.2%,0.08
+30,No Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.048 and exang <= 0.461,0.5611802901420526,100.0%,69.4%,0.09
+31,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.715 and fbs > -0.304 and restecg <= 0.657,0.5023305475291425,100.0%,73.2%,0.10
+32,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.79,0.5791554972914996,100.0%,71.4%,0.11
+33,Heart Disease,Heart Disease,No Heart Disease,N/A,0.6413980006357922,0.0%,58.0%,0.09
+34,Heart Disease,Heart Disease,No Heart Disease,slope > 1.806 and sex > 0.791 and thal <= 3.054,0.6385067557880101,100.0%,61.0%,0.09
+35,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5382709587296722,100.0%,68.0%,0.09
+36,No Heart Disease,No Heart Disease,Heart Disease,thal > 1.802 and oldpeak > 1.586,0.6146537978755969,100.0%,51.2%,0.08
+37,Heart Disease,Heart Disease,No Heart Disease,restecg <= 0.412 and cp > 0.251,0.6248840561296622,100.0%,65.2%,0.08
+38,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.045,0.5635162609872443,100.0%,71.0%,0.08
+39,No Heart Disease,No Heart Disease,Heart Disease,thalach <= 131.603 and chol <= 285.964 and oldpeak > 0.435,0.5285147144039506,100.0%,72.4%,0.09
+40,Heart Disease,Heart Disease,No Heart Disease,thal <= 2.477 and exang <= 0.895 and sex <= 0.504,0.5703833149539016,100.0%,73.2%,0.09
+41,Heart Disease,Heart Disease,No Heart Disease,fbs > -0.334,0.6385067557880101,100.0%,61.0%,0.08
+42,No Heart Disease,Heart Disease,No Heart Disease,thal <= 2.607 and age <= 57.233,0.5746511490549147,100.0%,67.8%,0.08
+43,No Heart Disease,No Heart Disease,Heart Disease,ca > 0.587 and fbs <= 0.137,0.5385780180376637,100.0%,72.6%,0.09
+44,Heart Disease,Heart Disease,No Heart Disease,ca <= 1.048,0.5552050112383545,100.0%,67.2%,0.09
+45,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5550283934281972,100.0%,69.2%,0.10
+46,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5166669695511246,100.0%,72.2%,0.09
+47,No Heart Disease,No Heart Disease,Heart Disease,exang > 0.329 and thal > 2.457,0.6063189449278922,100.0%,70.4%,0.09
+48,Heart Disease,Heart Disease,No Heart Disease,sex > -0.19,0.5803682153779509,100.0%,71.0%,0.09
+49,No Heart Disease,Heart Disease,No Heart Disease,thalach > 126.6,0.5438657124167511,100.0%,65.8%,0.09
+50,Heart Disease,Heart Disease,No Heart Disease,cp > 0.997 and oldpeak <= 1.512,0.5890249731613945,100.0%,75.0%,0.10
+51,Heart Disease,No Heart Disease,Heart Disease,ca > -0.572,0.5535449274411132,100.0%,74.8%,0.10
+52,Heart Disease,Heart Disease,No Heart Disease,thalach > 153.929 and cp > 0.238,0.6039544040960698,100.0%,72.6%,0.09
+53,Heart Disease,Heart Disease,No Heart Disease,age <= 56.729 and cp > -0.146,0.5661825052700541,100.0%,72.0%,0.10
+54,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.698 and cp > 0.636,0.5885166577545521,100.0%,71.8%,0.10
+55,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.391 and ca > 1.41,0.53477203191083,100.0%,73.4%,0.09
+56,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 1.52 and thal > 2.586,0.5316592864837311,100.0%,69.4%,0.14
+57,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5971003852360004,0.0%,62.2%,0.08
+58,Heart Disease,Heart Disease,No Heart Disease,thalach > 139.759 and trestbps <= 105.933 and sex > 0.999,0.5029982519328422,100.0%,68.8%,0.11
+59,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5665813392689988,100.0%,68.2%,0.09
+60,Heart Disease,Heart Disease,No Heart Disease,N/A,0.6058525400590433,0.0%,64.0%,0.08
+61,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.033,0.5698432402365071,100.0%,69.0%,0.11
+62,Heart Disease,Heart Disease,No Heart Disease,thalach > 137.831 and trestbps <= 146.734,0.5856850826181136,100.0%,64.4%,0.08
+63,Heart Disease,Heart Disease,No Heart Disease,sex > 0.455 and cp > 0.891,0.588853712906824,100.0%,73.0%,0.09
+64,Heart Disease,Heart Disease,No Heart Disease,cp > 1.527,0.5302753721019698,100.0%,71.6%,0.10
+65,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6355941417703241,0.0%,42.4%,0.07
+66,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.332 and oldpeak <= 2.064,0.6091142023394842,100.0%,70.6%,0.09
+67,No Heart Disease,Heart Disease,No Heart Disease,N/A,0.568514610260851,100.0%,71.2%,0.08
+68,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6146537978755969,100.0%,65.2%,0.09
+69,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.717,0.5550283934281972,100.0%,71.0%,0.10
+70,Heart Disease,Heart Disease,No Heart Disease,N/A,0.626998298395999,0.0%,60.0%,0.07
+71,Heart Disease,Heart Disease,No Heart Disease,thal <= 3.058,0.6287975634207806,100.0%,62.8%,0.09
+72,No Heart Disease,No Heart Disease,Heart Disease,age <= 53.822 and oldpeak > 0.21,0.5827658487337264,100.0%,70.4%,0.10
+73,Heart Disease,Heart Disease,No Heart Disease,cp > -0.429,0.5715364606173408,100.0%,58.6%,0.08
+74,No Heart Disease,No Heart Disease,Heart Disease,exang > 0.427 and cp <= 0.219,0.6355941417703241,100.0%,69.6%,0.09
+75,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 0.505 and cp > 1.012,0.5825949373310902,100.0%,72.4%,0.10
+76,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.385 and oldpeak <= 1.721,0.5521654740042856,100.0%,71.8%,0.09
+77,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.192,0.5102787508748803,100.0%,72.8%,0.09
+78,Heart Disease,Heart Disease,No Heart Disease,thalach > 142.471,0.6130336976868203,100.0%,69.2%,0.08
+79,No Heart Disease,No Heart Disease,Heart Disease,ca > 1.001,0.6020788240644341,100.0%,68.4%,0.10
+80,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5938525830528812,100.0%,63.8%,0.08
+81,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5702470397613559,87.1%,66.4%,0.08
+82,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 0.924 and exang <= 0.847,0.5890692084290503,100.0%,71.2%,0.08
+83,Heart Disease,Heart Disease,No Heart Disease,thalach > 142.115 and ca <= 1.646 and thalach > 136.93,0.5845619146176863,100.0%,68.4%,0.09
+84,No Heart Disease,Heart Disease,No Heart Disease,ca <= 1.256,0.5276824962080042,100.0%,67.8%,0.09
+85,No Heart Disease,Heart Disease,No Heart Disease,thalach > 137.642,0.5515772973299413,100.0%,66.2%,0.09
+86,Heart Disease,No Heart Disease,Heart Disease,N/A,0.56299390735145,100.0%,62.6%,0.08
+87,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 0.613,0.5535100033402238,100.0%,72.8%,0.09
+88,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5522731836594645,100.0%,68.2%,0.09
+89,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 2.527 and cp <= 1.657,0.6114548674417037,100.0%,56.6%,0.09
+90,Heart Disease,No Heart Disease,Heart Disease,oldpeak <= 1.509,0.5099614506763883,100.0%,72.4%,0.10
+91,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.257 and restecg > 0.846,0.5212089368472207,100.0%,73.4%,0.11
+92,No Heart Disease,No Heart Disease,Heart Disease,exang > 0.419,0.606365710331074,100.0%,65.2%,0.09
+93,No Heart Disease,Heart Disease,No Heart Disease,N/A,0.5358602876707215,100.0%,75.0%,0.10
+94,Heart Disease,Heart Disease,No Heart Disease,thal <= 2.279 and thalach > 143.87,0.5398439025264856,100.0%,74.2%,0.09
+95,Heart Disease,Heart Disease,No Heart Disease,thalach > 134.123,0.6035632906549591,100.0%,71.8%,0.09
+96,No Heart Disease,Heart Disease,No Heart Disease,cp > 0.754 and slope <= 1.011 and thalach > 158.872,0.5461026836839231,100.0%,75.0%,0.09
+97,Heart Disease,Heart Disease,No Heart Disease,thal <= 2.74 and restecg <= 0.797 and slope <= 1.334,0.6102574558759495,100.0%,75.8%,0.09
+98,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.661 and ca <= 0.364,0.6238571269326264,100.0%,58.8%,0.07
+99,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5003142382942228,100.0%,69.4%,0.10
+100,Heart Disease,Heart Disease,No Heart Disease,thalach > 134.571 and ca <= 0.588,0.6059536079050373,100.0%,65.6%,0.09
+101,No Heart Disease,No Heart Disease,Heart Disease,slope <= 2.08 and thalach <= 145.811,0.6575605712813519,100.0%,44.4%,0.08
+102,Heart Disease,No Heart Disease,Heart Disease,cp <= 1.101,0.512991978180782,100.0%,75.4%,0.10
+103,No Heart Disease,No Heart Disease,Heart Disease,ca > 1.424,0.5320103180630567,100.0%,72.4%,0.09
+104,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5003106600535789,100.0%,69.2%,0.09
+105,No Heart Disease,No Heart Disease,Heart Disease,exang > 0.455,0.6027304391883476,100.0%,65.6%,0.09
+106,Heart Disease,Heart Disease,No Heart Disease,cp > 1.322 and thalach > 123.597,0.5829657013475282,100.0%,67.2%,0.10
+107,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6689357984150415,0.0%,38.8%,0.08
+108,No Heart Disease,No Heart Disease,Heart Disease,age > 49.349,0.570919440127343,100.0%,67.8%,0.09
+109,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.987 and exang > 0.444,0.5316592864837311,100.0%,69.0%,0.09
+110,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.372 and oldpeak <= 1.104,0.5703833149539016,100.0%,68.6%,0.11
+111,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6095149045927938,0.0%,48.6%,0.09
+112,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.866 and exang > -0.019,0.5421391060253179,100.0%,74.6%,0.11
+113,Heart Disease,Heart Disease,No Heart Disease,sex <= 0.52 and trestbps <= 147.499 and chol > 215.518,0.5953624337042582,100.0%,68.0%,0.08
+114,Heart Disease,Heart Disease,No Heart Disease,N/A,0.7059578106522404,0.0%,58.8%,0.08
+115,No Heart Disease,Heart Disease,No Heart Disease,thal <= 1.659,0.5545103846650796,100.0%,68.4%,0.09
+116,No Heart Disease,No Heart Disease,Heart Disease,thalach <= 150.803 and ca > -0.124,0.5818730124360559,100.0%,72.6%,0.10
+117,No Heart Disease,No Heart Disease,Heart Disease,sex > 0.931 and slope > 0.902,0.5478916704667995,100.0%,67.4%,0.09
+118,Heart Disease,Heart Disease,No Heart Disease,thalach > 120.891,0.6060321052398953,100.0%,73.4%,0.09
+119,Heart Disease,Heart Disease,No Heart Disease,ca <= 1.399,0.6297733276807748,100.0%,70.4%,0.08
+120,No Heart Disease,No Heart Disease,Heart Disease,thalach <= 162.31,0.5845610608278109,100.0%,72.4%,0.09
+121,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.028 and fbs <= 0.326,0.5564569522986725,100.0%,71.0%,0.10
+122,No Heart Disease,Heart Disease,No Heart Disease,exang <= 0.414 and thal <= 2.288 and oldpeak > 1.307,0.5590913531493115,100.0%,72.4%,0.10
+123,Heart Disease,No Heart Disease,Heart Disease,N/A,0.5099614506763883,100.0%,72.4%,0.09
+124,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.225 and cp > -0.403 and sex > 0.687 and age > 52.537,0.6169350403836967,100.0%,60.2%,0.08
+125,No Heart Disease,Heart Disease,No Heart Disease,thalach > 137.868 and exang <= 0.255,0.5314358669901015,100.0%,73.8%,0.10
+126,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 2.158,0.5398439025264856,100.0%,71.8%,0.10
+127,No Heart Disease,No Heart Disease,Heart Disease,ca > 1.652 and thalach <= 135.152,0.607845362373857,100.0%,68.4%,0.10
+128,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.244 and thalach > 149.039,0.5753705011486254,100.0%,71.6%,0.09
+129,Heart Disease,Heart Disease,No Heart Disease,ca <= 1.09 and oldpeak <= 1.115,0.5978890543489517,100.0%,69.8%,0.09
+130,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.633,0.5513342416171751,100.0%,68.4%,0.09
+131,Heart Disease,Heart Disease,No Heart Disease,cp > 1.812 and restecg > -0.02,0.5521654740042856,100.0%,73.6%,0.09
+132,No Heart Disease,Heart Disease,No Heart Disease,cp > 0.374 and ca <= 0.356,0.6120543250639348,100.0%,73.0%,0.09
+133,Heart Disease,Heart Disease,No Heart Disease,thalach > 149.956 and thal <= 2.505,0.6059536079050373,100.0%,65.6%,0.09
+134,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 0.805 and thal <= 2.713,0.6229211291310682,100.0%,69.6%,0.09
+135,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5701555762739454,100.0%,69.6%,0.09
+136,Heart Disease,No Heart Disease,Heart Disease,oldpeak > -0.51,0.5368020450877378,100.0%,71.8%,0.09
+137,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5697209629093112,100.0%,71.4%,0.08
+138,Heart Disease,Heart Disease,No Heart Disease,thalach > 150.148 and cp > 0.965,0.5522731836594645,100.0%,71.6%,0.08
+139,No Heart Disease,Heart Disease,No Heart Disease,cp > 1.685 and oldpeak <= 1.754,0.6052644891993314,100.0%,69.6%,0.09
+140,Heart Disease,Heart Disease,No Heart Disease,slope > 1.698,0.5552050112383545,100.0%,67.6%,0.08
+141,No Heart Disease,No Heart Disease,Heart Disease,fbs > -0.092,0.5101607862161928,100.0%,69.2%,0.09
+142,Heart Disease,Heart Disease,No Heart Disease,trestbps > 159.095,0.5102787508748803,100.0%,73.6%,0.08
+143,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.768,0.5791395189373713,100.0%,60.6%,0.07
+144,Heart Disease,Heart Disease,No Heart Disease,cp > 0.714,0.5885166577545521,100.0%,68.8%,0.09
+145,No Heart Disease,No Heart Disease,Heart Disease,restecg > -0.495,0.5736996959284951,100.0%,62.8%,0.09
+146,No Heart Disease,No Heart Disease,Heart Disease,ca > 1.218 and cp <= 0.825,0.6337472881620737,100.0%,69.0%,0.09
+147,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.288,0.5302753721019698,100.0%,76.6%,0.10
+148,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.268 and oldpeak > -0.409,0.5635552250573177,100.0%,68.8%,0.09
+149,No Heart Disease,No Heart Disease,Heart Disease,ca > 0.504,0.5431661427416572,100.0%,70.6%,0.09
+150,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 0.898 and thalach <= 148.827,0.6095149045927938,100.0%,60.4%,0.08
+151,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5763041502180207,0.0%,61.4%,0.07
+152,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.344,0.5011876792029695,100.0%,71.6%,0.10
+153,No Heart Disease,Heart Disease,No Heart Disease,thalach > 150.032 and oldpeak > 0.192 and slope <= 2.232,0.5438657124167511,100.0%,67.4%,0.08
+154,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6323588045296056,0.0%,40.8%,0.07
+155,No Heart Disease,Heart Disease,No Heart Disease,slope > 0.619 and thal <= 1.351,0.5545103846650796,100.0%,68.4%,0.08
+156,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.785 and ca <= 0.398,0.5897390498075564,100.0%,74.2%,0.08
+157,No Heart Disease,Heart Disease,No Heart Disease,exang <= 0.353 and cp > -0.038,0.5363280072145555,100.0%,76.4%,0.09
+158,No Heart Disease,Heart Disease,No Heart Disease,exang <= 0.837 and sex > 0.904,0.6120543250639348,100.0%,71.0%,0.09
+159,No Heart Disease,Heart Disease,No Heart Disease,N/A,0.6114514727224104,0.0%,56.8%,0.08
+160,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5634248276093594,100.0%,74.8%,0.09
+161,Heart Disease,Heart Disease,No Heart Disease,cp > 0.621 and sex <= 0.233,0.5787354252610194,100.0%,71.2%,0.08
+162,Heart Disease,Heart Disease,No Heart Disease,thal <= 2.164 and exang <= 0.192,0.6385067557880101,99.6%,64.8%,0.07
+163,No Heart Disease,No Heart Disease,Heart Disease,exang > 0.395,0.5166669695511246,100.0%,76.2%,0.10
+164,Heart Disease,No Heart Disease,Heart Disease,N/A,0.5099614506763883,100.0%,70.2%,0.09
+165,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > -0.155 and cp <= 0.266,0.6135108896490411,100.0%,68.6%,0.09
+166,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.538494014660474,100.0%,75.8%,0.10
+167,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.356 and exang > 0.9 and cp <= 1.27,0.603435074650479,100.0%,63.6%,0.09
+168,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5406294177938061,100.0%,69.0%,0.09
+169,Heart Disease,Heart Disease,No Heart Disease,cp > 1.031 and exang <= 0.157,0.5356850778223089,100.0%,66.0%,0.08
+170,Heart Disease,Heart Disease,No Heart Disease,thal <= 2.389 and thalach > 174.903 and cp <= 0.843 and thal <= 2.481,0.5436306296710043,100.0%,72.2%,0.09
+171,No Heart Disease,No Heart Disease,Heart Disease,ca > 1.726,0.5189120288899927,100.0%,69.8%,0.09
+172,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5462873649647898,100.0%,71.2%,0.09
+173,No Heart Disease,No Heart Disease,Heart Disease,slope <= 1.165,0.635261716758807,100.0%,62.6%,0.07
+174,Heart Disease,Heart Disease,No Heart Disease,cp > 0.153,0.5533337297272124,100.0%,72.6%,0.10
+175,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.748,0.5212089368472207,100.0%,74.0%,0.10
+176,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.377 and oldpeak > 1.162,0.5892532041980769,100.0%,74.4%,0.08
+177,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 1.564,0.5115818021499918,100.0%,72.0%,0.09
+178,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.595,0.53477203191083,100.0%,65.0%,0.08
+179,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 0.308,0.5826293385076768,100.0%,42.2%,0.08
+180,Heart Disease,No Heart Disease,Heart Disease,oldpeak > -0.271,0.5048907788541003,100.0%,68.0%,0.09
+181,No Heart Disease,No Heart Disease,Heart Disease,exang <= 0.299 and fbs <= 0.352,0.5115818021499918,100.0%,67.6%,0.09
+182,No Heart Disease,No Heart Disease,Heart Disease,thalach <= 119.221 and ca <= 1.9,0.5892532041980769,100.0%,72.4%,0.09
+183,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 0.585,0.6374238141586782,100.0%,58.0%,0.08
+184,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.169,0.5818730124360559,100.0%,71.2%,0.10
+185,No Heart Disease,No Heart Disease,Heart Disease,exang <= 0.054,0.5715136783376328,100.0%,64.2%,0.08
+186,No Heart Disease,Heart Disease,No Heart Disease,N/A,0.5104403464139033,100.0%,66.0%,0.08
+187,No Heart Disease,No Heart Disease,Heart Disease,cp <= 1.08 and ca > -0.826,0.5532383167275587,100.0%,75.0%,0.09
+188,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6418507735726112,0.0%,38.4%,0.07
+189,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6575605712813519,0.0%,39.8%,0.07
+190,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5406294177938061,100.0%,63.0%,0.08
+191,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 1.401,0.6229255918279132,100.0%,67.8%,0.09
+192,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 0.003 and exang <= 0.533,0.5662787485270636,100.0%,71.2%,0.09
+193,Heart Disease,Heart Disease,No Heart Disease,cp > -0.141 and ca > -0.175 and trestbps > 108.309,0.5959234015963695,100.0%,67.8%,0.08
+194,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6409337803873514,0.0%,37.6%,0.07
+195,Heart Disease,Heart Disease,No Heart Disease,N/A,0.6466879367907276,0.0%,61.4%,0.07
+196,No Heart Disease,No Heart Disease,Heart Disease,exang > 0.282 and trestbps <= 140.832,0.6099426295100374,100.0%,66.4%,0.08
+197,Heart Disease,Heart Disease,No Heart Disease,thalach > 131.381,0.5521654740042856,100.0%,72.0%,0.09
+198,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5290617863897107,100.0%,67.4%,0.12
+199,No Heart Disease,No Heart Disease,Heart Disease,chol <= 257.429 and trestbps <= 136.774,0.6132422024546837,100.0%,67.4%,0.09
+200,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6095149045927938,0.0%,41.4%,0.09
+201,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.512 and cp > 1.59,0.6297733276807748,100.0%,68.6%,0.09
+202,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5101607862161928,100.0%,69.8%,0.09
+203,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6027304391883476,100.0%,63.0%,0.09
+204,No Heart Disease,No Heart Disease,Heart Disease,exang > 0.313 and sex > 0.8 and cp <= 0.788,0.6418507735726112,100.0%,57.6%,0.09
+205,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.472 and age > 52.193,0.5897390498075564,100.0%,72.4%,0.11
+206,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5670716256487445,100.0%,61.6%,0.10
+207,No Heart Disease,No Heart Disease,Heart Disease,chol <= 332.163 and age <= 56.386,0.5629495917249503,100.0%,70.2%,0.09
+208,Heart Disease,Heart Disease,No Heart Disease,restecg > -0.367 and chol > 238.259,0.5628114248426129,100.0%,71.6%,0.10
+209,No Heart Disease,Heart Disease,No Heart Disease,cp > 1.077,0.5663279362818116,100.0%,73.4%,0.11
+210,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.576 and thal <= 2.066,0.6001153948739206,100.0%,70.2%,0.11
+211,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.036 and thalach > 140.26,0.5763041502180207,100.0%,67.4%,0.08
+212,Heart Disease,Heart Disease,No Heart Disease,N/A,0.626998298395999,0.0%,61.2%,0.08
+213,Heart Disease,Heart Disease,No Heart Disease,N/A,0.626842886062783,0.0%,54.8%,0.08
+214,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5961325228463599,0.0%,41.0%,0.08
+215,Heart Disease,Heart Disease,No Heart Disease,N/A,0.6466879367907276,0.0%,55.4%,0.08
+216,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5825949373310902,100.0%,75.8%,0.08
+217,No Heart Disease,No Heart Disease,Heart Disease,thal > 2.393,0.6063189449278922,100.0%,66.0%,0.09
+218,No Heart Disease,Heart Disease,No Heart Disease,restecg > 0.687 and trestbps <= 133.244,0.5436008545617328,100.0%,74.8%,0.09
+219,Heart Disease,Heart Disease,No Heart Disease,ca > 0.468 and exang <= 0.279 and sex <= 0.166,0.5425629407240157,100.0%,68.2%,0.09
+220,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.967,0.5312392591341886,100.0%,69.8%,0.10
+221,Heart Disease,Heart Disease,No Heart Disease,sex <= 0.24 and cp > 0.161,0.5686907855133285,100.0%,73.4%,0.09
+222,Heart Disease,Heart Disease,No Heart Disease,cp > 0.815 and chol <= 243.478,0.5599679625657276,100.0%,72.0%,0.09
+223,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.364 and oldpeak <= 0.277,0.5923463055651323,100.0%,68.8%,0.09
+224,No Heart Disease,Heart Disease,No Heart Disease,thalach > 125.253,0.5438657124167511,100.0%,71.4%,0.10
+225,No Heart Disease,No Heart Disease,Heart Disease,thalach <= 145.057,0.5827658487337264,100.0%,66.8%,0.09
+226,No Heart Disease,Heart Disease,No Heart Disease,cp > 0.652 and exang > -0.127 and oldpeak > 0.713,0.517525095771714,100.0%,70.6%,0.11
+227,Heart Disease,Heart Disease,No Heart Disease,thalach > 158.955 and thal <= 2.251,0.5081391440518996,100.0%,74.2%,0.10
+228,No Heart Disease,Heart Disease,No Heart Disease,trestbps <= 139.411,0.5611802901420526,100.0%,73.4%,0.09
+229,No Heart Disease,Heart Disease,No Heart Disease,exang <= 0.19,0.5518335740778,100.0%,71.6%,0.10
+230,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.12,0.6079492708985759,100.0%,69.8%,0.10
+231,Heart Disease,Heart Disease,No Heart Disease,age <= 50.897 and trestbps > 127.147,0.5824446681439256,100.0%,65.8%,0.08
+232,Heart Disease,Heart Disease,No Heart Disease,thalach > 137.888,0.5735837688412176,100.0%,66.4%,0.09
+233,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.895 and age > 50.0,0.606365710331074,100.0%,60.6%,0.09
+234,Heart Disease,Heart Disease,No Heart Disease,cp > 0.075,0.5398439025264856,100.0%,67.2%,0.08
+235,No Heart Disease,No Heart Disease,Heart Disease,ca > 0.007 and exang > 0.569,0.6132422024546837,100.0%,56.6%,0.09
+236,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.708,0.5469864373294586,100.0%,71.0%,0.10
+237,Heart Disease,No Heart Disease,Heart Disease,chol > 283.402 and thal > 1.704,0.5582676115100939,100.0%,67.8%,0.09
+238,Heart Disease,Heart Disease,No Heart Disease,N/A,0.6385067557880101,0.0%,58.6%,0.08
+239,Heart Disease,Heart Disease,No Heart Disease,thal > 1.717,0.5081881120438904,100.0%,76.2%,0.10
+240,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6143479099721221,100.0%,55.8%,0.08
+241,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 0.012,0.5736996959284951,100.0%,69.6%,0.09
+242,Heart Disease,Heart Disease,No Heart Disease,cp > 0.379,0.6100661555531639,100.0%,72.4%,0.10
+243,No Heart Disease,No Heart Disease,Heart Disease,exang > -0.088,0.5003106600535789,100.0%,71.4%,0.09
+244,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.372,0.5003106600535789,100.0%,66.8%,0.10
+245,Heart Disease,Heart Disease,No Heart Disease,N/A,0.626842886062783,0.0%,61.0%,0.07
+246,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5285147144039506,100.0%,71.2%,0.10
+247,Heart Disease,Heart Disease,No Heart Disease,age <= 64.972,0.5599679625657276,100.0%,73.2%,0.11
+248,No Heart Disease,No Heart Disease,Heart Disease,chol <= 193.407,0.5161630467063953,100.0%,72.0%,0.09
+249,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 1.634 and thalach <= 146.41,0.66784444997307,100.0%,66.0%,0.08
+250,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.328 and ca <= 0.297 and sex <= 0.446,0.5673057657458527,100.0%,75.0%,0.10
+251,No Heart Disease,Heart Disease,No Heart Disease,N/A,0.5104403464139033,100.0%,68.6%,0.10
+252,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5444829942824312,100.0%,70.2%,0.09
+253,Heart Disease,No Heart Disease,Heart Disease,N/A,0.5048907788541003,100.0%,71.0%,0.10
+254,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 1.796,0.5955623256071805,100.0%,67.4%,0.08
+255,Heart Disease,Heart Disease,No Heart Disease,cp > 1.115 and chol > 236.585 and exang <= 0.48,0.5635872902304603,92.7%,68.4%,0.08
+256,No Heart Disease,Heart Disease,No Heart Disease,N/A,0.5385834859057095,100.0%,70.6%,0.09
+257,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.865 and slope > 1.742,0.5972027634143127,100.0%,73.0%,0.10
+258,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5715136783376328,100.0%,62.0%,0.07
+259,Heart Disease,Heart Disease,No Heart Disease,cp > 1.47,0.5534311486555524,100.0%,63.0%,0.08
+260,Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 1.627 and cp > 1.639,0.5763041502180207,100.0%,72.8%,0.08
+261,No Heart Disease,No Heart Disease,Heart Disease,trestbps <= 115.227 and cp <= 1.709,0.618596573713922,100.0%,62.2%,0.09
+262,Heart Disease,Heart Disease,No Heart Disease,N/A,0.6400068254480072,0.0%,59.6%,0.07
+263,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.6533937386178796,0.0%,38.4%,0.08
+264,No Heart Disease,No Heart Disease,Heart Disease,ca > 1.37 and thalach <= 152.513 and thal > 2.693,0.6473404842901476,100.0%,53.6%,0.08
+265,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5188135893509707,100.0%,71.0%,0.09
+266,Heart Disease,Heart Disease,No Heart Disease,N/A,0.6158953169325245,0.0%,60.4%,0.09
+267,No Heart Disease,No Heart Disease,Heart Disease,exang > -0.041 and restecg <= 0.246,0.6473404842901476,100.0%,59.0%,0.08
+268,Heart Disease,Heart Disease,No Heart Disease,cp > -0.628,0.5702470397613559,100.0%,66.8%,0.08
+269,Heart Disease,No Heart Disease,Heart Disease,thalach <= 148.642,0.5720926106798594,100.0%,65.2%,0.08
+270,Heart Disease,Heart Disease,No Heart Disease,cp > -0.288 and thalach > 171.542,0.6218147684913982,100.0%,67.8%,0.08
+271,No Heart Disease,Heart Disease,No Heart Disease,N/A,0.5264254133319737,100.0%,70.2%,0.10
+272,No Heart Disease,No Heart Disease,Heart Disease,thal <= 1.594 and thalach <= 141.412 and cp <= 0.09 and restecg <= 0.216,0.5312392591341886,100.0%,69.4%,0.10
+273,No Heart Disease,Heart Disease,No Heart Disease,oldpeak <= 0.88 and cp > 1.776 and thalach <= 149.116 and ca <= 2.142 and thal <= 1.664,0.5545103846650796,100.0%,68.8%,0.09
+274,No Heart Disease,No Heart Disease,Heart Disease,ca > 1.044,0.5978313502849353,100.0%,65.4%,0.08
+275,Heart Disease,Heart Disease,No Heart Disease,cp > 0.146,0.5152086579580052,100.0%,72.0%,0.09
+276,Heart Disease,Heart Disease,No Heart Disease,N/A,0.5824446681439256,100.0%,61.4%,0.07
+277,No Heart Disease,Heart Disease,No Heart Disease,slope > 0.25,0.5264254133319737,100.0%,76.2%,0.11
+278,No Heart Disease,No Heart Disease,Heart Disease,sex > 0.881 and restecg <= 1.208 and chol <= 240.031,0.6316495196911729,100.0%,61.4%,0.09
+279,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5478916704667995,100.0%,70.2%,0.09
+280,Heart Disease,Heart Disease,No Heart Disease,N/A,0.7059578106522404,0.0%,57.8%,0.07
+281,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.194,0.6035632906549591,100.0%,67.8%,0.08
+282,Heart Disease,Heart Disease,No Heart Disease,thalach > 148.149,0.6385067557880101,100.0%,68.2%,0.09
+283,No Heart Disease,No Heart Disease,Heart Disease,chol > 266.066 and restecg > 0.64 and exang > 0.638 and ca > -0.114,0.538494014660474,100.0%,75.4%,0.09
+284,Heart Disease,Heart Disease,No Heart Disease,restecg > 0.628 and sex > 0.253,0.5444958848019121,100.0%,73.4%,0.09
+285,No Heart Disease,No Heart Disease,Heart Disease,thal > 1.516,0.635261716758807,100.0%,65.4%,0.08
+286,No Heart Disease,No Heart Disease,Heart Disease,oldpeak > 2.287 and thalach <= 150.85,0.5927805380250504,100.0%,69.6%,0.08
+287,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.733 and cp > -0.15 and sex <= 0.084,0.5686907855133285,100.0%,75.8%,0.09
+288,No Heart Disease,Heart Disease,No Heart Disease,cp > 0.914 and fbs <= 0.189,0.5590913531493115,100.0%,69.4%,0.09
+289,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.714 and exang > -0.084 and restecg <= 0.768 and chol <= 235.072,0.5766610413994765,100.0%,70.2%,0.10
+290,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.916 and fbs > -0.079,0.6385067557880101,100.0%,68.2%,0.08
+291,Heart Disease,Heart Disease,No Heart Disease,exang <= 0.284 and cp > 1.094 and restecg <= 0.435,0.6298100057452147,100.0%,66.4%,0.08
+292,Heart Disease,No Heart Disease,Heart Disease,cp <= 1.607,0.512991978180782,100.0%,70.6%,0.09
+293,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.561 and thalach > 172.892,0.5634248276093594,100.0%,71.0%,0.09
+294,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5006152934909157,100.0%,63.8%,0.09
+295,No Heart Disease,No Heart Disease,Heart Disease,thalach <= 148.502 and age > 58.504,0.6617814356583173,100.0%,64.6%,0.08
+296,No Heart Disease,Heart Disease,No Heart Disease,N/A,0.5393702699838572,0.0%,68.2%,0.10
+297,Heart Disease,Heart Disease,No Heart Disease,trestbps > 149.668 and age <= 67.765,0.5963225081093898,100.0%,68.6%,0.08
+298,Heart Disease,Heart Disease,No Heart Disease,N/A,0.6317216732455154,0.0%,57.2%,0.08
+299,No Heart Disease,No Heart Disease,Heart Disease,cp <= 0.804 and ca > 0.467 and sex <= 0.077,0.5826293385076768,100.0%,70.8%,0.10
+300,Heart Disease,Heart Disease,No Heart Disease,thalach > 127.526 and fbs <= 0.096 and thal <= 1.871 and ca <= 0.808,0.5845619146176863,100.0%,68.2%,0.10
+301,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.672,0.5829657013475282,100.0%,75.8%,0.11
+302,Heart Disease,Heart Disease,No Heart Disease,fbs > -0.448,0.5258177116542654,100.0%,73.0%,0.11
+303,Heart Disease,No Heart Disease,Heart Disease,N/A,0.5535449274411132,0.0%,71.2%,0.10
+304,Heart Disease,Heart Disease,No Heart Disease,ca <= 0.885 and thalach > 156.104 and age > 51.769 and thalach > 142.384,0.5703833149539016,100.0%,69.0%,0.10
+305,Heart Disease,Heart Disease,No Heart Disease,cp > 0.256,0.5787354252610194,100.0%,67.8%,0.09
+306,No Heart Disease,No Heart Disease,Heart Disease,N/A,0.5494395496066533,0.0%,62.6%,0.09
+307,No Heart Disease,Heart Disease,No Heart Disease,ca <= 0.697,0.568514610260851,100.0%,68.0%,0.10

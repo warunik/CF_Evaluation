@@ -22,11 +22,11 @@ DATASETS = {
             "thal": "numeric"
         },
         "model_paths": {
-            "decision_tree": "Evaluation/saved_models/heart_Decision_Tree_tuned.pkl",
-            "logistic_regression": "Evaluation/saved_models/heart_Logistic_Regression_tuned.pkl",
-            "mlp": "Evaluation/saved_models/heart_MLP_tuned.pkl",
-            "random_forest": "Evaluation/saved_models/heart_Random_Forest_tuned.pkl",
-            "xgboost": "Evaluation/saved_models/heart_XGBoost_tuned.pkl"
+            "decision_tree": "Evaluation/saved_models/heart_Decision_Tree_ROBUST.pkl",
+            "logistic_regression": "Evaluation/saved_models/heart_Logistic_Regression_ROBUST.pkl",
+            "mlp": "Evaluation/saved_models/heart_MLP_ROBUST.pkl",
+            "random_forest": "Evaluation/saved_models/heart_Random_Forest_ROBUST.pkl",
+            "xgboost": "Evaluation/saved_models/heart_XGBoost_ROBUST.pkl"
         }
     },
     "diabetes": {
@@ -46,11 +46,11 @@ DATASETS = {
             "Age": "numeric"
         },
         "model_paths": {
-            "decision_tree": "Evaluation/saved_models/diabetes_Decision_Tree_tuned.pkl",
-            "logistic_regression": "Evaluation/saved_models/diabetes_Logistic_Regression_tuned.pkl",
-            "mlp": "Evaluation/saved_models/diabetes_MLP_tuned.pkl",
-            "random_forest": "Evaluation/saved_models/diabetes_Random_Forest_tuned.pkl",
-            "xgboost": "Evaluation/saved_models/diabetes_XGBoost_tuned.pkl"
+            "decision_tree": "Evaluation/saved_models/diabetes_Decision_Tree_ROBUST.pkl",
+            "logistic_regression": "Evaluation/saved_models/diabetes_Logistic_Regression_ROBUST.pkl",
+            "mlp": "Evaluation/saved_models/diabetes_MLP_ROBUST.pkl",
+            "random_forest": "Evaluation/saved_models/diabetes_Random_Forest_ROBUST.pkl",
+            "xgboost": "Evaluation/saved_models/diabetes_XGBoost_ROBUST.pkl"
         }
     },
     "adult": {
@@ -77,11 +77,11 @@ DATASETS = {
             "native-country": "categorical"
         },
         "model_paths": {
-            "decision_tree": "Evaluation/saved_models/adult_Decision_Tree_tuned.pkl",
-            "logistic_regression": "Evaluation/saved_models/adult_Logistic_Regression_tuned.pkl",
-            "mlp": "Evaluation/saved_models/adult_MLP_tuned.pkl",
-            "random_forest": "Evaluation/saved_models/adult_Random_Forest_tuned.pkl",
-            "xgboost": "Evaluation/saved_models/adult_XGBoost_tuned.pkl"
+            "decision_tree": "Evaluation/saved_models/adult_Decision_Tree_ROBUST.pkl",
+            "logistic_regression": "Evaluation/saved_models/adult_Logistic_Regression_ROBUST.pkl",
+            "mlp": "Evaluation/saved_models/adult_MLP_ROBUST.pkl",
+            "random_forest": "Evaluation/saved_models/adult_Random_Forest_ROBUST.pkl",
+            "xgboost": "Evaluation/saved_models/adult_XGBoost_ROBUST.pkl"
         }
     },
     "bank": {
@@ -103,11 +103,11 @@ DATASETS = {
             "dependents": "numeric"
         },
         "model_paths": {
-            "decision_tree": "Evaluation/saved_models/bank_Decision_Tree_tuned.pkl",
-            "logistic_regression": "Evaluation/saved_models/bank_Logistic_Regression_tuned.pkl",
-            "mlp": "Evaluation/saved_models/bank_MLP_tuned.pkl",
-            "random_forest": "Evaluation/saved_models/bank_Random_Forest_tuned.pkl",
-            "xgboost": "Evaluation/saved_models/bank_XGBoost_tuned.pkl"
+            "decision_tree": "Evaluation/saved_models/bank_Decision_Tree_ROBUST.pkl",
+            "logistic_regression": "Evaluation/saved_models/bank_Logistic_Regression_ROBUST.pkl",
+            "mlp": "Evaluation/saved_models/bank_MLP_ROBUST.pkl",
+            "random_forest": "Evaluation/saved_models/bank_Random_Forest_ROBUST.pkl",
+            "xgboost": "Evaluation/saved_models/bank_XGBoost_ROBUST.pkl"
         }
     },
     "german": {
@@ -139,11 +139,11 @@ DATASETS = {
             "foreign_worker": "categorical"
         },
         "model_paths": {
-            "decision_tree": "Evaluation/saved_models/german_Decision_Tree_tuned.pkl",
-            "logistic_regression": "Evaluation/saved_models/german_Logistic_Regression_tuned.pkl",
-            "mlp": "Evaluation/saved_models/german_MLP_tuned.pkl",
-            "random_forest": "Evaluation/saved_models/german_Random_Forest_tuned.pkl",
-            "xgboost": "Evaluation/saved_models/german_XGBoost_tuned.pkl"
+            "decision_tree": "Evaluation/saved_models/german_Decision_Tree_ROBUST.pkl",
+            "logistic_regression": "Evaluation/saved_models/german_Logistic_Regression_ROBUST.pkl",
+            "mlp": "Evaluation/saved_models/german_MLP_OVERFIT.pkl",
+            "random_forest": "Evaluation/saved_models/german_Random_Forest_OVERFIT.pkl",
+            "xgboost": "Evaluation/saved_models/german_XGBoost_OVERFIT.pkl"
         }
     }
 }

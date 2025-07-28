@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate,total_time_seconds,avg_time_per_sample,min_sample_time,max_sample_time,total_sample_time,overhead_time
+diabetes,decision_tree,231,85,215,16,39.53488372093023,2.364509105682373,0.010216545504192973,0.006003141403198242,0.03452181816101074,2.1965572834014893,0.1679518222808838

@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate,total_time_seconds,avg_time_per_sample,min_sample_time,max_sample_time,total_sample_time,overhead_time
+bank,xgboost,45000,2731,42558,2442,6.417124864890267,582.3523590564728,0.013587598340382135,0.008994340896606445,2.2179481983184814,578.2610101699829,4.091348886489868

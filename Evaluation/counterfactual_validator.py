@@ -7,6 +7,7 @@ import warnings
 import os
 import re
 warnings.filterwarnings('ignore')
+import time
 
 # Import the config
 from config import DATASETS, ML_MODELS
@@ -329,6 +330,8 @@ class CounterfactualValidator:
                                      contrast_class, counterfactual_rules, prediction_confidence):
         """Validate a single counterfactual sample"""
         
+        start_time = time.time()
+
         print(f"\nValidating Instance {instance_id}")
         
         # Get original sample
@@ -405,6 +408,8 @@ class CounterfactualValidator:
         else:
             results['validation_result'] = None
         
+        elapsed_time = time.time() - start_time
+        results['validation_time'] = elapsed_time
         return results
     
     def generate_feature_frequency_report(self, output_path):
@@ -469,7 +474,7 @@ class CounterfactualValidator:
         # Prepare data for CSV
         report_data = []
         
-        for result in validation_results:
+        for i, result in enumerate(validation_results):
             if result:
                 row = {
                     'instance': result['instance_id'],
@@ -493,6 +498,9 @@ class CounterfactualValidator:
                     else:
                         row['result'] = 'FAILED'
                         row['reason'] = 'Prediction failed'
+
+                if 'validation_time' in result:
+                    row['validation_time'] = result['validation_time']
                 
                 report_data.append(row)
         
@@ -508,7 +516,7 @@ class CounterfactualValidator:
         
         return df_report
     
-    def generate_comprehensive_report(self, validation_results, save_csv=True, output_dir="./"):
+    def generate_comprehensive_report(self, validation_results, save_csv=True, output_dir="./", total_time=None, sample_times=None):
         """Generate comprehensive evaluation report"""
         
         print("\n" + "="*80)
@@ -543,6 +551,17 @@ class CounterfactualValidator:
         print(f"Successful: {successes}/{total_valid} ({success_rate:.1f}%)")
         print(f"Skipped: {skipped}")
         print(f"Failed: {total_samples - total_valid - skipped}")
+
+        if total_time is not None and sample_times:
+            print("\nCOMPUTATIONAL TIME ANALYSIS:")
+            print("-" * 40)
+            print(f"Total validation time: {total_time:.2f} seconds")
+            print(f"Number of samples: {len(sample_times)}")
+            print(f"Average time per sample: {np.mean(sample_times):.4f} seconds")
+            print(f"Fastest sample: {np.min(sample_times):.4f} seconds")
+            print(f"Slowest sample: {np.max(sample_times):.4f} seconds")
+            print(f"Total sample validation time: {np.sum(sample_times):.2f} seconds")
+            print(f"Overhead time: {total_time - np.sum(sample_times):.2f} seconds")
         
         # Save reports if requested
         if save_csv:
@@ -564,6 +583,16 @@ class CounterfactualValidator:
                 'skipped_samples': skipped,
                 'success_rate': success_rate
             }
+
+            if total_time is not None and sample_times:
+                metrics_data.update({
+                    'total_time_seconds': total_time,
+                    'avg_time_per_sample': np.mean(sample_times),
+                    'min_sample_time': np.min(sample_times),
+                    'max_sample_time': np.max(sample_times),
+                    'total_sample_time': np.sum(sample_times),
+                    'overhead_time': total_time - np.sum(sample_times)
+                })
             
             df_metrics = pd.DataFrame([metrics_data])
             metrics_path = f"{output_dir}{self.dataset_name}_{self.model_name}_metrics.csv"
@@ -613,6 +642,7 @@ class CounterfactualValidator:
 def validate_single_report(counterfactual_csv_path, output_dir="./validation_results/"):
     """Validate a single counterfactual report"""
     
+    start_total = time.time()
     print(f"Processing: {counterfactual_csv_path}")
     
     # Initialize validator
@@ -643,6 +673,7 @@ def validate_single_report(counterfactual_csv_path, output_dir="./validation_res
     
     # Validate each sample
     validation_results = []
+    sample_times = []
     for sample in test_samples:
         result = validator.validate_counterfactual_sample(
             sample["instance_id"],
@@ -652,15 +683,20 @@ def validate_single_report(counterfactual_csv_path, output_dir="./validation_res
             sample["counterfactual_rules"],
             sample["prediction_confidence"]
         )
+        if result and 'validation_time' in result:
+            sample_times.append(result['validation_time'])
         validation_results.append(result)
+    
+    total_elapsed = time.time() - start_total
     
     # Generate comprehensive report
     report = validator.generate_comprehensive_report(
         validation_results, 
         save_csv=True, 
-        output_dir=output_dir
+        output_dir=output_dir,
+        total_time=total_elapsed,
+        sample_times=sample_times
     )
-    
     return report
 
 def validate_multiple_reports(report_directory, output_dir="./validation_results/"):

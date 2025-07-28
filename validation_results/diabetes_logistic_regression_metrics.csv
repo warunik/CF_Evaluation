@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate,total_time_seconds,avg_time_per_sample,min_sample_time,max_sample_time,total_sample_time,overhead_time
+diabetes,logistic_regression,231,86,197,34,43.65482233502538,1.9721229076385498,0.009568089761104681,0.0067288875579833984,0.054518699645996094,1.884913682937622,0.08720922470092773

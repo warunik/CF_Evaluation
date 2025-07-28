@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate,total_time_seconds,avg_time_per_sample,min_sample_time,max_sample_time,total_sample_time,overhead_time
+bank,decision_tree,45000,1360,33600,3003,4.0476190476190474,384.8400249481201,0.009053364263749319,0.0037488937377929688,0.2519397735595703,380.2141389846802,4.625885963439941

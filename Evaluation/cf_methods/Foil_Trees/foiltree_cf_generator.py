@@ -42,18 +42,18 @@ class CounterfactualExplanationGenerator:
             # Check if files exist
             required_files = ['metadata.json', 'X_train.csv', 'X_test.csv', 'y_train.csv', 'y_test.csv']
             for file in required_files:
-                if not os.path.exists(f"{data_dir}/{file}"):
-                    raise FileNotFoundError(f"Required file not found: {data_dir}/{file}")
+                if not os.path.exists(f"preprocessed_data/{data_dir}/{file}"):
+                    raise FileNotFoundError(f"Required file not found: preprocessed_data/{data_dir}/{file}")
             
             # Load metadata
-            with open(f"{data_dir}/metadata.json", "r") as f:
+            with open(f"preprocessed_data/{data_dir}/metadata.json", "r") as f:
                 self.metadata = json.load(f)
             
             # Load datasets
-            self.X_train = pd.read_csv(f"{data_dir}/X_train.csv")
-            self.X_test = pd.read_csv(f"{data_dir}/X_test.csv")
-            self.y_train = pd.read_csv(f"{data_dir}/y_train.csv").iloc[:, 0]  # Get first column as Series
-            self.y_test = pd.read_csv(f"{data_dir}/y_test.csv").iloc[:, 0]    # Get first column as Series
+            self.X_train = pd.read_csv(f"preprocessed_data/{data_dir}/X_train.csv")
+            self.X_test = pd.read_csv(f"preprocessed_data/{data_dir}/X_test.csv")
+            self.y_train = pd.read_csv(f"preprocessed_data/{data_dir}/y_train.csv").iloc[:, 0]  # Get first column as Series
+            self.y_test = pd.read_csv(f"preprocessed_data/{data_dir}/y_test.csv").iloc[:, 0]    # Get first column as Series
             
             # Extract feature types from metadata
             self.categorical_features = self.metadata.get("categorical_features", [])

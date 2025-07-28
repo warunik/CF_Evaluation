@@ -1,0 +1,2 @@
+dataset,model,total_samples,successful_counterfactuals,total_valid_samples,skipped_samples,success_rate,total_time_seconds,avg_time_per_sample,min_sample_time,max_sample_time,total_sample_time,overhead_time
+bank,logistic_regression,44999,469,34276,2119,1.3683043528999883,392.6451222896576,0.009076101972318408,0.0034494400024414062,0.8132405281066895,389.1832525730133,3.461869716644287
