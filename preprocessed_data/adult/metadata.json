@@ -5,49 +5,172 @@
         "0": "<=50K",
         "1": ">50K"
     },
-    "feature_types": {
-        "age": "numeric",
-        "workclass": "categorical",
-        "education": "categorical",
-        "marital-status": "categorical",
-        "occupation": "categorical",
-        "relationship": "categorical",
-        "race": "categorical",
-        "sex": "categorical",
-        "capital-gain": "numeric",
-        "capital-loss": "numeric",
-        "hours-per-week": "numeric"
+    "original_features": {
+        "numeric": [
+            "age",
+            "capital-gain",
+            "capital-loss",
+            "hours-per-week"
+        ],
+        "categorical": [
+            "workclass",
+            "education",
+            "marital-status",
+            "occupation",
+            "relationship",
+            "race",
+            "sex"
+        ]
     },
-    "numeric_features": [
+    "final_features": [
         "age",
-        "capital-gain",
-        "capital-loss",
-        "hours-per-week"
-    ],
-    "categorical_features": [
-        "workclass",
         "education",
-        "marital-status",
-        "occupation",
-        "relationship",
-        "race",
-        "sex"
-    ],
-    "train_size": 22792,
-    "test_size": 9769,
-    "features": [
-        "age",
-        "workclass",
-        "education",
-        "marital-status",
-        "occupation",
-        "relationship",
-        "race",
         "sex",
         "capital-gain",
         "capital-loss",
-        "hours-per-week"
+        "hours-per-week",
+        "workclass_?",
+        "workclass_Federal-gov",
+        "workclass_Local-gov",
+        "workclass_Never-worked",
+        "workclass_Private",
+        "workclass_Self-emp-inc",
+        "workclass_Self-emp-not-inc",
+        "workclass_State-gov",
+        "workclass_Without-pay",
+        "marital-status_Divorced",
+        "marital-status_Married-AF-spouse",
+        "marital-status_Married-civ-spouse",
+        "marital-status_Married-spouse-absent",
+        "marital-status_Never-married",
+        "marital-status_Separated",
+        "marital-status_Widowed",
+        "occupation_?",
+        "occupation_Adm-clerical",
+        "occupation_Armed-Forces",
+        "occupation_Craft-repair",
+        "occupation_Exec-managerial",
+        "occupation_Farming-fishing",
+        "occupation_Handlers-cleaners",
+        "occupation_Machine-op-inspct",
+        "occupation_Other-service",
+        "occupation_Priv-house-serv",
+        "occupation_Prof-specialty",
+        "occupation_Protective-serv",
+        "occupation_Sales",
+        "occupation_Tech-support",
+        "occupation_Transport-moving",
+        "relationship_Husband",
+        "relationship_Not-in-family",
+        "relationship_Other-relative",
+        "relationship_Own-child",
+        "relationship_Unmarried",
+        "relationship_Wife",
+        "race_Amer-Indian-Eskimo",
+        "race_Asian-Pac-Islander",
+        "race_Black",
+        "race_Other",
+        "race_White"
     ],
+    "encoding_info": {
+        "workclass": {
+            "type": "onehot",
+            "categories": [
+                "?",
+                "Federal-gov",
+                "Local-gov",
+                "Never-worked",
+                "Private",
+                "Self-emp-inc",
+                "Self-emp-not-inc",
+                "State-gov",
+                "Without-pay"
+            ]
+        },
+        "education": {
+            "type": "frequency",
+            "mapping": {
+                "HS-grad": 0.31971744471744473,
+                "Some-college": 0.22306072306072305,
+                "Bachelors": 0.16334678834678834,
+                "Masters": 0.05449280449280449,
+                "Assoc-voc": 0.04282204282204282,
+                "11th": 0.03659178659178659,
+                "Assoc-acdm": 0.03352053352053352,
+                "10th": 0.028123903123903123,
+                "7th-8th": 0.020314145314145313,
+                "Prof-school": 0.017462267462267464,
+                "9th": 0.015926640926640926,
+                "12th": 0.013908388908388908,
+                "Doctorate": 0.012636012636012635,
+                "5th-6th": 0.011144261144261144,
+                "1st-4th": 0.005396630396630396,
+                "Preschool": 0.0015356265356265355
+            }
+        },
+        "marital-status": {
+            "type": "onehot",
+            "categories": [
+                "Divorced",
+                "Married-AF-spouse",
+                "Married-civ-spouse",
+                "Married-spouse-absent",
+                "Never-married",
+                "Separated",
+                "Widowed"
+            ]
+        },
+        "occupation": {
+            "type": "onehot",
+            "categories": [
+                "?",
+                "Adm-clerical",
+                "Armed-Forces",
+                "Craft-repair",
+                "Exec-managerial",
+                "Farming-fishing",
+                "Handlers-cleaners",
+                "Machine-op-inspct",
+                "Other-service",
+                "Priv-house-serv",
+                "Prof-specialty",
+                "Protective-serv",
+                "Sales",
+                "Tech-support",
+                "Transport-moving"
+            ]
+        },
+        "relationship": {
+            "type": "onehot",
+            "categories": [
+                "Husband",
+                "Not-in-family",
+                "Other-relative",
+                "Own-child",
+                "Unmarried",
+                "Wife"
+            ]
+        },
+        "race": {
+            "type": "onehot",
+            "categories": [
+                "Amer-Indian-Eskimo",
+                "Asian-Pac-Islander",
+                "Black",
+                "Other",
+                "White"
+            ]
+        },
+        "sex": {
+            "type": "label",
+            "mapping": {
+                "Female": 0,
+                "Male": 1
+            }
+        }
+    },
+    "train_size": 22792,
+    "test_size": 9769,
     "class_distribution": {
         "train": {
             "0": 17303,

@@ -1,58 +1,58 @@
 # config.py
 DATASETS = {
-    "heart": {
-        "name": "Heart Disease",
-        "path": "Evaluation/data/heart.csv",
-        "preprocessed_dir": "preprocessed_data/heart",  # Added
-        "target_column": "target",
-        "class_labels": {0: "No Heart Disease", 1: "Heart Disease"},
-        "feature_types": {
-            "age": "numeric",
-            "sex": "numeric",
-            "cp": "numeric",
-            "trestbps": "numeric",
-            "chol": "numeric",
-            "fbs": "numeric",
-            "restecg": "numeric",
-            "thalach": "numeric",
-            "exang": "numeric",
-            "oldpeak": "numeric",
-            "slope": "numeric",
-            "ca": "numeric",
-            "thal": "numeric"
-        },
-        "model_paths": {
-            "decision_tree": "Evaluation/saved_models/heart_Decision_Tree_ROBUST.pkl",
-            "logistic_regression": "Evaluation/saved_models/heart_Logistic_Regression_ROBUST.pkl",
-            "mlp": "Evaluation/saved_models/heart_MLP_ROBUST.pkl",
-            "random_forest": "Evaluation/saved_models/heart_Random_Forest_ROBUST.pkl",
-            "xgboost": "Evaluation/saved_models/heart_XGBoost_ROBUST.pkl"
-        }
-    },
-    "diabetes": {
-        "name": "Diabetes Prediction",
-        "path": "Evaluation/data/diabetes.csv",
-        "preprocessed_dir": "preprocessed_data/diabetes",  # Added
-        "target_column": "Outcome",
-        "class_labels": {0: "No Diabetes", 1: "Diabetes"},
-        "feature_types": {
-            "Pregnancies": "numeric",
-            "Glucose": "numeric",
-            "BloodPressure": "numeric",
-            "SkinThickness": "numeric",
-            "Insulin": "numeric",
-            "BMI": "numeric",
-            "DiabetesPedigreeFunction": "numeric",
-            "Age": "numeric"
-        },
-        "model_paths": {
-            "decision_tree": "Evaluation/saved_models/diabetes_Decision_Tree_ROBUST.pkl",
-            "logistic_regression": "Evaluation/saved_models/diabetes_Logistic_Regression_ROBUST.pkl",
-            "mlp": "Evaluation/saved_models/diabetes_MLP_ROBUST.pkl",
-            "random_forest": "Evaluation/saved_models/diabetes_Random_Forest_ROBUST.pkl",
-            "xgboost": "Evaluation/saved_models/diabetes_XGBoost_ROBUST.pkl"
-        }
-    },
+    # "heart": {
+    #     "name": "Heart Disease",
+    #     "path": "Evaluation/data/heart.csv",
+    #     "preprocessed_dir": "preprocessed_data/heart",  # Added
+    #     "target_column": "target",
+    #     "class_labels": {0: "No Heart Disease", 1: "Heart Disease"},
+    #     "feature_types": {
+    #         "age": "numeric",
+    #         "sex": "numeric",
+    #         "cp": "numeric",
+    #         "trestbps": "numeric",
+    #         "chol": "numeric",
+    #         "fbs": "numeric",
+    #         "restecg": "numeric",
+    #         "thalach": "numeric",
+    #         "exang": "numeric",
+    #         "oldpeak": "numeric",
+    #         "slope": "numeric",
+    #         "ca": "numeric",
+    #         "thal": "numeric"
+    #     },
+    #     "model_paths": {
+    #         "decision_tree": "Evaluation/saved_models/heart_Decision_Tree_ROBUST.pkl",
+    #         "logistic_regression": "Evaluation/saved_models/heart_Logistic_Regression_ROBUST.pkl",
+    #         "mlp": "Evaluation/saved_models/heart_MLP_ROBUST.pkl",
+    #         "random_forest": "Evaluation/saved_models/heart_Random_Forest_ROBUST.pkl",
+    #         "xgboost": "Evaluation/saved_models/heart_XGBoost_ROBUST.pkl"
+    #     }
+    # },
+    # "diabetes": {
+    #     "name": "Diabetes Prediction",
+    #     "path": "Evaluation/data/diabetes.csv",
+    #     "preprocessed_dir": "preprocessed_data/diabetes",  # Added
+    #     "target_column": "Outcome",
+    #     "class_labels": {0: "No Diabetes", 1: "Diabetes"},
+    #     "feature_types": {
+    #         "Pregnancies": "numeric",
+    #         "Glucose": "numeric",
+    #         "BloodPressure": "numeric",
+    #         "SkinThickness": "numeric",
+    #         "Insulin": "numeric",
+    #         "BMI": "numeric",
+    #         "DiabetesPedigreeFunction": "numeric",
+    #         "Age": "numeric"
+    #     },
+    #     "model_paths": {
+    #         "decision_tree": "Evaluation/saved_models/diabetes_Decision_Tree_ROBUST.pkl",
+    #         "logistic_regression": "Evaluation/saved_models/diabetes_Logistic_Regression_ROBUST.pkl",
+    #         "mlp": "Evaluation/saved_models/diabetes_MLP_ROBUST.pkl",
+    #         "random_forest": "Evaluation/saved_models/diabetes_Random_Forest_ROBUST.pkl",
+    #         "xgboost": "Evaluation/saved_models/diabetes_XGBoost_ROBUST.pkl"
+    #     }
+    # },
     "adult": {
         "name": "Income Prediction",
         "path": "Evaluation/data/adult.csv",
@@ -84,32 +84,32 @@ DATASETS = {
             "xgboost": "Evaluation/saved_models/adult_XGBoost_ROBUST.pkl"
         }
     },
-    "bank": {
-        "name": "Credit Approval",
-        "path": "Evaluation/data/bank.csv",
-        "preprocessed_dir": "preprocessed_data/bank",  # Added
-        "target_column": "give_credit",
-        "class_labels": {0: "Deny Credit", 1: "Approve Credit"},
-        "feature_types": {
-            "revolving": "numeric",
-            "age": "numeric",
-            "nbr_30_59_days_past_due_not_worse": "numeric",
-            "debt_ratio": "numeric",
-            "monthly_income": "numeric",
-            "nbr_open_credits_and_loans": "numeric",
-            "nbr_90_days_late": "numeric",
-            "nbr_real_estate_loans_or_lines": "numeric",
-            "nbr_60_89_days_past_due_not_worse": "numeric",
-            "dependents": "numeric"
-        },
-        "model_paths": {
-            "decision_tree": "Evaluation/saved_models/bank_Decision_Tree_ROBUST.pkl",
-            "logistic_regression": "Evaluation/saved_models/bank_Logistic_Regression_ROBUST.pkl",
-            "mlp": "Evaluation/saved_models/bank_MLP_ROBUST.pkl",
-            "random_forest": "Evaluation/saved_models/bank_Random_Forest_ROBUST.pkl",
-            "xgboost": "Evaluation/saved_models/bank_XGBoost_ROBUST.pkl"
-        }
-    },
+    # "bank": {
+    #     "name": "Credit Approval",
+    #     "path": "Evaluation/data/bank.csv",
+    #     "preprocessed_dir": "preprocessed_data/bank",  # Added
+    #     "target_column": "give_credit",
+    #     "class_labels": {0: "Deny Credit", 1: "Approve Credit"},
+    #     "feature_types": {
+    #         "revolving": "numeric",
+    #         "age": "numeric",
+    #         "nbr_30_59_days_past_due_not_worse": "numeric",
+    #         "debt_ratio": "numeric",
+    #         "monthly_income": "numeric",
+    #         "nbr_open_credits_and_loans": "numeric",
+    #         "nbr_90_days_late": "numeric",
+    #         "nbr_real_estate_loans_or_lines": "numeric",
+    #         "nbr_60_89_days_past_due_not_worse": "numeric",
+    #         "dependents": "numeric"
+    #     },
+    #     "model_paths": {
+    #         "decision_tree": "Evaluation/saved_models/bank_Decision_Tree_ROBUST.pkl",
+    #         "logistic_regression": "Evaluation/saved_models/bank_Logistic_Regression_ROBUST.pkl",
+    #         "mlp": "Evaluation/saved_models/bank_MLP_ROBUST.pkl",
+    #         "random_forest": "Evaluation/saved_models/bank_Random_Forest_ROBUST.pkl",
+    #         "xgboost": "Evaluation/saved_models/bank_XGBoost_ROBUST.pkl"
+    #     }
+    # },
     "german": {
         "name": "German Credit Risk",
         "path": "Evaluation/data/german_credit.csv",
@@ -139,9 +139,9 @@ DATASETS = {
             "foreign_worker": "categorical"
         },
         "model_paths": {
-            "decision_tree": "Evaluation/saved_models/german_Decision_Tree_ROBUST.pkl",
+            "decision_tree": "Evaluation/saved_models/german_Decision_Tree_OVERFIT.pkl",
             "logistic_regression": "Evaluation/saved_models/german_Logistic_Regression_ROBUST.pkl",
-            "mlp": "Evaluation/saved_models/german_MLP_OVERFIT.pkl",
+            "mlp": "Evaluation/saved_models/german_MLP_ROBUST.pkl",
             "random_forest": "Evaluation/saved_models/german_Random_Forest_OVERFIT.pkl",
             "xgboost": "Evaluation/saved_models/german_XGBoost_OVERFIT.pkl"
         }

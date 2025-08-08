@@ -5,76 +5,216 @@
         "0": "Good Credit",
         "1": "Bad Credit"
     },
-    "feature_types": {
-        "account_check_status": "categorical",
-        "duration_in_month": "numeric",
-        "credit_history": "categorical",
-        "purpose": "categorical",
-        "credit_amount": "numeric",
-        "savings": "categorical",
-        "present_emp_since": "categorical",
-        "installment_as_income_perc": "numeric",
-        "personal_status_sex": "categorical",
-        "other_debtors": "categorical",
-        "present_res_since": "numeric",
-        "property": "categorical",
-        "age": "numeric",
-        "other_installment_plans": "categorical",
-        "housing": "categorical",
-        "credits_this_bank": "numeric",
-        "job": "categorical",
-        "people_under_maintenance": "numeric",
-        "telephone": "categorical",
-        "foreign_worker": "categorical"
+    "original_features": {
+        "numeric": [
+            "duration_in_month",
+            "credit_amount",
+            "installment_as_income_perc",
+            "present_res_since",
+            "age",
+            "credits_this_bank",
+            "people_under_maintenance"
+        ],
+        "categorical": [
+            "account_check_status",
+            "credit_history",
+            "purpose",
+            "savings",
+            "present_emp_since",
+            "personal_status_sex",
+            "other_debtors",
+            "property",
+            "other_installment_plans",
+            "housing",
+            "job",
+            "telephone",
+            "foreign_worker"
+        ]
     },
-    "numeric_features": [
+    "final_features": [
         "duration_in_month",
         "credit_amount",
         "installment_as_income_perc",
         "present_res_since",
         "age",
         "credits_this_bank",
-        "people_under_maintenance"
-    ],
-    "categorical_features": [
-        "account_check_status",
-        "credit_history",
-        "purpose",
-        "savings",
-        "present_emp_since",
-        "personal_status_sex",
-        "other_debtors",
-        "property",
-        "other_installment_plans",
-        "housing",
-        "job",
-        "telephone",
-        "foreign_worker"
-    ],
-    "train_size": 700,
-    "test_size": 300,
-    "features": [
-        "account_check_status",
-        "duration_in_month",
-        "credit_history",
-        "purpose",
-        "credit_amount",
-        "savings",
-        "present_emp_since",
-        "installment_as_income_perc",
-        "personal_status_sex",
-        "other_debtors",
-        "present_res_since",
-        "property",
-        "age",
-        "other_installment_plans",
-        "housing",
-        "credits_this_bank",
-        "job",
         "people_under_maintenance",
         "telephone",
-        "foreign_worker"
+        "foreign_worker",
+        "account_check_status_0 <= ... < 200 DM",
+        "account_check_status_< 0 DM",
+        "account_check_status_>= 200 DM / salary assignments for at least 1 year",
+        "account_check_status_no checking account",
+        "credit_history_all credits at this bank paid back duly",
+        "credit_history_critical account/ other credits existing (not at this bank)",
+        "credit_history_delay in paying off in the past",
+        "credit_history_existing credits paid back duly till now",
+        "credit_history_no credits taken/ all credits paid back duly",
+        "purpose_(vacation - does not exist?)",
+        "purpose_business",
+        "purpose_car (new)",
+        "purpose_car (used)",
+        "purpose_domestic appliances",
+        "purpose_education",
+        "purpose_furniture/equipment",
+        "purpose_radio/television",
+        "purpose_repairs",
+        "purpose_retraining",
+        "savings_.. >= 1000 DM ",
+        "savings_... < 100 DM",
+        "savings_100 <= ... < 500 DM",
+        "savings_500 <= ... < 1000 DM ",
+        "savings_unknown/ no savings account",
+        "present_emp_since_.. >= 7 years",
+        "present_emp_since_... < 1 year ",
+        "present_emp_since_1 <= ... < 4 years",
+        "present_emp_since_4 <= ... < 7 years",
+        "present_emp_since_unemployed",
+        "personal_status_sex_female : divorced/separated/married",
+        "personal_status_sex_male : divorced/separated",
+        "personal_status_sex_male : married/widowed",
+        "personal_status_sex_male : single",
+        "other_debtors_co-applicant",
+        "other_debtors_guarantor",
+        "other_debtors_none",
+        "property_if not A121 : building society savings agreement/ life insurance",
+        "property_if not A121/A122 : car or other, not in attribute 6",
+        "property_real estate",
+        "property_unknown / no property",
+        "other_installment_plans_bank",
+        "other_installment_plans_none",
+        "other_installment_plans_stores",
+        "housing_for free",
+        "housing_own",
+        "housing_rent",
+        "job_management/ self-employed/ highly qualified employee/ officer",
+        "job_skilled employee / official",
+        "job_unemployed/ unskilled - non-resident",
+        "job_unskilled - resident"
     ],
+    "encoding_info": {
+        "account_check_status": {
+            "type": "onehot",
+            "categories": [
+                "0 <= ... < 200 DM",
+                "< 0 DM",
+                ">= 200 DM / salary assignments for at least 1 year",
+                "no checking account"
+            ]
+        },
+        "credit_history": {
+            "type": "onehot",
+            "categories": [
+                "all credits at this bank paid back duly",
+                "critical account/ other credits existing (not at this bank)",
+                "delay in paying off in the past",
+                "existing credits paid back duly till now",
+                "no credits taken/ all credits paid back duly"
+            ]
+        },
+        "purpose": {
+            "type": "onehot",
+            "categories": [
+                "(vacation - does not exist?)",
+                "business",
+                "car (new)",
+                "car (used)",
+                "domestic appliances",
+                "education",
+                "furniture/equipment",
+                "radio/television",
+                "repairs",
+                "retraining"
+            ]
+        },
+        "savings": {
+            "type": "onehot",
+            "categories": [
+                ".. >= 1000 DM ",
+                "... < 100 DM",
+                "100 <= ... < 500 DM",
+                "500 <= ... < 1000 DM ",
+                "unknown/ no savings account"
+            ]
+        },
+        "present_emp_since": {
+            "type": "onehot",
+            "categories": [
+                ".. >= 7 years",
+                "... < 1 year ",
+                "1 <= ... < 4 years",
+                "4 <= ... < 7 years",
+                "unemployed"
+            ]
+        },
+        "personal_status_sex": {
+            "type": "onehot",
+            "categories": [
+                "female : divorced/separated/married",
+                "male : divorced/separated",
+                "male : married/widowed",
+                "male : single"
+            ]
+        },
+        "other_debtors": {
+            "type": "onehot",
+            "categories": [
+                "co-applicant",
+                "guarantor",
+                "none"
+            ]
+        },
+        "property": {
+            "type": "onehot",
+            "categories": [
+                "if not A121 : building society savings agreement/ life insurance",
+                "if not A121/A122 : car or other, not in attribute 6",
+                "real estate",
+                "unknown / no property"
+            ]
+        },
+        "other_installment_plans": {
+            "type": "onehot",
+            "categories": [
+                "bank",
+                "none",
+                "stores"
+            ]
+        },
+        "housing": {
+            "type": "onehot",
+            "categories": [
+                "for free",
+                "own",
+                "rent"
+            ]
+        },
+        "job": {
+            "type": "onehot",
+            "categories": [
+                "management/ self-employed/ highly qualified employee/ officer",
+                "skilled employee / official",
+                "unemployed/ unskilled - non-resident",
+                "unskilled - resident"
+            ]
+        },
+        "telephone": {
+            "type": "label",
+            "mapping": {
+                "none": 0,
+                "yes, registered under the customers name ": 1
+            }
+        },
+        "foreign_worker": {
+            "type": "label",
+            "mapping": {
+                "no": 0,
+                "yes": 1
+            }
+        }
+    },
+    "train_size": 700,
+    "test_size": 300,
     "class_distribution": {
         "train": {
             "0": 490,
