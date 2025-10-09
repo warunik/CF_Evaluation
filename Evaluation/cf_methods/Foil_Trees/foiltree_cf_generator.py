@@ -96,15 +96,58 @@ class CounterfactualExplanationGenerator:
     def load_csv_data(self):
         """Load train/test data from CSV files"""
         try:
-            # Construct file paths - adjust these paths according to your directory structure
-            train_path = f"data/{self.dataset_name}_train.csv"
-            test_path = f"data/{self.dataset_name}_test.csv"
-            
-            # Alternative path structure if above doesn't work
-            if not os.path.exists(train_path):
-                train_path = f"{self.dataset_name}_train.csv"
-                test_path = f"{self.dataset_name}_test.csv"
-            
+            # Construct possible file paths - adjust these paths according to your directory structure
+            dataset_name_variants = []
+
+            # Add common variations of the dataset name to support different naming conventions
+            raw_name = self.dataset_name
+            dataset_name_variants.extend([
+                raw_name,
+                raw_name.replace(" ", ""),
+                raw_name.replace(" ", "_"),
+                raw_name.lower(),
+                raw_name.lower().replace(" ", ""),
+                raw_name.lower().replace(" ", "_"),
+            ])
+
+            # Remove duplicates while keeping order
+            seen_variants = set()
+            dataset_name_variants = [
+                name for name in dataset_name_variants
+                if not (name in seen_variants or seen_variants.add(name))
+            ]
+
+            train_path = None
+            test_path = None
+
+            # Look for matching files using the generated variants
+            for name in dataset_name_variants:
+                candidate_train_paths = [
+                    os.path.join("data", f"{name}_train.csv"),
+                    os.path.join("data", f"{name.capitalize()}_train.csv"),
+                    f"{name}_train.csv",
+                ]
+
+                candidate_test_paths = [
+                    os.path.join("data", f"{name}_test.csv"),
+                    os.path.join("data", f"{name.capitalize()}_test.csv"),
+                    f"{name}_test.csv",
+                ]
+
+                for candidate_train, candidate_test in zip(candidate_train_paths, candidate_test_paths):
+                    if os.path.exists(candidate_train) and os.path.exists(candidate_test):
+                        train_path = candidate_train
+                        test_path = candidate_test
+                        break
+                if train_path and test_path:
+                    break
+
+            if train_path is None or test_path is None:
+                raise FileNotFoundError(
+                    f"Could not locate train/test CSV files for dataset '{self.dataset_name}'. "
+                    "Please ensure the files follow one of the expected naming conventions."
+                )
+
             # Load the CSV files
             train_data = pd.read_csv(train_path)
             test_data = pd.read_csv(test_path)
