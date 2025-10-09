@@ -1,6 +1,0 @@
-dataset,model,accuracy,precision,recall,f1,roc_auc,cv_f1_score,best_params
-bank,Decision Tree,0.9189555555555555,0.9065318863956464,0.9189555555555555,0.9119807244945217,0.6756608654941367,0.2871732006480747,"{'classifier__criterion': 'gini', 'classifier__max_depth': None, 'classifier__min_samples_leaf': 4, 'classifier__min_samples_split': 10}"
-bank,Logistic Regression,0.9338,0.9108426239841181,0.9338,0.9063688388416943,0.7069531497007536,0.08032813675762336,"{'classifier__C': 100, 'classifier__penalty': 'l1', 'classifier__solver': 'liblinear'}"
-bank,MLP,0.9363555555555556,0.9195767190501173,0.9363555555555556,0.9207593905689825,0.8297980247884096,0.29115185953054795,"{'classifier__alpha': 0.01, 'classifier__hidden_layer_sizes': (50,), 'classifier__learning_rate': 'constant'}"
-bank,Random Forest,0.9363333333333334,0.9195186943595128,0.9363333333333334,0.9206963996200638,0.8523035186476756,0.28413504683056406,"{'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 50}"
-bank,XGBoost,0.9368,0.920624122801457,0.9368,0.9217522089914839,0.8650010478819673,0.300553739587328,"{'classifier__learning_rate': 0.2, 'classifier__max_depth': 3, 'classifier__n_estimators': 200, 'classifier__subsample': 1.0}"

@@ -1,0 +1,301 @@
+instance,original_class,expected_contrast,dataset,model,result,original_prediction,modified_prediction,original_confidence,modified_confidence,validation_time,reason
+0,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8990923339193425,0.7915724734071776,0.006086826324462891,
+1,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+2,0,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.6158918986802453,0.5833195722430768,0.002697467803955078,
+3,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8890995952307642,0.8419351824230146,0.0020024776458740234,
+4,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9068079919645866,0.8518920536437626,0.00299835205078125,
+5,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8384617558525962,0.8666291272444782,0.002179861068725586,
+6,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.9222069936921697,0.7908166937611146,0.003999948501586914,
+7,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+8,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+9,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9649082359602317,0.8993584261840358,0.0020003318786621094,
+10,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+11,1,0,GermanCredit,logistic_regression,✓,1.0,0.0,0.5046746681331584,0.5602817358659167,0.0020017623901367188,
+12,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.814435821350498,0.7837583306469666,0.0012688636779785156,
+13,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+14,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.9534904600847348,0.952824936423699,0.0009970664978027344,
+15,1,1,GermanCredit,logistic_regression,✓,0.0,1.0,0.8131874097625768,0.5561028028961913,0.0019989013671875,
+16,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7962229889733946,0.7840938999691003,0.0030024051666259766,
+17,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9492510570243238,0.952640031002229,0.004000425338745117,
+18,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+19,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.7023986262109747,0.6771174369048796,0.0018010139465332031,
+20,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.5980722331175105,0.6481488603714083,0.0010073184967041016,
+21,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.6342035099175911,0.6342035099175911,0.0008096694946289062,
+22,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+23,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+24,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+25,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+26,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+27,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+28,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.6194895283108677,0.6194895283108677,0.0011396408081054688,
+29,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+30,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7129043453212175,0.5921759794993194,0.0009958744049072266,
+31,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.6466037199023322,0.5253963789861954,0.005181550979614258,
+32,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+33,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+34,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+35,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7530299685232846,0.7397423981235872,0.001998424530029297,
+36,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.5881507905222715,0.5881507905222715,0.0010213851928710938,
+37,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+38,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+39,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+40,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.5486047278502867,0.6969976299407746,0.0019989013671875,
+41,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+42,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.6798458792854738,0.5427048133467745,0.0019991397857666016,
+43,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.5884266004012205,0.5971636443169908,0.001020669937133789,
+44,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9145713476020308,0.6775226227388089,0.001983642578125,
+45,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+46,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.7275829008770485,0.8316232937833354,0.00436711311340332,
+47,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.955596068450155,0.8716110452577334,0.002009868621826172,
+48,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9696793815393164,0.9732663361589677,0.00099945068359375,
+49,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9497446403425303,0.7791178616211495,0.0020003318786621094,
+50,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+51,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+52,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8154303486719074,0.8049032619322843,0.0009982585906982422,
+53,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+54,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.5264490258789969,0.6085434013270898,0.0009438991546630859,
+55,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.6387056134219496,0.6434375782470839,0.0020084381103515625,
+56,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+57,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+58,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9818783655298954,0.9818783655298954,0.004003763198852539,
+59,0,1,GermanCredit,logistic_regression,✓,0.0,1.0,0.8505678764496503,0.5527193879479573,0.002292633056640625,
+60,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8930374817899192,0.8492306758329292,0.0020093917846679688,
+61,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8547977319695165,0.8547977319695165,0.0009992122650146484,
+62,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+63,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+64,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8464651296429101,0.8464651296429101,0.0010051727294921875,
+65,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8456979362136412,0.7782546888212374,0.001996755599975586,
+66,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9088054467023138,0.9088054467023138,0.0021414756774902344,
+67,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+68,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8010315429473245,0.5576165756728573,0.005010843276977539,
+69,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8871766005346846,0.9058539103548352,0.0021469593048095703,
+70,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7731590146598514,0.7109457677310527,0.002006053924560547,
+71,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8754653625637665,0.6358933842521624,0.0020112991333007812,
+72,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+73,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+74,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9265411496482397,0.9345176243974651,0.0019817352294921875,
+75,1,1,GermanCredit,logistic_regression,✓,0.0,1.0,0.5922421854236704,0.6245183887119649,0.0020008087158203125,
+76,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.831543922824987,0.8317584723188275,0.002005338668823242,
+77,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+78,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+79,1,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.57428823858896,0.57428823858896,0.0029969215393066406,
+80,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+81,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+82,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9815107347268246,0.9340876664846263,0.0020003318786621094,
+83,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9600357224915373,0.962610112134268,0.0048143863677978516,
+84,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.72854175537004,0.7157748743649025,0.0020008087158203125,
+85,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+86,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+87,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.7323293265146896,0.6443826029541688,0.0010912418365478516,
+88,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9621694736815768,0.9167009112849203,0.00301361083984375,
+89,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+90,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8966209878254092,0.884844489116465,0.0028076171875,
+91,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.6819173180432971,0.6646965869241543,0.0021758079528808594,
+92,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.9026857827476074,0.8902252449042201,0.0010287761688232422,
+93,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+94,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+95,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+96,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+97,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+98,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+99,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8556386068811228,0.8564927801024701,0.0019998550415039062,
+100,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+101,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+102,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+103,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.5796287277288913,0.5920126293405473,0.001999378204345703,
+104,0,1,GermanCredit,logistic_regression,✓,0.0,1.0,0.5359474383877982,0.5745242069516497,0.002005338668823242,
+105,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+106,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+107,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.6776476044056047,0.6811447330743864,0.0039997100830078125,
+108,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+109,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+110,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.9120681783612614,0.918411662986766,0.0020034313201904297,
+111,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7909608990178948,0.7904241208507172,0.0019953250885009766,
+112,0,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.9796387912258524,0.9803548484338745,0.0010042190551757812,
+113,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+114,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+115,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9297395949839314,0.9059202049921872,0.001998424530029297,
+116,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+117,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+118,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7806292364576866,0.6558435120239501,0.003000020980834961,
+119,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8801779391731515,0.8548604253837617,0.0030198097229003906,
+120,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.6412752702486253,0.6999463250724742,0.002979755401611328,
+121,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9692182033192297,0.9691907508779826,0.002020597457885742,
+122,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+123,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.5980682143272201,0.5725273724408031,0.0021605491638183594,
+124,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8908389402959409,0.8876379802924454,0.0019979476928710938,
+125,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+126,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.7950243819473499,0.7889976954890744,0.002001047134399414,
+127,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+128,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+129,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+130,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+131,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+132,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+133,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+134,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.855772813923562,0.8346048285252948,0.005869388580322266,
+135,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+136,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+137,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.6376392616800495,0.7038019554556758,0.0020105838775634766,
+138,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8315662647674116,0.8487292810807404,0.001008749008178711,
+139,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+140,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+141,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8345907669074161,0.8345907669074161,0.002003908157348633,
+142,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+143,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+144,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.5130107092632106,0.5051469631038108,0.001997232437133789,
+145,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.8058012510954742,0.8369006886941047,0.002999544143676758,
+146,0,1,GermanCredit,logistic_regression,✓,0.0,1.0,0.7882217239600426,0.5180566566791137,0.005001068115234375,
+147,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.5261438179493407,0.5739090087209007,0.002001047134399414,
+148,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.6864103709622184,0.7540173043802437,0.0019981861114501953,
+149,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.9665683046340396,0.9439868451372319,0.0020003318786621094,
+150,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+151,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8901515796320545,0.8682086518145151,0.0010004043579101562,
+152,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7856365576070821,0.8284306732509503,0.0030052661895751953,
+153,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+154,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+155,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.5238702451130326,0.5323633472969792,0.0040035247802734375,
+156,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.551718713991536,0.6686035781076323,0.001995086669921875,
+157,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+158,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.667683105401125,0.6658378411076535,0.001001119613647461,
+159,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8925037965283413,0.8850988205424456,0.0022125244140625,
+160,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.6226572570152389,0.6012808347311319,0.001997232437133789,
+161,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+162,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.890016373688495,0.7197756307291561,0.0019996166229248047,
+163,0,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.738436767448273,0.6494385701889017,0.0055277347564697266,
+164,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9124045480422337,0.8886688521045942,0.002019643783569336,
+165,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+166,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+167,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+168,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+169,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+170,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9221977613005128,0.9420943675227778,0.0020029544830322266,
+171,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9298127091353874,0.8653455388146863,0.002015829086303711,
+172,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+173,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.6761564209291848,0.6761564209291848,0.0020835399627685547,
+174,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+175,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+176,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7276054299482801,0.6092276853968551,0.002001047134399414,
+177,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+178,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.6369855489319636,0.6168913925326389,0.0040094852447509766,
+179,1,0,GermanCredit,logistic_regression,✗,1.0,1.0,0.5235404455534838,0.5884923232609653,0.0019960403442382812,
+180,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8633626381829298,0.863287020619014,0.0019941329956054688,
+181,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+182,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.7767599078506132,0.7127375027305333,0.002002716064453125,
+183,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+184,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+185,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.6146433684256989,0.5506453413726586,0.0019986629486083984,
+186,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+187,0,1,GermanCredit,logistic_regression,✓,0.0,1.0,0.5830035484507073,0.5384061626219717,0.0020058155059814453,
+188,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+189,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9033403236228159,0.7582088784676806,0.002997159957885742,
+190,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+191,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.570305047434557,0.570305047434557,0.003998279571533203,
+192,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+193,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+194,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8581335209509022,0.8420844812553571,0.0020008087158203125,
+195,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7779100907856675,0.68464122446175,0.002002239227294922,
+196,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.6475513570113557,0.6475513570113557,0.0010175704956054688,
+197,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+198,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+199,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+200,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.9244431817504554,0.7226251791867191,0.002020597457885742,
+201,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.832727665638594,0.854632202815935,0.0019795894622802734,
+202,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.5280176190594907,0.5982908365359727,0.003018617630004883,
+203,1,1,GermanCredit,logistic_regression,✓,0.0,1.0,0.512324988690413,0.5295009665886464,0.004106998443603516,
+204,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+205,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.968754818921004,0.8974170587896029,0.002001523971557617,
+206,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+207,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7213189340830879,0.7213189340830879,0.0019996166229248047,
+208,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8985307948425105,0.8212682636532113,0.0010178089141845703,
+209,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.5288326969685206,0.5295485875543288,0.0021190643310546875,
+210,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.7744912768521822,0.732065069770661,0.0020003318786621094,
+211,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+212,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+213,1,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.610130872003051,0.5858268632806284,0.0049991607666015625,
+214,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+215,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.948906945744039,0.935047502673452,0.002187490463256836,
+216,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+217,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+218,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.7287508806251813,0.7029654415448057,0.001018524169921875,
+219,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9187114667475039,0.6473409805057657,0.0019795894622802734,
+220,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+221,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+222,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8985173012319645,0.7422936956231214,0.002001523971557617,
+223,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+224,0,0,GermanCredit,logistic_regression,✗,1.0,1.0,0.6390911809137292,0.7215392418266936,0.0019991397857666016,
+225,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+226,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.814214391638688,0.7569323333840201,0.004014015197753906,
+227,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.512351832503542,0.5132797753820779,0.0019845962524414062,
+228,0,1,GermanCredit,logistic_regression,✗,1.0,0.0,0.6240415399203364,0.5406038608499163,0.002001523971557617,
+229,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+230,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+231,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+232,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+233,0,1,GermanCredit,logistic_regression,✓,0.0,1.0,0.6379323199674112,0.6190318042829,0.002002239227294922,
+234,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+235,0,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.5681969307274366,0.6355663718484886,0.0010042190551757812,
+236,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+237,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7594853280823057,0.7425196522571422,0.0019855499267578125,
+238,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.6834247369379263,0.611494418649241,0.004996061325073242,
+239,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+240,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+241,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+242,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+243,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+244,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9395529106224932,0.8885633416906091,0.0019986629486083984,
+245,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9551095657082608,0.6401391823703544,0.001999378204345703,
+246,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+247,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.6726222465238751,0.6659334289064234,0.001996755599975586,
+248,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7163341180353331,0.5558607888020796,0.0020024776458740234,
+249,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+250,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.6315762049042537,0.6894493872262613,0.0020008087158203125,
+251,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.9138463798523278,0.9242757435621097,0.003006458282470703,
+252,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.8720233218619413,0.8116483468078093,0.002991199493408203,
+253,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+254,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8867130597701388,0.8414468435986752,0.0015370845794677734,
+255,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+256,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+257,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+258,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.8270897694748724,0.7929166380578336,0.0019996166229248047,
+259,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+260,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+261,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+262,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7581050152977417,0.6413389467444177,0.0009996891021728516,
+263,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+264,1,1,GermanCredit,logistic_regression,✓,0.0,1.0,0.9118239761195263,0.510391275360962,0.0010268688201904297,
+265,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+266,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+267,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7723455985738068,0.6620171665739696,0.002005338668823242,
+268,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+269,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+270,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.948763808630622,0.9116582209796713,0.0029959678649902344,
+271,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+272,1,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.8903897280384181,0.8825318272623893,0.0039730072021484375,
+273,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+274,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+275,1,0,GermanCredit,logistic_regression,✗,1.0,1.0,0.9131111637896293,0.8563268453391456,0.0019991397857666016,
+276,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+277,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+278,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+279,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.9135818123131164,0.8619867607059739,0.0009996891021728516,
+280,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.5093696680113065,0.5093696680113065,0.0020198822021484375,
+281,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.875627423706928,0.8445282946323851,0.0019817352294921875,
+282,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.6077504114978437,0.5805268241437592,0.004004955291748047,
+283,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+284,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+285,0,1,GermanCredit,logistic_regression,✗,0.0,0.0,0.7622540814192934,0.7666429994862601,0.0020194053649902344,
+286,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+287,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+288,1,0,GermanCredit,logistic_regression,✓,0.0,0.0,0.8725370610508726,0.8858147255332569,0.0019998550415039062,
+289,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+290,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+291,1,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+292,0,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+293,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+294,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.5412085167009636,0.5707750761314805,0.0029985904693603516,
+295,0,1,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided
+296,1,0,GermanCredit,logistic_regression,✗,1.0,1.0,0.5307752803549821,0.6157006767473271,0.0011379718780517578,
+297,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.7212162872040445,0.7212162872040445,0.001989126205444336,
+298,0,1,GermanCredit,logistic_regression,✓,1.0,1.0,0.7462464772649532,0.7462464772649532,0.0019991397857666016,
+299,1,0,GermanCredit,logistic_regression,SKIPPED,,,,,,No counterfactual rules provided

@@ -1,0 +1,3 @@
+file,dataset,model,total_samples,success_rate,successful,total_valid,skipped
+adult_xgboost_counterfactual_report.csv,Unknown,Unknown,6033,0.0,0,4351,1682
+wine_random_forest_counterfactual_report.csv,Unknown,Unknown,54,0.0,0,43,11
